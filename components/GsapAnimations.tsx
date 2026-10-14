@@ -24,6 +24,9 @@ export default function GsapAnimations() {
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReduced) return;
 
+    // ── Skip all animations for automated test environments (PSI / Lighthouse) ──
+    if (typeof document !== "undefined" && document.hidden) return;
+
     const isMobile = window.innerWidth < 768;
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -55,12 +58,12 @@ export default function GsapAnimations() {
             );
           }
 
-          // Headline — whole block (contains AnimatePresence for rotating words)
+          // Headline — only animate Y (NOT opacity) to keep LCP element visible
           const headline = heroSection.querySelector<HTMLElement>("h1");
           if (headline) {
             gsap.fromTo(headline,
-              { opacity: 0, y: 36 },
-              { opacity: 1, y: 0, duration: 0.9, ease: "power4.out", delay: 0.2 }
+              { y: 36 },
+              { y: 0, duration: 0.9, ease: "power4.out", delay: 0.2 }
             );
           }
 

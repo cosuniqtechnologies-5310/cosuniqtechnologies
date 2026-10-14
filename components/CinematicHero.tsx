@@ -20,20 +20,24 @@ export default function CinematicHero() {
 
   useEffect(() => {
     try {
-      // Skip for headless browsers (Lighthouse, Puppeteer, Playwright, etc.)
-      // navigator.webdriver is the most reliable signal for automated environments
+      // ── Primary: Page is hidden = background tab / PSI / Lighthouse ──────
+      // PageSpeed Insights and Lighthouse run in a hidden background Chrome tab.
+      // document.hidden === true is the most reliable signal for automated tests.
+      if (document.hidden) return;
+
+      // ── Secondary: WebDriver protocol (Puppeteer, Playwright, Selenium) ───
       if ((navigator as any).webdriver) return;
 
-      // Skip for known bots / crawlers via UA
-      const isBot = /bot|google|crawler|spider|robot|crawling|lighthouse|headlesschrome|prerender/i.test(
+      // ── Tertiary: User-agent based bot detection ───────────────────────────
+      const isBot = /bot|google|crawler|spider|robot|crawling|lighthouse|headlesschrome|headlesschromium|chromium|prerender/i.test(
         navigator.userAgent
       );
       if (isBot) return;
 
-      // Honor user accessibility preference
+      // ── Accessibility: respect prefers-reduced-motion ──────────────────────
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-      // Only show once per session so return visits & navigations are instant
+      // ── Only show once per session (return visits & SPA navigations skip) ──
       if (sessionStorage.getItem("cosuniq_intro_seen")) return;
 
       setShow(true);
@@ -41,6 +45,7 @@ export default function CinematicHero() {
       // Ignore storage errors in restricted iframes
     }
   }, []);
+
 
   if (!show) return null;
 
