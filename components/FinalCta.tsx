@@ -7,7 +7,6 @@ import styles from "./FinalCta.module.css";
 import MagneticWrapper from "./MagneticWrapper";
 import HoverTextReveal from "./HoverTextReveal";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const ProcessFlow = ({ accentColor = "#FF6B00", accentColorRgba = "rgba(255, 107, 0, 0.1)" }: { accentColor?: string, accentColorRgba?: string }) => {
   const [key, setKey] = useState(0);
@@ -194,7 +193,6 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
     const country = formData.get('country') as string;
     const details = formData.get('details') as string;
     const consent1 = formData.get('consent1');
-    const recaptchaToken = formData.get("g-recaptcha-response");
     
     const newErrors: typeof errors = {};
     
@@ -219,13 +217,6 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
     }
     
     if (!consent1) newErrors.consent1 = 'You must agree to the privacy policy';
-
-    if (process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && !recaptchaToken) {
-      setStatus('error');
-      // Briefly show error if they try to submit without captcha
-      setTimeout(() => setStatus('idle'), 3000);
-      return;
-    }
     
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -449,18 +440,11 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
             </div>
 
             <div className={styles.legalText}>
-              To learn more about how we protect your data, please refer to the <Link href="/privacy" className={variant === 'academy' ? styles.academyLink : ''}>Cosuniq privacy policy</Link>.<br/><br/>
-              This site is protected by reCAPTCHA.
+              To learn more about how we protect your data, please refer to the <Link href="/privacy" className={variant === 'academy' ? styles.academyLink : ''}>Cosuniq privacy policy</Link>.
             </div>
-
-            {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ? (
-              <div style={{ marginTop: '1rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'flex-start' }}>
-                <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
-              </div>
-            ) : null}
             
             {status === 'error' && (
-              <p className={styles.errorMessage}>Oops! Something went wrong or you missed the reCAPTCHA. Please try again.</p>
+              <p className={styles.errorMessage}>Oops! Something went wrong. Please try again.</p>
             )}
             
             {status === 'success' && (

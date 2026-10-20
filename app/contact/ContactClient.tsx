@@ -6,7 +6,6 @@ import InitReveal from "../../components/InitReveal";
 import InnerBanner from "../../components/InnerBanner";
 import styles from "./Contact.module.css";
 import emailjs from '@emailjs/browser';
-import ReCAPTCHA from "react-google-recaptcha";
 
 interface FormErrors {
   name?: string;
@@ -37,12 +36,6 @@ export default function Contact() {
       newErrors.email = "Please enter a valid email.";
     }
     if (!message?.trim()) newErrors.message = "Please tell us about your project.";
-
-    const recaptchaToken = formData.get("g-recaptcha-response");
-    if (process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && !recaptchaToken) {
-      setErrorMessage("Please complete the reCAPTCHA.");
-      return;
-    }
 
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
@@ -223,11 +216,6 @@ export default function Contact() {
                   </div>
                 </div>
 
-                {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ? (
-                  <div className={`${styles.formCard} ${styles.formCardFull}`} style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '1rem' }}>
-                    <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
-                  </div>
-                ) : null}
 
                 <div className={`${styles.submitWrapper} ${styles.formCardFull}`}>
                   <button className={styles.ctaBtn} type="submit" disabled={isSubmitting}>
