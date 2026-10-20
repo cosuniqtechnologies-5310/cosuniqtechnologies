@@ -39,7 +39,7 @@ export default function Contact() {
     if (!message?.trim()) newErrors.message = "Please tell us about your project.";
 
     const recaptchaToken = formData.get("g-recaptcha-response");
-    if (!recaptchaToken) {
+    if (process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && !recaptchaToken) {
       setErrorMessage("Please complete the reCAPTCHA.");
       return;
     }
@@ -223,9 +223,11 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className={`${styles.formCard} ${styles.formCardFull}`} style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '1rem' }}>
-                  <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""} />
-                </div>
+                {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ? (
+                  <div className={`${styles.formCard} ${styles.formCardFull}`} style={{ display: 'flex', justifyContent: 'flex-start', marginTop: '1rem' }}>
+                    <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
+                  </div>
+                ) : null}
 
                 <div className={`${styles.submitWrapper} ${styles.formCardFull}`}>
                   <button className={styles.ctaBtn} type="submit" disabled={isSubmitting}>

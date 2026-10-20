@@ -220,7 +220,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
     
     if (!consent1) newErrors.consent1 = 'You must agree to the privacy policy';
 
-    if (!recaptchaToken) {
+    if (process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY && !recaptchaToken) {
       setStatus('error');
       // Briefly show error if they try to submit without captcha
       setTimeout(() => setStatus('idle'), 3000);
@@ -453,9 +453,11 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
               This site is protected by reCAPTCHA.
             </div>
 
-            <div style={{ marginTop: '1rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'flex-start' }}>
-              <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""} />
-            </div>
+            {process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ? (
+              <div style={{ marginTop: '1rem', marginBottom: '1.5rem', display: 'flex', justifyContent: 'flex-start' }}>
+                <ReCAPTCHA sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} />
+              </div>
+            ) : null}
             
             {status === 'error' && (
               <p className={styles.errorMessage}>Oops! Something went wrong or you missed the reCAPTCHA. Please try again.</p>
