@@ -65,9 +65,9 @@ export default function Footer() {
               <Link href="/about">Who We Are</Link>
               <Link href="/case-studies">Case Studies</Link>
               <Link href="/portfolio">Showcase</Link>
-              <Link href="/blog">Blogs</Link>
+              <Link href="/insights">Insights</Link>
               <Link href="/academy">Academy</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact">Contact Us</Link>
             </div>
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Services</span>

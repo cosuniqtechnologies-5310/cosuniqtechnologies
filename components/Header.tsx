@@ -98,8 +98,8 @@ export default function Header() {
           <MagneticWrapper><Link href="/about"         className={styles.navItem} onClick={handleNavClick}>Who We Are</Link></MagneticWrapper>
           <MagneticWrapper><Link href="/case-studies"  className={styles.navItem} onClick={handleNavClick}>Case Studies</Link></MagneticWrapper>
           <MagneticWrapper><Link href="/portfolio"     className={styles.navItem} onClick={handleNavClick}>Showcase</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/blog"          className={styles.navItem} onClick={handleNavClick}>Blogs</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/contact"       className={styles.navItem} onClick={handleNavClick}>Contact</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/insights"      className={styles.navItem} onClick={handleNavClick}>Insights</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/contact"       className={styles.navItem} onClick={handleNavClick}>Contact Us</Link></MagneticWrapper>
           <MagneticWrapper><Link href="/academy"       className={styles.navItem} onClick={handleNavClick}>Academy</Link></MagneticWrapper>
         </nav>
 

@@ -18,8 +18,8 @@ const navLinks = [
   { name: "Who We Are", href: "/about" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Showcase", href: "/portfolio" },
-  { name: "Blogs", href: "/blog" },
-  { name: "Contact", href: "/contact" },
+  { name: "Insights", href: "/insights" },
+  { name: "Contact Us", href: "/contact" },
   { name: "Academy", href: "/academy" }
 ];
 

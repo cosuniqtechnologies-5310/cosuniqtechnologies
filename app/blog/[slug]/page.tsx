@@ -126,8 +126,8 @@ export default async function BlogPostPage({ params }: PageProps) {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Blogs",
-        "item": "https://cosuniq.in/blog"
+        "name": "Insights",
+        "item": "https://cosuniq.in/insights"
       },
       {
         "@type": "ListItem",
@@ -173,7 +173,7 @@ export default async function BlogPostPage({ params }: PageProps) {
       />
       <InitReveal />
       <InnerBanner
-        eyebrow={`BLOG • ${post.category.toUpperCase()}`}
+        eyebrow={`INSIGHTS • ${post.category.toUpperCase()}`}
         title={post.title}
         description={post.summary}
         bgImage={post.image}
@@ -183,7 +183,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <div className={styles.articleContainer}>
             {/* Top Navigation & Author Byline Row */}
             <div className={styles.topNavMetaRow}>
-              <Link href="/blog" className={styles.backLink}>
+              <Link href="/insights" className={styles.backLink}>
                 <FiArrowLeft /> All articles
               </Link>
 

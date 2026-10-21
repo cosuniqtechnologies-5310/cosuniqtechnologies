@@ -37,7 +37,7 @@ export default function BlogPage() {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Blogs",
+        "name": "Insights",
         "item": "https://cosuniq.in/blog"
       }
     ]
@@ -52,7 +52,7 @@ export default function BlogPage() {
       <InitReveal />
       <InnerBanner
         eyebrow="PERSPECTIVES & RESEARCH"
-        title="Our Blog"
+        title="Insights"
         description="Thoughts, technical perspectives, and design craft from the team at Cosuniq."
         bgImage="/assets/images/brainstorm.webp"
       />
