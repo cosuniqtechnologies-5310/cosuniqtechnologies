@@ -9,7 +9,7 @@ import styles from "./Blog.module.css";
 export default function BlogClient() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
 
-  const categories = ["All", "Engineering", "Design & UX", "Mobile", "AI & Automation", "Cloud & DevOps"];
+  const categories = ["All", ...Array.from(new Set(blogPosts.map(p => p.category)))];
 
   const filteredPosts = activeCategory === "All"
     ? blogPosts

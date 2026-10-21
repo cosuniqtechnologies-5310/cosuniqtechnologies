@@ -54,6 +54,52 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function renderFormattedText(text: string) {
+  const parts = [];
+  const regex = /\[(.*?)\]\((.*?)\)/g;
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const label = match[1];
+    const url = match[2];
+
+    if (url.startsWith('/')) {
+      parts.push(
+        <Link
+          key={`${match.index}-${url}`}
+          href={url}
+          style={{ color: 'var(--brand)', textDecoration: 'underline', fontWeight: 600 }}
+        >
+          {label}
+        </Link>
+      );
+    } else {
+      parts.push(
+        <a
+          key={`${match.index}-${url}`}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: 'var(--brand)', textDecoration: 'underline', fontWeight: 600 }}
+        >
+          {label}
+        </a>
+      );
+    }
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = blogPosts.find(p => p.slug === slug);
@@ -175,7 +221,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <section key={idx}>
                   <h2>{section.heading}</h2>
                   {section.paragraphs.map((p, pIdx) => (
-                    <p key={pIdx}>{p}</p>
+                    <p key={pIdx}>{renderFormattedText(p)}</p>
                   ))}
 
                   {section.callout && (
@@ -187,7 +233,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                   {section.bullets && (
                     <ul className={styles.bulletsList}>
                       {section.bullets.map((b, bIdx) => (
-                        <li key={bIdx} className={styles.bulletItem}>{b}</li>
+                        <li key={bIdx} className={styles.bulletItem}>{renderFormattedText(b)}</li>
                       ))}
                     </ul>
                   )}
