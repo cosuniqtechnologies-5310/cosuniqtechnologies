@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { FiArrowLeft, FiClock, FiCalendar, FiArrowRight } from "react-icons/fi";
 import InitReveal from "../../../components/InitReveal";
+import InnerBanner from "../../../components/InnerBanner";
 import FinalCta from "../../../components/FinalCta";
 import { blogPosts } from "../../../components/blogData";
 import styles from "../../../components/Blog.module.css";
@@ -171,11 +172,26 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
       />
       <InitReveal />
-      <article className={styles.singleArticleRoot}>
+      <InnerBanner
+        eyebrow={`BLOG • ${post.category.toUpperCase()}`}
+        title={post.title}
+        description={post.summary}
+        bgImage={post.image}
+      />
+      <article className={styles.singleArticleRoot} style={{ paddingTop: '3rem' }}>
         <div className="container">
           <div className={styles.articleContainer}>
-            {/* Back link */}
-            <div style={{ marginBottom: '2rem' }}>
+            {/* Top Navigation & Meta Bar */}
+            <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '1rem',
+              marginBottom: '2rem',
+              paddingBottom: '1.25rem',
+              borderBottom: '1px solid rgba(0, 0, 0, 0.08)'
+            }}>
               <Link href="/blog" style={{
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -186,14 +202,8 @@ export default async function BlogPostPage({ params }: PageProps) {
               }}>
                 <FiArrowLeft /> Back to all articles
               </Link>
-            </div>
 
-            {/* Header */}
-            <header className={styles.articleHeader}>
-              <span className={styles.categoryTag}>{post.category}</span>
-              <h1 className={styles.articleH1}>{post.title}</h1>
-              
-              <div className={styles.articleMetaBar}>
+              <div className={styles.articleMetaBar} style={{ paddingBottom: 0, borderBottom: 'none' }}>
                 <span>By {post.author}</span>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
                   <FiCalendar /> {post.date}
@@ -202,10 +212,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                   <FiClock /> {post.readTime}
                 </span>
               </div>
-            </header>
+            </div>
 
             {/* Featured Hero Image */}
-            <div className={styles.articleHeroImg}>
+            <div className={styles.articleHeroImg} style={{ marginTop: 0 }}>
               <img
                 src={post.image}
                 alt={post.title}

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import InitReveal from "../../components/InitReveal";
+import InnerBanner from "../../components/InnerBanner";
 import styles from "../../components/LegalPage.module.css";
 
 export const metadata: Metadata = {
@@ -10,15 +11,43 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicyPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cosuniq.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy",
+        "item": "https://cosuniq.in/privacy-policy"
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <InitReveal />
-      <div className={styles.legalRoot}>
+      <InnerBanner
+        eyebrow="LEGAL & DATA GOVERNANCE"
+        title="Privacy Policy"
+        description="How Cosuniq Technologies safeguards your personal information, proprietary project specifications, and intellectual property with enterprise security."
+        bgImage="/assets/images/office.webp"
+      />
+      <div className={styles.legalRoot} style={{ paddingTop: '3.5rem' }}>
         <div className="container">
           <div className={styles.legalContainer}>
             <header className={styles.headerBlock}>
-              <span className={styles.eyebrow}>LEGAL & COMPLIANCE</span>
-              <h1 className={styles.title}>Privacy Policy</h1>
+              <span className={styles.eyebrow}>DATA PROTECTION FRAMEWORK</span>
               <p className={styles.effectiveDate}>Effective Date: October 2026 | Last Updated: October 2026</p>
             </header>
 
