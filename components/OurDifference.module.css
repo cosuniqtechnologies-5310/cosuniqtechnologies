@@ -214,46 +214,68 @@
   top: 50%;
   transform: translateY(-50%);
   right: -2.5rem;
-  z-index: 2;
+  z-index: 4;
 }
 
 .roundCta {
-  width: 130px;
-  height: 130px;
-  background: #FF6B00;
-  color: white;
+  width: 144px;
+  height: 144px;
+  min-width: 144px;
+  min-height: 144px;
+  aspect-ratio: 1 / 1;
+  background: #FF6800;
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  padding: 1.25rem 1rem;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-  box-shadow: 0 10px 20px rgba(255, 107, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+              background 0.3s ease,
+              box-shadow 0.35s ease;
+  box-shadow: 0 16px 36px rgba(255, 104, 0, 0.42),
+              0 4px 14px rgba(255, 104, 0, 0.22);
 }
 
 .roundCtaText {
+  font-family: var(--font-plus-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
+  font-size: 0.92rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.3;
+  line-height: 1.18;
+  color: #ffffff;
+  user-select: none;
+  display: block;
+}
+
+.roundCtaArrow {
+  display: block;
+  width: 26px;
+  height: 26px;
+  stroke: #ffffff;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .roundCta:hover {
-  background: #E65A00;
-  transform: scale(1.05) rotate(-5deg);
-  box-shadow: 0 15px 30px rgba(255, 107, 0, 0.3);
+  background: #FF5A00;
+  transform: scale(1.06);
+  box-shadow: 0 20px 48px rgba(255, 104, 0, 0.55),
+              0 6px 18px rgba(255, 104, 0, 0.28);
 }
 
-.roundCta svg {
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+.roundCta:hover .roundCtaArrow {
+  transform: translateX(5px);
 }
 
-.roundCta:hover svg {
-  transform: translateX(4px) translateY(-4px);
+.roundCta:active {
+  transform: scale(0.97);
 }
 
 
@@ -442,10 +464,29 @@
   .buttonWrap {
     position: absolute;
     bottom: -3.5rem;
-    right: 0;
+    right: 1rem;
     top: auto;
     transform: none;
     transform-origin: bottom right;
+    z-index: 5;
+  }
+
+  .roundCta {
+    width: 124px;
+    height: 124px;
+    min-width: 124px;
+    min-height: 124px;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .roundCtaText {
+    font-size: 0.82rem;
+  }
+
+  .roundCtaArrow {
+    width: 22px;
+    height: 22px;
   }
 
   .middleColumn {
@@ -466,5 +507,30 @@
   .card3 {
     --card-x: -8px;
     --card-rot: -1.5deg;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttonWrap {
+    bottom: -2.75rem;
+    right: 0.5rem;
+  }
+
+  .roundCta {
+    width: 114px;
+    height: 114px;
+    min-width: 114px;
+    min-height: 114px;
+    gap: 0.4rem;
+    padding: 0.85rem;
+  }
+
+  .roundCtaText {
+    font-size: 0.76rem;
+  }
+
+  .roundCtaArrow {
+    width: 20px;
+    height: 20px;
   }
 }

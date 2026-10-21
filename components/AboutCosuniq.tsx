@@ -46,65 +46,38 @@ export default function AboutCosuniq() {
 
       <div className={styles.container}>
 
-        {/* Section Header */}
-        <div className={styles.header}>
-          <div>
+        {/* Section Header Collage */}
+        <div className={styles.headerCollage}>
+          <div className={styles.headerLeft}>
             <span className={styles.eyebrowWrap}>
               <span className={styles.spark}>✦</span>
               About Cosuniq
             </span>
             <h2 className={styles.headline}>
-              New by name. Experienced by craft<span className={styles.dot}>.</span>
+              New by name.<br />
+              Experienced by craft<span className={styles.dot}>.</span>
             </h2>
           </div>
-          <Link href="/about" className={styles.cta}>
-            Discover COSUNIQ
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
-            </svg>
-          </Link>
+
+          <div className={styles.headerRight}>
+            <p className={styles.introText}>
+              COSUNIQ unites strategic clarity, bold design, and engineering precision under one roof. We help ambitious founders and enterprises build enduring digital brands and high-velocity digital products.
+            </p>
+            <Link href="/about" className={styles.cta}>
+              Discover COSUNIQ
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
-        {/* Intro paragraph */}
-        <p className={styles.introText}>
-          COSUNIQ is a creative technology agency bringing together strategy, design, and technology to help ambitious businesses build stronger brands and better digital experiences. We combine fresh thinking with years of hands-on experience to create purposeful, scalable solutions that don&apos;t just look good, but move businesses forward.
-        </p>
+        {/* Collage Main Row: Left Hero Artwork Canvas | Right Cloud Chatbox Cards */}
+        <div className={styles.collageGrid}>
 
-        {/* 3-Column Creative Scene: Left Message Box (Vision) | BIG Center Artwork | Right Message Box (Mission) */}
-        <div className={styles.innovativeRow}>
-
-          {/* LEFT: OUR VISION MESSAGE BOX */}
-          <div className={`${styles.messageBox} ${styles.messageLeft}`}>
-            <div className={styles.msgHeader}>
-              <div className={styles.msgAvatar}>
-                <VisionIcon />
-              </div>
-              <div>
-                <span className={styles.msgTag}>01 / OUR VISION</span>
-                <span className={styles.msgSubtitle}>Foresight & Longevity</span>
-              </div>
-            </div>
-
-            <h3 className={styles.msgTitle}>
-              See what comes next<span className={styles.orangeDot}>.</span>
-            </h3>
-
-            <p className={styles.msgBody}>
-              We see beyond temporary trends to architect digital products and brand systems built to endure.
-            </p>
-
-            <div className={styles.msgBadge}>
-              <span className={styles.sparkOrange}>✦</span>
-              <span>Built for the Long-Term</span>
-            </div>
-
-            {/* Speech bubble pointer pointing towards center doodle characters */}
-            <div className={styles.tailRight} aria-hidden="true" />
-          </div>
-
-          {/* CENTER: BIG HEROIC DOODLE ARTWORK */}
-          <div className={styles.centerHeroArt}>
-            <div className={styles.artAtmosphereGlow} />
+          {/* LEFT: HERO DOODLE ARTWORK CANVAS (Soft rounded corners, stickers, glow) */}
+          <div className={styles.leftArtColumn}>
+            <div className={styles.artAtmosphereGlow} aria-hidden="true" />
 
             {/* Creative floating stickers */}
             <div className={`${styles.floatSticker} ${styles.sticker1}`}>
@@ -114,11 +87,12 @@ export default function AboutCosuniq() {
               <span>🎨 Radical Imagination</span>
             </div>
 
-            <div className={styles.artImageWrapper}>
+            {/* Soft-cornered artwork card */}
+            <div className={styles.softArtCard}>
               <img 
                 src="/assets/images/cosuniq_doodle_tight.webp" 
                 alt="Cosuniq Creative Characters & Code Doodle Art" 
-                className={styles.bigDoodleImage}
+                className={styles.doodleImage}
                 loading="lazy"
                 decoding="async"
                 width={1164}
@@ -126,39 +100,74 @@ export default function AboutCosuniq() {
               />
             </div>
 
+            {/* Bottom capsule badge */}
             <div className={styles.artBottomPill}>
               <span className={styles.spark}>✦</span>
               <span>Where Bold Imagination & Clean Code Meet</span>
             </div>
           </div>
 
-          {/* RIGHT: OUR MISSION MESSAGE BOX */}
-          <div className={`${styles.messageBox} ${styles.messageRight}`}>
-            <div className={styles.msgHeader}>
-              <div className={styles.msgAvatar}>
-                <MissionIcon />
+          {/* RIGHT: TWO CLOUD CHATBOX CARDS (Aligned, with chatbox pointers towards artwork) */}
+          <div className={styles.rightCardsColumn}>
+
+            {/* 01 / OUR VISION CHATBOX */}
+            <article className={`${styles.cloudChatbox} ${styles.chatboxVision}`}>
+              <div className={styles.msgHeader}>
+                <div className={styles.msgAvatar}>
+                  <VisionIcon />
+                </div>
+                <div>
+                  <span className={styles.msgTag}>01 / OUR VISION</span>
+                  <span className={styles.msgSubtitle}>Foresight & Longevity</span>
+                </div>
               </div>
-              <div>
-                <span className={styles.msgTag}>02 / OUR MISSION</span>
-                <span className={styles.msgSubtitle}>Purposeful Execution</span>
+
+              <h3 className={styles.msgTitle}>
+                See what comes next<span className={styles.orangeDot}>.</span>
+              </h3>
+
+              <p className={styles.msgBody}>
+                We see beyond temporary trends to architect scalable digital products and enduring brand systems.
+              </p>
+
+              <div className={styles.msgBadge}>
+                <span className={styles.sparkOrange}>✦</span>
+                <span>Built for the Long-Term</span>
               </div>
-            </div>
 
-            <h3 className={styles.msgTitle}>
-              Build what matters<span className={styles.orangeDot}>.</span>
-            </h3>
+              {/* Chatbox speech bubble pointer on left edge pointing to artwork */}
+              <div className={styles.chatboxTail} aria-hidden="true" />
+            </article>
 
-            <p className={styles.msgBody}>
-              Transforming bold ideas into high-performing digital experiences with measurable business impact.
-            </p>
+            {/* 02 / OUR MISSION CHATBOX */}
+            <article className={`${styles.cloudChatbox} ${styles.chatboxMission}`}>
+              <div className={styles.msgHeader}>
+                <div className={styles.msgAvatar}>
+                  <MissionIcon />
+                </div>
+                <div>
+                  <span className={styles.msgTag}>02 / OUR MISSION</span>
+                  <span className={styles.msgSubtitle}>Purposeful Execution</span>
+                </div>
+              </div>
 
-            <div className={styles.msgBadge}>
-              <span className={styles.sparkOrange}>✦</span>
-              <span>Execution & Impact</span>
-            </div>
+              <h3 className={styles.msgTitle}>
+                Build what matters<span className={styles.orangeDot}>.</span>
+              </h3>
 
-            {/* Speech bubble pointer pointing towards center doodle characters */}
-            <div className={styles.tailLeft} aria-hidden="true" />
+              <p className={styles.msgBody}>
+                Transforming bold ideas into high-velocity digital experiences with measurable business impact.
+              </p>
+
+              <div className={styles.msgBadge}>
+                <span className={styles.sparkOrange}>✦</span>
+                <span>Execution & Impact</span>
+              </div>
+
+              {/* Chatbox speech bubble pointer on left edge pointing to artwork */}
+              <div className={styles.chatboxTail} aria-hidden="true" />
+            </article>
+
           </div>
 
         </div>

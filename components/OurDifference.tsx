@@ -1,6 +1,5 @@
 "use client";
 
-"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -100,10 +99,24 @@ export default function OurDifference() {
 
               <div className={styles.buttonWrap}>
                 <MagneticWrapper intensity={0.4}>
-                  <Link href="#contact" className={styles.roundCta}>
-                    <span className={styles.roundCtaText}>Start<br/>Project</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+                  <Link href="#contact" className={styles.roundCta} aria-label="Start Project">
+                    <span className={styles.roundCtaText}>
+                      START<br />PROJECT
+                    </span>
+                    <svg
+                      width="26"
+                      height="26"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#ffffff"
+                      strokeWidth="2.75"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden="true"
+                      className={styles.roundCtaArrow}
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="13 6.5 19 12 13 17.5" />
                     </svg>
                   </Link>
                 </MagneticWrapper>
