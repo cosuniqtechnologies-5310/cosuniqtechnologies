@@ -7,6 +7,7 @@ export interface LocationData {
   heroDesc: string;
   metaTitle: string;
   metaDesc: string;
+  keywords: string[];
   bannerImage: string;
   localContext: {
     heading: string;
@@ -43,22 +44,32 @@ export const locationsMap: Record<string, LocationData> = {
     slug: "coimbatore",
     cityName: "Coimbatore",
     region: "Western Tamil Nadu",
-    eyebrow: "COIMBATORE • ENGINEERING & TECH CORRIDOR",
+    eyebrow: "COIMBATORE • TOP WEBSITE DESIGN & SOFTWARE STUDIO",
     heroTitle: "High-performance software engineering & modern web development in Coimbatore.",
-    heroDesc: "We partner with ambitious enterprises, industrial manufacturers, healthcare providers, and high-growth startups across Coimbatore to build scalable digital products that endure.",
-    metaTitle: "Software Development & Web Design Company in Coimbatore | Cosuniq",
-    metaDesc: "Cosuniq Technologies builds enterprise web applications, custom SaaS platforms, mobile apps, and brand systems for growing businesses in Coimbatore.",
+    heroDesc: "We partner with ambitious enterprises, industrial manufacturers, healthcare providers, and high-growth startups across Coimbatore to build scalable digital products, ecommerce platforms, and high-speed websites.",
+    metaTitle: "Best Website Design & Development Company in Coimbatore | Cosuniq",
+    metaDesc: "Cosuniq is a top website design and development company in Coimbatore. We build high-performance business websites, ecommerce stores, and custom software.",
+    keywords: [
+      "website design company in coimbatore",
+      "best website design company in coimbatore",
+      "website design & development company in coimbatore",
+      "ecommerce website design company in coimbatore",
+      "top website design company in coimbatore",
+      "matrimony website design company in coimbatore",
+      "software development in coimbatore",
+      "web development company in coimbatore"
+    ],
     bannerImage: "/assets/images/laptop.webp",
     localContext: {
       heading: "Engineering Digital Power for the Manchester of South India",
-      description: "Coimbatore is renowned for precision engineering, manufacturing excellence, higher education, and rapid tech entrepreneurship. As modern businesses expand beyond regional borders, having fragile off-the-shelf templates or slow monolithic websites is no longer viable. Cosuniq Technologies engineers bespoke full-stack web applications, custom ERP/CRM engines, and intuitive design systems built to perform at global standards.",
-      highlight: "Precision full-stack code built for scale, reliability, and measurable business impact."
+      description: "Coimbatore is renowned for precision engineering, manufacturing excellence, higher education, and rapid tech entrepreneurship. As a premier website design & development company in Coimbatore, Cosuniq Technologies engineers bespoke full-stack web applications, custom business portals, high-converting ecommerce platforms, and intuitive design systems built to perform at global standards.",
+      highlight: "Precision full-stack code built for scale, sub-second speed, and measurable business impact."
     },
     targetServices: [
       {
         num: "01",
-        title: "Enterprise Web Applications",
-        desc: "High-concurrency portals and web applications built with Next.js, React, and TypeScript for sub-second page speeds and bulletproof security.",
+        title: "Website Design & Web Development",
+        desc: "Custom corporate websites, matrimony and community portals, and high-speed web applications engineered with Next.js and TypeScript for sub-second page performance.",
         serviceLink: "/services/web-development",
         serviceName: "Web Development"
       },
@@ -78,20 +89,20 @@ export const locationsMap: Record<string, LocationData> = {
       },
       {
         num: "04",
-        title: "High-Conversion E-Commerce",
-        desc: "Custom headless storefronts and Shopify Plus architectures engineered for high catalogue volumes, instant search, and automated inventory sync.",
+        title: "E-Commerce Website Design & Shopify",
+        desc: "High-converting ecommerce websites, custom Shopify Plus storefronts, and headless commerce engines with automated payments and instant search.",
         serviceLink: "/services/ecommerce",
         serviceName: "E-Commerce Solutions"
       }
     ],
     practicalSolutions: [
       {
-        problem: "Legacy internal desktop software cannot be accessed securely by remote teams or clients.",
-        solution: "We re-architect proprietary business logic into modern, role-secured cloud web portals with automated backups and real-time syncing."
+        problem: "Businesses seeking the best website design company in Coimbatore frequently encounter slow, template-heavy sites that leak qualified leads.",
+        solution: "We engineer statically generated, edge-cached web platforms that load in under 1 second, pass Google Core Web Vitals, and convert traffic into customers."
       },
       {
-        problem: "Slow WordPress or monolithic websites failing Google Core Web Vitals and leaking qualified leads.",
-        solution: "We build statically generated, edge-cached web platforms that load in under 1 second and rank with technical SEO excellence."
+        problem: "Legacy internal desktop software cannot be accessed securely by remote teams or clients.",
+        solution: "We re-architect proprietary business logic into modern, role-secured cloud web portals with automated backups and real-time syncing."
       },
       {
         problem: "Fragmented mobile user experience causing high customer drop-offs during transactions.",
@@ -108,16 +119,16 @@ export const locationsMap: Record<string, LocationData> = {
     },
     faqs: [
       {
-        q: "How does Cosuniq collaborate with businesses in Coimbatore?",
-        a: "We work directly with founders, CTOs, and marketing leaders through structured weekly agile sprints, interactive Figma prototypes, and live staging deployments. Direct engineering communication ensures zero handoff delays."
+        q: "What makes Cosuniq a top website design & development company in Coimbatore?",
+        a: "Unlike traditional agencies that rely on slow, pre-made themes, our engineers and designers craft bespoke UI/UX in Figma and code modern Next.js web applications with sub-second loading speed, zero plugin bloat, and enterprise-grade security."
+      },
+      {
+        q: "Can you design custom web portals like matrimony, real estate, or B2B directories in Coimbatore?",
+        a: "Yes. We design and build secure, bespoke web portals including matrimony and matchmaking platforms, member directories, and B2B wholesale portals with custom user roles, automated profile verification, and reliable payment rails."
       },
       {
         q: "Can you modernize our existing business software without disrupting active operations?",
         a: "Yes. We specialize in phased migrations — building secure APIs and modern web frontends alongside legacy databases to ensure zero business downtime during transition."
-      },
-      {
-        q: "What technologies do you use for custom software development?",
-        a: "We develop primarily with Next.js, React, TypeScript, Node.js, Python, PostgreSQL, Redis, Docker, and AWS cloud infrastructure."
       }
     ]
   },
@@ -131,6 +142,14 @@ export const locationsMap: Record<string, LocationData> = {
     heroDesc: "We build high-converting e-commerce engines, B2B wholesale portals, and automated inventory software for garment manufacturers, textile exporters, and growing brands in Tiruppur.",
     metaTitle: "Web Development & E-Commerce Solutions in Tiruppur | Cosuniq",
     metaDesc: "Custom web development, apparel export portals, inventory synchronization, and B2B digital solutions for manufacturers and brands in Tiruppur.",
+    keywords: [
+      "website development company in tiruppur",
+      "textile ecommerce website design in tiruppur",
+      "web development company in tiruppur",
+      "b2b website development tiruppur",
+      "ecommerce website development in tiruppur",
+      "website design company in tiruppur"
+    ],
     bannerImage: "/assets/images/orangebabe_mockup.webp",
     localContext: {
       heading: "Digital Transformation for the Global Textile & Knitwear Hub",
@@ -214,6 +233,14 @@ export const locationsMap: Record<string, LocationData> = {
     heroDesc: "We empower agro-exporters, family-owned enterprises, healthcare clinics, and retail brands in Pollachi with professional website design, custom software, and digital branding.",
     metaTitle: "Website Design & Software Development in Pollachi | Cosuniq",
     metaDesc: "Professional website design, custom business software, and e-commerce development for agro-exporters, local brands, and retail businesses in Pollachi.",
+    keywords: [
+      "website design company in pollachi",
+      "website development in pollachi",
+      "ecommerce website development in pollachi",
+      "software solutions in pollachi",
+      "shopify website design in pollachi",
+      "web design company in pollachi"
+    ],
     bannerImage: "/assets/images/office.webp",
     localContext: {
       heading: "Elevating Regional Enterprises to National & International Markets",
@@ -292,28 +319,38 @@ export const locationsMap: Record<string, LocationData> = {
     slug: "udumalpet",
     cityName: "Udumalpet",
     region: "Western Tamil Nadu",
-    eyebrow: "UDUMALPET • REGIONAL DIGITAL STUDIO",
-    heroTitle: "Web development & custom software engineering in Udumalpet.",
-    heroDesc: "We provide startups, manufacturing units, agricultural suppliers, and educational institutions in Udumalpet with high-performance web development, custom software, and brand design.",
-    metaTitle: "Web Development & Software Company in Udumalpet | Cosuniq",
-    metaDesc: "Modern website design, custom software development, mobile apps, and branding services for businesses, startups, and institutions in Udumalpet.",
+    eyebrow: "UDUMALPET • NEW SOFTWARE COMPANY & WEB STUDIO",
+    heroTitle: "Website development & custom software company in Udumalpet.",
+    heroDesc: "Cosuniq is Udumalpet's premier new software company and website development studio, engineering high-speed business websites, custom software, and mobile applications for ambitious businesses.",
+    metaTitle: "Website Development & Software Companies in Udumalpet | Cosuniq",
+    metaDesc: "Looking for a new software company or website development in Udumalpet? Cosuniq delivers high-speed business websites, custom software, and digital solutions.",
+    keywords: [
+      "website development in udumalpet",
+      "software development in udumalpet",
+      "software companies in udumalpet",
+      "udumalpet new software company",
+      "website design company in udumalpet",
+      "software development company in udumalpet",
+      "website development company in dindigul",
+      "website development companies in villupuram"
+    ],
     bannerImage: "/assets/images/brainstorm.webp",
     localContext: {
-      heading: "Local Roots, World-Class Creative & Engineering Craft",
-      description: "Udumalpet is a rapidly advancing commercial hub with strong manufacturing, renewable wind energy, poultry, and retail sectors. As regional businesses modernize, having reliable software partners who understand local commercial realities while delivering cutting-edge engineering is critical. Cosuniq Technologies brings world-class digital craftsmanship to Udumalpet — building custom software, high-speed websites, and memorable brand identities.",
+      heading: "Udumalpet's New Software Company & Modern Web Development Partner",
+      description: "Udumalpet is a rapidly advancing commercial hub with strong manufacturing, renewable wind energy, poultry, and retail sectors. As a new software company founded with deep local roots in Udumalpet, Cosuniq Technologies provides regional enterprises with world-class software development, high-speed website design, and brand identity systems.",
       highlight: "Direct collaboration, clean modern code, and enduring digital solutions for regional leaders."
     },
     targetServices: [
       {
         num: "01",
-        title: "Custom Web Application Development",
-        desc: "Fast, modern websites and client portals engineered with Next.js and TypeScript, completely avoiding fragile templates.",
+        title: "Website Development & Business Portals",
+        desc: "Fast, modern websites and interactive client portals engineered with Next.js and TypeScript, completely avoiding fragile templates and delivering top-tier website speed.",
         serviceLink: "/services/web-development",
         serviceName: "Web Development"
       },
       {
         num: "02",
-        title: "Bespoke Business Software & CRMs",
+        title: "Custom Software Development & CRMs",
         desc: "Custom operational software designed around your exact workflows to manage inventory, billing, customer data, and inquiries.",
         serviceLink: "/services/ai-software",
         serviceName: "AI & Custom Software"
@@ -357,16 +394,16 @@ export const locationsMap: Record<string, LocationData> = {
     },
     faqs: [
       {
-        q: "What kinds of businesses in Udumalpet do you work with?",
-        a: "We work with manufacturers, agricultural and poultry enterprises, retail brands, educational trusts, renewable energy firms, and emerging local startups."
+        q: "Are you a new software company in Udumalpet?",
+        a: "Yes, Cosuniq Technologies is an innovative software company and website development studio founded in Udumalpet, serving businesses across Western Tamil Nadu with modern full-stack web development and software engineering."
+      },
+      {
+        q: "What website development and software services do you provide in Udumalpet?",
+        a: "We provide custom business website development, e-commerce storefronts, bespoke inventory & billing software, mobile apps, and brand design with sub-second loading speed."
       },
       {
         q: "How long does it take to design and launch a new business website?",
         a: "A focused corporate or institutional website takes 3 to 6 weeks from initial architecture to final testing and deployment."
-      },
-      {
-        q: "Do you offer post-launch maintenance and technical support?",
-        a: "Yes. We provide ongoing hosting management, security updates, feature expansions, and technical support to ensure your digital assets always perform."
       }
     ]
   },
@@ -380,6 +417,14 @@ export const locationsMap: Record<string, LocationData> = {
     heroDesc: "We build high-speed hospitality websites, e-commerce storefronts, institutional portals, and brand identities for businesses across Palani and the Dindigul region.",
     metaTitle: "Website Design & Digital Solutions in Palani | Cosuniq",
     metaDesc: "Professional website development, hospitality portals, retail digital platforms, and brand design for businesses and institutions in Palani.",
+    keywords: [
+      "website development in palani",
+      "website design company in palani",
+      "business website design in palani",
+      "ecommerce website in palani",
+      "hotel booking website development in palani",
+      "website development company in dindigul"
+    ],
     bannerImage: "/assets/images/team.webp",
     localContext: {
       heading: "Connecting Heritage Commerce & Hospitality with Modern Digital Velocity",

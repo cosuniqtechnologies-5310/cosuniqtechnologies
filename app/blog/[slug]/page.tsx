@@ -30,7 +30,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | Cosuniq Blogs`,
     description: post.summary,
-    keywords: [post.category, "Cosuniq Technologies", "software engineering", "design", "tech blog"],
+    keywords: [
+      ...(post.keywords || []),
+      post.category,
+      "Cosuniq Technologies",
+      "software engineering",
+      "design",
+      "tech blog"
+    ],
     openGraph: {
       title: `${post.title} | Cosuniq Technologies`,
       description: post.summary,

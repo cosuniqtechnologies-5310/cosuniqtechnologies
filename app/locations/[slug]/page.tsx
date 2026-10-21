@@ -29,11 +29,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: location.metaTitle,
     description: location.metaDesc,
     keywords: [
+      ...(location.keywords || []),
       location.cityName,
       `${location.cityName} software company`,
       `${location.cityName} web design`,
       `${location.cityName} website development`,
-      `${location.cityName} IT services`,
       "Cosuniq Technologies",
       "Tamil Nadu",
       "India"

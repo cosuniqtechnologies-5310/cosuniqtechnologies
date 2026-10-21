@@ -39,8 +39,8 @@ export const servicesMap: Record<string, ServiceData> = {
     eyebrow: "01 / HIGH-PERFORMANCE WEB ENGINEERING",
     heroTitle: "Web applications engineered for velocity, scale & security.",
     heroDesc: "We build modern enterprise web applications, customer portals, and high-converting marketing platforms using Next.js, React, Node.js, and cloud-native architecture.",
-    metaTitle: "Web Development Services | Next.js & React Engineering",
-    metaDesc: "Custom web development services by Cosuniq Technologies. Building enterprise-grade, lightning-fast web applications with Next.js, TypeScript, and Node.js.",
+    metaTitle: "Website Design & Web Development Services | Next.js Engineering",
+    metaDesc: "Custom website design and web development services by Cosuniq Technologies. Building enterprise-grade, lightning-fast portfolio websites, SaaS portals, and Next.js applications.",
     bannerImage: "/assets/images/laptop.webp",
     deliverables: [
       {
@@ -50,8 +50,8 @@ export const servicesMap: Record<string, ServiceData> = {
       },
       {
         num: "02",
-        title: "Enterprise Portals & Dashboards",
-        desc: "Data-dense interfaces optimized for deep analytics, transactional auditing, and operational management."
+        title: "Enterprise Portals & Custom Portfolio Websites",
+        desc: "Bespoke corporate websites, high-impact portfolio websites, and data-dense client dashboards built for velocity and conversion."
       },
       {
         num: "03",
@@ -65,8 +65,8 @@ export const servicesMap: Record<string, ServiceData> = {
       },
       {
         num: "05",
-        title: "Speed & Core Web Vitals Audits",
-        desc: "Deep frontend performance optimization achieving 95+ Google Lighthouse scores and sub-second Largest Contentful Paint."
+        title: "Website Speed & Core Web Vitals Optimization",
+        desc: "Deep frontend performance optimization achieving 95+ Google Lighthouse scores, sub-second LCP, and top website speed."
       },
       {
         num: "06",
@@ -292,14 +292,14 @@ export const servicesMap: Record<string, ServiceData> = {
     eyebrow: "05 / HIGH-CONVERSION COMMERCE ARCHITECTURE",
     heroTitle: "E-Commerce platforms engineered for maximum conversion & volume.",
     heroDesc: "From custom Shopify Plus storefronts to headless Next.js commerce engines, we build online shopping experiences that turn casual browsers into loyal repeat buyers.",
-    metaTitle: "E-Commerce Development Services | Shopify Plus & Headless",
-    metaDesc: "High-conversion e-commerce development by Cosuniq Technologies. Building custom Shopify Plus, WooCommerce, and headless commerce platforms.",
+    metaTitle: "E-Commerce Website Development | Shopify & Headless Stores",
+    metaDesc: "High-conversion ecommerce website development by Cosuniq Technologies. Building custom Shopify, Shopify Plus, WooCommerce, and headless commerce platforms.",
     bannerImage: "/assets/images/orangebabe_mockup.webp",
     deliverables: [
       {
         num: "01",
-        title: "Custom Shopify & Shopify Plus",
-        desc: "Bespoke themes and custom checkout extensibility apps without clunky third-party app bloat."
+        title: "Shopify & Custom E-Commerce Website Development",
+        desc: "Bespoke Shopify themes, custom checkout apps, and tailor-made ecommerce website platforms without clunky third-party bloat."
       },
       {
         num: "02",
