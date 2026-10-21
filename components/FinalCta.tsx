@@ -305,6 +305,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                       type="text" 
                       name="firstName"
                       id="firstName" 
+                      aria-label="First Name"
                       className={`${styles.input} ${errors.firstName ? styles.inputError : ''}`} 
                       placeholder="First Name*" 
                     />
@@ -315,6 +316,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                       type="text" 
                       name="lastName"
                       id="lastName" 
+                      aria-label="Last Name"
                       className={`${styles.input} ${errors.lastName ? styles.inputError : ''}`} 
                       placeholder="Last Name*" 
                     />
@@ -328,6 +330,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                       type="email" 
                       name="email"
                       id="email" 
+                      aria-label="Email Address"
                       className={`${styles.input} ${errors.email ? styles.inputError : ''}`} 
                       placeholder="Email Address*" 
                     />
@@ -338,6 +341,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                       type="text" 
                       name="company"
                       id="company" 
+                      aria-label="Company"
                       className={`${styles.input} ${errors.company ? styles.inputError : ''}`} 
                       placeholder="Company*" 
                     />
@@ -351,13 +355,14 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                       type="text" 
                       name="jobTitle"
                       id="jobTitle" 
+                      aria-label="Job Title"
                       className={`${styles.input} ${errors.jobTitle ? styles.inputError : ''}`} 
                       placeholder="Job Title*" 
                     />
                     {errors.jobTitle && <span className={styles.fieldError}>{errors.jobTitle}</span>}
                   </div>
                   <div className={styles.inputGroup}>
-                    <select name="country" id="country" className={`${styles.select} ${errors.country ? styles.inputError : ''}`} defaultValue="">
+                    <select name="country" id="country" aria-label="Country" className={`${styles.select} ${errors.country ? styles.inputError : ''}`} defaultValue="">
                       <option value="" disabled>Country*</option>
                       <option value="IN">India</option>
                       <option value="US">United States</option>
@@ -373,25 +378,25 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
               <>
                 <div className={styles.row}>
                   <div className={styles.inputGroup}>
-                    <input type="text" name="name" className={`${styles.input} ${errors.firstName ? styles.inputError : ''}`} placeholder="Full Name*" />
+                    <input type="text" name="name" aria-label="Full Name" className={`${styles.input} ${errors.firstName ? styles.inputError : ''}`} placeholder="Full Name*" />
                     {errors.firstName && <span className={styles.fieldError}>{errors.firstName}</span>}
                   </div>
                   <div className={styles.inputGroup}>
-                    <input type="email" name="email" className={`${styles.input} ${errors.email ? styles.inputError : ''}`} placeholder="Email Address*" />
+                    <input type="email" name="email" aria-label="Email Address" className={`${styles.input} ${errors.email ? styles.inputError : ''}`} placeholder="Email Address*" />
                     {errors.email && <span className={styles.fieldError}>{errors.email}</span>}
                   </div>
                 </div>
                 <div className={styles.row}>
                   <div className={styles.inputGroup}>
-                    <input type="tel" name="whatsapp" className={styles.input} placeholder="WhatsApp Number*" required />
+                    <input type="tel" name="whatsapp" aria-label="WhatsApp Number" className={styles.input} placeholder="WhatsApp Number*" required />
                   </div>
                   <div className={styles.inputGroup}>
-                    <input type="text" name="role" className={styles.input} placeholder="College / Current Role*" required />
+                    <input type="text" name="role" aria-label="College or Current Role" className={styles.input} placeholder="College / Current Role*" required />
                   </div>
                 </div>
                 <div className={styles.row}>
                   <div className={styles.inputGroup}>
-                    <select name="track" className={`${styles.select} ${errors.jobTitle ? styles.inputError : ''}`} defaultValue="">
+                    <select name="track" aria-label="Track Interested In" className={`${styles.select} ${errors.jobTitle ? styles.inputError : ''}`} defaultValue="">
                       <option value="" disabled>Track Interested In*</option>
                       <option value="code">Cosuniq Code</option>
                       <option value="design">Cosuniq Design</option>
@@ -401,7 +406,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                     {errors.jobTitle && <span className={styles.fieldError}>{errors.jobTitle}</span>}
                   </div>
                   <div className={styles.inputGroup}>
-                    <select name="experience" className={styles.select} required defaultValue="">
+                    <select name="experience" aria-label="Experience Level" className={styles.select} required defaultValue="">
                       <option value="" disabled>Experience Level*</option>
                       <option value="beginner">Beginner</option>
                       <option value="intermediate">Intermediate</option>
@@ -417,6 +422,7 @@ export default function FinalCta({ variant = 'default' }: { variant?: 'default' 
                 <textarea 
                   name="details"
                   id="details" 
+                  aria-label="Let us know how we can help you"
                   className={`${styles.textarea} ${errors.details ? styles.inputError : ''}`} 
                   placeholder="Let us know how we can help you*" 
                   rows={3} 

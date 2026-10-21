@@ -688,7 +688,7 @@ const StrategyIcon = () => (
     <circle cx="14" cy="10" r="3"   stroke="currentColor" strokeWidth="1.2" />
     <circle cx="14" cy="10" r="0.8" fill="#005aff" />
     <line x1="7" y1="17" x2="11.5" y2="12.5" stroke="currentColor" strokeWidth="1.2" />
-    <polyline points="7,15 9,17 7,17 Z" fill="rgba(255,255,255,0.1)" stroke="currentColor" strokeWidth="1.2" />
+    <polygon points="7,15 9,17 7,17" fill="rgba(255,255,255,0.1)" stroke="currentColor" strokeWidth="1.2" />
   </svg>
 );
 

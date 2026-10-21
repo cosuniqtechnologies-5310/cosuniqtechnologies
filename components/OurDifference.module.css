@@ -133,7 +133,8 @@
   height: 30px;
   top: 15%;
   left: -10%;
-  animation: pulseScale 3s ease-in-out infinite, spin 12s linear infinite;
+  animation: pulseAndSpin 10s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 .power2 {
@@ -142,6 +143,7 @@
   top: 50%;
   left: -15%;
   animation: spin 15s linear infinite;
+  will-change: transform;
 }
 
 .power3 {
@@ -150,6 +152,7 @@
   top: 8%;
   right: -5%;
   animation: burst 4s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 .power4 {
@@ -157,7 +160,8 @@
   height: 20px;
   bottom: 10%;
   right: 12%;
-  animation: pulseScale 2.5s ease-in-out infinite reverse, spin 8s linear infinite reverse;
+  animation: pulseAndSpin 8s ease-in-out infinite reverse;
+  will-change: transform, opacity;
 }
 
 .power5 {
@@ -166,6 +170,13 @@
   bottom: 5%;
   left: 5%;
   animation: pulseScale 4s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@keyframes pulseAndSpin {
+  0% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+  50% { transform: scale(1.25) rotate(180deg); opacity: 1; }
+  100% { transform: scale(1) rotate(360deg); opacity: 0.8; }
 }
 
 @keyframes pulseScale {

@@ -88,9 +88,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={plusJakartaSans.variable}>
       <head>
-        {/* Preconnect for performance */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
       </head>
@@ -102,13 +99,28 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@graph": [
                 {
-                  "@type": "Organization",
+                  "@type": "ProfessionalService",
                   "@id": "https://cosuniq.in/#organization",
                   "name": "Cosuniq Technologies",
                   "url": "https://cosuniq.in",
                   "logo": "https://cosuniq.in/assets/cosuniq-technologies.png",
+                  "image": "https://cosuniq.in/assets/og-image.png",
+                  "priceRange": "$$",
                   "description":
                     "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production.",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressCountry": "IN"
+                  },
+                  "knowsAbout": [
+                    "Web Development",
+                    "Mobile App Development",
+                    "UI/UX Design",
+                    "Brand Strategy",
+                    "AI & Custom Software",
+                    "Cloud & DevOps",
+                    "E-Commerce Solutions"
+                  ],
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+917358696546",
@@ -135,9 +147,9 @@ export default function RootLayout({
         />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-27V2TYW5G8"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
