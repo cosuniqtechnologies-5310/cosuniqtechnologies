@@ -153,11 +153,15 @@
   we translate exactly -50% to reset perfectly.
 */
 .scrollTrackLeft {
+  transform: translateY(0);
   animation: scrollVerticalUp 18s linear infinite;
+  will-change: transform;
 }
 
 .scrollTrackRight {
+  transform: translateY(-50%);
   animation: scrollVerticalDown 18s linear infinite;
+  will-change: transform;
 }
 
 @keyframes scrollVerticalUp {

@@ -207,10 +207,10 @@ export default function GsapAnimations() {
         }
 
         // ════════════════════════════════════════════════════════════════
-        // 5. CAPABILITIES — service cards stagger
+        // 5. CAPABILITIES — service cards stagger (exclude infinite marquee cards)
         // ════════════════════════════════════════════════════════════════
         const capCards = document.querySelectorAll<HTMLElement>(
-          "[class*='CapabilitiesUniverse'] [class*='card'], .service-card"
+          ".service-card"
         );
         if (capCards.length) {
           gsap.fromTo(
