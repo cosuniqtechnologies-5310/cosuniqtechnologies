@@ -30,10 +30,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.6rem;
-  max-width: 960px;
-  margin: 0 auto 3.5rem auto;
+  width: 100%;
+  margin: 0 0 3rem 0;
   position: relative;
   z-index: 2;
 }

@@ -131,7 +131,7 @@ export default function PortfolioClient() {
           display: 'flex',
           flexWrap: 'wrap',
           gap: '0.75rem',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           marginBottom: '3rem'
         }}>
           {[
