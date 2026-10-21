@@ -1,5 +1,6 @@
 /* ==========================================================================
-   AboutCosuniq — Innovative Creative Universe, Vibrant Orange Background
+   AboutCosuniq — Innovative Creative Universe, Vibrant Orange Canvas
+   Big Central Hero Doodle + Left & Right Conversational Message Boxes
    ========================================================================== */
 
 .section {
@@ -25,45 +26,45 @@
 .bgIcon {
   position: absolute;
   color: #ffffff;
-  opacity: 0.06;
+  opacity: 0.07;
 }
 
 .bgIcon1 {
-  width: 260px;
-  height: 260px;
-  top: -20px;
-  left: -50px;
+  width: 280px;
+  height: 280px;
+  top: -30px;
+  left: -60px;
   transform: rotate(-15deg);
 }
 
 .bgIcon2 {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   top: 25%;
-  right: -50px;
+  right: -60px;
   transform: rotate(20deg);
 }
 
 .bgIcon3 {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   bottom: 60px;
-  left: 8%;
+  left: 6%;
   transform: rotate(-10deg);
 }
 
 .bgIcon4 {
-  width: 240px;
-  height: 240px;
-  bottom: -30px;
-  right: 12%;
+  width: 260px;
+  height: 260px;
+  bottom: -40px;
+  right: 10%;
   transform: rotate(15deg);
 }
 
 .container {
   position: relative;
   z-index: 1;
-  width: min(1280px, 92vw);
+  width: min(1380px, 94vw);
   margin: 0 auto;
 }
 
@@ -72,7 +73,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   gap: 2rem;
 }
 
@@ -81,15 +82,15 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   color: #ffffff;
   font-family: var(--font-plus-jakarta), sans-serif;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0.45rem 1rem;
+  padding: 0.45rem 1.1rem;
   border-radius: 99px;
   margin-bottom: 1.25rem;
   backdrop-filter: blur(8px);
@@ -104,12 +105,12 @@
 
 .headline {
   font-family: var(--display, sans-serif);
-  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.08;
   color: #ffffff;
-  margin: 0 0 1rem;
+  margin: 0 0 0.85rem;
 }
 
 .dot {
@@ -127,170 +128,175 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  font-size: 0.74rem;
+  font-size: 0.75rem;
   padding: 14px 34px;
   border-radius: 99px;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   white-space: nowrap;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
 }
 
 .cta:hover {
   background: #111111;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.28);
 }
 
 /* ── Intro paragraph ─────────────────────────────── */
 .introText {
   font-family: var(--font-plus-jakarta), sans-serif;
-  font-size: clamp(1rem, 1.35vw, 1.15rem);
-  line-height: 1.8;
+  font-size: clamp(1rem, 1.3vw, 1.12rem);
+  line-height: 1.75;
   color: rgba(255, 255, 255, 0.95);
-  margin: 0 0 3rem;
+  margin: 0 0 2.75rem;
   font-weight: 400;
-  max-width: 980px;
+  max-width: 960px;
 }
 
-/* ── 3-Column Combined Innovative Row ───────────── */
-.threeColRow {
+/* ── Innovative 3-Column Scene: Left Message | BIG Art | Right Message ── */
+.innovativeRow {
   display: grid;
-  grid-template-columns: 1fr 1.25fr 1fr;
-  gap: 1.75rem;
-  align-items: stretch;
-  margin-top: 1rem;
-}
-
-/* ── Innovative Frosted Glass Cards (NO WHITE CARD) ─ */
-.glassCard {
+  grid-template-columns: minmax(280px, 330px) minmax(460px, 1.5fr) minmax(280px, 330px);
+  gap: 2rem;
+  align-items: center;
   position: relative;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.08) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  border-radius: 28px;
-  padding: 2.4rem 2.2rem;
-  display: flex;
-  flex-direction: column;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s ease, border-color 0.35s ease;
-  overflow: hidden;
-  cursor: default;
 }
 
-.glassCard:hover,
-.glassCardActive {
+/* ── Modern Communicative Message Box ───────────── */
+.messageBox {
+  position: relative;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 2.2rem 2rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16), 0 4px 14px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.35s ease;
+  z-index: 2;
+}
+
+.messageBox:hover {
   transform: translateY(-6px);
-  border-color: rgba(255, 255, 255, 0.55);
-  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.6);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.11) 100%);
+  box-shadow: 0 28px 64px rgba(0, 0, 0, 0.22), 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.cardTopRow {
+/* Header row inside message box */
+.msgHeader {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #F3F4F6;
 }
 
-.iconBadge {
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+.msgAvatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: #FFF4EC;
+  border: 1.5px solid #FFE0CC;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  backdrop-filter: blur(8px);
 }
 
-.iconBadge svg {
-  width: 32px;
-  height: 32px;
-}
-
-.cardPillTag {
+.msgTag {
+  display: block;
   font-family: var(--font-plus-jakarta), sans-serif;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.14em;
+  color: #FF6B00;
   text-transform: uppercase;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 0.35rem 0.85rem;
-  border-radius: 99px;
 }
 
-.cardCornerArrow {
-  margin-left: auto;
-  color: rgba(255, 255, 255, 0.45);
-  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.glassCard:hover .cardCornerArrow,
-.glassCardActive .cardCornerArrow {
-  color: #ffffff;
-  transform: translate(3px, -3px);
-}
-
-.cardTitle {
-  font-family: var(--display, sans-serif);
-  font-size: clamp(1.4rem, 2.1vw, 1.75rem);
-  font-weight: 800;
-  color: #ffffff;
-  margin: 0 0 1rem;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-}
-
-.accentDot {
-  color: #ffffff;
-  opacity: 0.6;
-}
-
-.cardDescription {
-  font-family: var(--font-plus-jakarta), sans-serif;
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.75;
-  margin: 0 0 1.75rem;
-  flex-grow: 1;
-}
-
-.highlightPill {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.75rem 1.1rem;
-  border-radius: 14px;
-  font-size: 0.85rem;
+.msgSubtitle {
+  display: block;
+  font-size: 0.76rem;
+  color: #6B7280;
   font-weight: 600;
-  color: #ffffff;
-  line-height: 1.4;
-  margin-top: auto;
+  margin-top: 1px;
 }
 
-.sparkIcon {
-  color: #ffffff;
-  font-size: 0.85rem;
-  flex-shrink: 0;
+.msgTitle {
+  font-family: var(--display, sans-serif);
+  font-size: clamp(1.25rem, 1.6vw, 1.45rem);
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 0.85rem;
 }
 
-/* ── Center Column: Creative Doodle Engine ──────── */
-.centerArtCol {
+.orangeDot {
+  color: #FF6B00;
+}
+
+.msgBody {
+  font-family: var(--font-plus-jakarta), sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.68;
+  color: #4B5563;
+  margin: 0 0 1.4rem;
+  font-weight: 450;
+}
+
+.msgBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #FFF5EE;
+  border: 1px solid #FFE2D1;
+  border-radius: 99px;
+  padding: 0.4rem 0.95rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FF6B00;
+  letter-spacing: 0.02em;
+}
+
+.sparkOrange {
+  color: #FF6B00;
+  font-size: 0.78rem;
+}
+
+/* ── Speech Bubble Tails pointing to Center Artwork ─ */
+.tailRight {
+  position: absolute;
+  top: 45%;
+  right: -12px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 14px solid #ffffff;
+  filter: drop-shadow(4px 0 3px rgba(0, 0, 0, 0.06));
+}
+
+.tailLeft {
+  position: absolute;
+  top: 45%;
+  left: -12px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 14px solid #ffffff;
+  filter: drop-shadow(-4px 0 3px rgba(0, 0, 0, 0.06));
+}
+
+/* ── Center Column: Big Heroic Doodle Artwork ───── */
+.centerHeroArt {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 0.75rem;
+  z-index: 1;
 }
 
 .artAtmosphereGlow {
@@ -298,128 +304,133 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.08) 50%, transparent 75%);
-  filter: blur(32px);
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.1) 45%, transparent 72%);
+  filter: blur(40px);
   pointer-events: none;
   z-index: 0;
-  animation: glowPulse 4s ease-in-out infinite;
+  animation: glowPulse 5s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-  0%, 100% { opacity: 0.8; transform: translate(-50%, -50%) scale(1); }
+  0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
   50% { opacity: 1; transform: translate(-50%, -50%) scale(1.08); }
 }
 
-/* Floating creative micro tags */
-.floatTag {
+/* Floating interactive stickers */
+.floatSticker {
   position: absolute;
   z-index: 3;
-  background: rgba(255, 255, 255, 0.96);
-  color: #FF6B00;
-  padding: 0.35rem 0.9rem;
+  background: #ffffff;
+  color: #111827;
+  padding: 0.45rem 1.05rem;
   border-radius: 99px;
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.03em;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   pointer-events: none;
   white-space: nowrap;
-  animation: tagFloat 4.5s ease-in-out infinite alternate;
+  animation: stickerFloat 4.8s ease-in-out infinite alternate;
 }
 
-.floatTagLeft {
-  top: 2rem;
-  left: -0.5rem;
+.sticker1 {
+  top: -0.5rem;
+  left: 12%;
   transform: rotate(-4deg);
 }
 
-.floatTagRight {
-  bottom: 4.5rem;
-  right: -0.5rem;
-  transform: rotate(3deg);
-  animation-delay: -2.25s;
+.sticker2 {
+  bottom: 3.5rem;
+  right: 10%;
+  transform: rotate(4deg);
+  animation-delay: -2.4s;
 }
 
-@keyframes tagFloat {
-  0% { transform: translateY(0px) rotate(-3deg); }
-  100% { transform: translateY(-7px) rotate(-1deg); }
+@keyframes stickerFloat {
+  0% { transform: translateY(0px) rotate(-4deg); }
+  100% { transform: translateY(-8px) rotate(-2deg); }
 }
 
-.artImageContainer {
+.artImageWrapper {
   position: relative;
   z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-.artIllustration {
+/* BIG Hero Doodle Image */
+.bigDoodleImage {
   width: 100%;
-  max-width: 480px;
+  max-width: 660px;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.18));
-  transition: transform 0.4s ease;
+  filter: drop-shadow(0 20px 38px rgba(0, 0, 0, 0.22));
+  transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
+  user-select: none;
 }
 
-.centerArtCol:hover .artIllustration {
-  transform: scale(1.05) rotate(0.8deg);
+.centerHeroArt:hover .bigDoodleImage {
+  transform: scale(1.04) rotate(0.6deg);
 }
 
-.artFooterBadge {
+.artBottomPill {
   position: relative;
   z-index: 2;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(10px);
-  padding: 0.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 0.5rem 1.3rem;
   border-radius: 99px;
-  font-size: 0.74rem;
+  font-size: 0.76rem;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.08em;
   color: #ffffff;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
 }
 
-.artFooterBadge:hover {
-  background: rgba(255, 255, 255, 0.3);
+.artBottomPill:hover {
+  background: rgba(255, 255, 255, 0.32);
   transform: translateY(-2px);
 }
 
-/* ── Responsive ────────────────────────────── */
-@media (max-width: 1080px) {
-  .threeColRow {
+/* ── Responsive Behavior ────────────────────────── */
+@media (max-width: 1140px) {
+  .innovativeRow {
     grid-template-columns: 1fr;
-    gap: 2.25rem;
+    gap: 2.5rem;
   }
 
-  .centerArtCol {
-    order: -1; /* Display artwork first on mobile/tablets */
-    padding: 1rem 0;
+  .centerHeroArt {
+    order: -1; /* Hero artwork shown first */
+    padding: 1.5rem 0;
   }
 
-  .artIllustration {
-    max-width: 380px;
+  .bigDoodleImage {
+    max-width: 520px;
   }
 
-  .floatTagLeft {
-    top: 1rem;
-    left: 2rem;
+  .tailRight, .tailLeft {
+    display: none; /* Hide horizontal speech tails when stacked */
   }
 
-  .floatTagRight {
-    bottom: 3.5rem;
-    right: 2rem;
+  .sticker1 {
+    top: 0;
+    left: 8%;
+  }
+
+  .sticker2 {
+    bottom: 2.5rem;
+    right: 8%;
   }
 }
 
@@ -435,21 +446,28 @@
   }
 
   .headline {
-    font-size: clamp(1.8rem, 8vw, 2.4rem);
+    font-size: clamp(1.85rem, 8vw, 2.35rem);
     margin: 0;
   }
 
-  .glassCard {
+  .messageBox {
     padding: 1.8rem 1.5rem;
     border-radius: 22px;
   }
 
-  .artIllustration {
-    max-width: 300px;
+  .bigDoodleImage {
+    max-width: 360px;
   }
 
-  .floatTag {
-    font-size: 0.65rem;
-    padding: 0.25rem 0.7rem;
+  .floatSticker {
+    font-size: 0.68rem;
+    padding: 0.35rem 0.8rem;
+  }
+
+  .artBottomPill {
+    font-size: 0.7rem;
+    padding: 0.45rem 1rem;
+    text-align: center;
   }
 }
+

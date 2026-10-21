@@ -1,47 +1,30 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import styles from "./AboutCosuniq.module.css";
 
-const Dots = () => (
-  <>
-    <circle cx="2"  cy="2"  r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="12" cy="2"  r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="22" cy="2"  r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="22" cy="12" r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="22" cy="22" r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="12" cy="22" r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="2"  cy="22" r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-    <circle cx="2"  cy="12" r="1" stroke="rgba(255,255,255,0.4)" strokeWidth="0.85" fill="none" />
-  </>
-);
-
 const VisionIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" strokeLinecap="round" strokeLinejoin="round">
-    <Dots />
-    <ellipse cx="12" cy="12" rx="7" ry="4.5" stroke="#ffffff" strokeWidth="1.5" />
-    <circle cx="12" cy="12" r="2.2" stroke="#ffffff" strokeWidth="1.5" />
-    <circle cx="12" cy="12" r="0.9" fill="#ffffff" />
+  <svg viewBox="0 0 24 24" fill="none" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+    <ellipse cx="12" cy="12" rx="7" ry="4.5" stroke="#FF6B00" strokeWidth="1.6" />
+    <circle cx="12" cy="12" r="2.2" stroke="#FF6B00" strokeWidth="1.6" />
+    <circle cx="12" cy="12" r="0.9" fill="#FF6B00" />
   </svg>
 );
 
 const MissionIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" strokeLinecap="round" strokeLinejoin="round">
-    <Dots />
-    <circle cx="12" cy="12" r="5" stroke="#ffffff" strokeWidth="1.5" />
-    <circle cx="12" cy="12" r="2.2" stroke="#ffffff" strokeWidth="1.5" />
-    <circle cx="12" cy="12" r="0.9" fill="#ffffff" />
-    <line x1="12" y1="7"  x2="12" y2="5"  stroke="#ffffff" strokeWidth="1.5" />
-    <line x1="12" y1="17" x2="12" y2="19" stroke="#ffffff" strokeWidth="1.5" />
-    <line x1="7"  y1="12" x2="5"  y2="12" stroke="#ffffff" strokeWidth="1.5" />
-    <line x1="17" y1="12" x2="19" y2="12" stroke="#ffffff" strokeWidth="1.5" />
+  <svg viewBox="0 0 24 24" fill="none" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+    <circle cx="12" cy="12" r="5" stroke="#FF6B00" strokeWidth="1.6" />
+    <circle cx="12" cy="12" r="2.2" stroke="#FF6B00" strokeWidth="1.6" />
+    <circle cx="12" cy="12" r="0.9" fill="#FF6B00" />
+    <line x1="12" y1="7"  x2="12" y2="4.5"  stroke="#FF6B00" strokeWidth="1.6" />
+    <line x1="12" y1="17" x2="12" y2="19.5" stroke="#FF6B00" strokeWidth="1.6" />
+    <line x1="7"  y1="12" x2="4.5"  y2="12" stroke="#FF6B00" strokeWidth="1.6" />
+    <line x1="17" y1="12" x2="19.5" y2="12" stroke="#FF6B00" strokeWidth="1.6" />
   </svg>
 );
 
 export default function AboutCosuniq() {
-  const [hovered, setHovered] = useState<string | null>(null);
-
   return (
     <section className={styles.section} id="about">
 
@@ -87,57 +70,55 @@ export default function AboutCosuniq() {
           COSUNIQ is a creative technology agency bringing together strategy, design, and technology to help ambitious businesses build stronger brands and better digital experiences. We combine fresh thinking with years of hands-on experience to create purposeful, scalable solutions that don&apos;t just look good, but move businesses forward.
         </p>
 
-        {/* 3-Column Innovative Row: Glass Vision | Organic Center Art | Glass Mission */}
-        <div className={styles.threeColRow}>
-          
-          {/* 1. LEFT: OUR VISION (INNOVATIVE FROSTED GLASS) */}
-          <article
-            className={`${styles.glassCard} ${hovered === "vision" ? styles.glassCardActive : ""}`}
-            onMouseEnter={() => setHovered("vision")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <div className={styles.cardTopRow}>
-              <div className={styles.iconBadge}>
+        {/* 3-Column Creative Scene: Left Message Box (Vision) | BIG Center Artwork | Right Message Box (Mission) */}
+        <div className={styles.innovativeRow}>
+
+          {/* LEFT: OUR VISION MESSAGE BOX */}
+          <div className={`${styles.messageBox} ${styles.messageLeft}`}>
+            <div className={styles.msgHeader}>
+              <div className={styles.msgAvatar}>
                 <VisionIcon />
               </div>
-              <span className={styles.cardPillTag}>01 / OUR VISION</span>
-              <span className={styles.cardCornerArrow} aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
-                </svg>
-              </span>
+              <div>
+                <span className={styles.msgTag}>OUR VISION</span>
+                <span className={styles.msgSubtitle}>Foresight & Enduring Craft</span>
+              </div>
             </div>
 
-            <h3 className={styles.cardTitle}>See what comes next<span className={styles.accentDot}>.</span></h3>
-            
-            <p className={styles.cardDescription}>
-              We envision a world where every ambitious business — regardless of size — has access to world-class creative and technology expertise. To become the most trusted creative technology partner for forward-thinking brands, helping them not just keep up with change, but lead it.
+            <h3 className={styles.msgTitle}>
+              See what comes next<span className={styles.orangeDot}>.</span>
+            </h3>
+
+            <p className={styles.msgBody}>
+              We envision a world where ambitious brands don’t just keep up with change, but lead it. We see beyond temporary trends and engineer digital products built to endure.
             </p>
 
-            <div className={styles.highlightPill}>
-              <span className={styles.sparkIcon}>✦</span>
-              <span>We see beyond trends and build for what endures.</span>
+            <div className={styles.msgBadge}>
+              <span className={styles.sparkOrange}>✦</span>
+              <span>Built for the Long-Term</span>
             </div>
-          </article>
 
-          {/* 2. CENTER: CREATIVE DOODLE ENGINE (ORGANIC, FLOATING, NO WHITE CARD) */}
-          <div className={styles.centerArtCol}>
+            {/* Speech bubble pointer pointing towards center doodle characters */}
+            <div className={styles.tailRight} aria-hidden="true" />
+          </div>
+
+          {/* CENTER: BIG HEROIC DOODLE ARTWORK */}
+          <div className={styles.centerHeroArt}>
             <div className={styles.artAtmosphereGlow} />
 
             {/* Creative floating stickers */}
-            <div className={`${styles.floatTag} ${styles.floatTagLeft}`}>
+            <div className={`${styles.floatSticker} ${styles.sticker1}`}>
               <span>⚡ High-Velocity Code</span>
             </div>
-            <div className={`${styles.floatTag} ${styles.floatTagRight}`}>
-              <span>🎨 Radical Craft</span>
+            <div className={`${styles.floatSticker} ${styles.sticker2}`}>
+              <span>🎨 Radical Imagination</span>
             </div>
 
-            {/* Doodle Graphic with clean transparent background */}
-            <div className={styles.artImageContainer}>
+            <div className={styles.artImageWrapper}>
               <img 
                 src="/assets/images/cosuniq_doodle_tight.webp" 
                 alt="Cosuniq Creative Characters & Code Doodle Art" 
-                className={styles.artIllustration}
+                className={styles.bigDoodleImage}
                 loading="lazy"
                 decoding="async"
                 width={1132}
@@ -145,41 +126,40 @@ export default function AboutCosuniq() {
               />
             </div>
 
-            <div className={styles.artFooterBadge}>
+            <div className={styles.artBottomPill}>
               <span className={styles.spark}>✦</span>
-              <span>Creative DNA & Engineering Craft</span>
+              <span>Where Bold Imagination & Clean Code Meet</span>
             </div>
           </div>
 
-          {/* 3. RIGHT: OUR MISSION (INNOVATIVE FROSTED GLASS) */}
-          <article
-            className={`${styles.glassCard} ${hovered === "mission" ? styles.glassCardActive : ""}`}
-            onMouseEnter={() => setHovered("mission")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <div className={styles.cardTopRow}>
-              <div className={styles.iconBadge}>
+          {/* RIGHT: OUR MISSION MESSAGE BOX */}
+          <div className={`${styles.messageBox} ${styles.messageRight}`}>
+            <div className={styles.msgHeader}>
+              <div className={styles.msgAvatar}>
                 <MissionIcon />
               </div>
-              <span className={styles.cardPillTag}>02 / OUR MISSION</span>
-              <span className={styles.cardCornerArrow} aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7" /><polyline points="7 7 17 7 17 17" />
-                </svg>
-              </span>
+              <div>
+                <span className={styles.msgTag}>OUR MISSION</span>
+                <span className={styles.msgSubtitle}>Purposeful Execution</span>
+              </div>
             </div>
 
-            <h3 className={styles.cardTitle}>Build what matters<span className={styles.accentDot}>.</span></h3>
-            
-            <p className={styles.cardDescription}>
-              Our mission is to transform bold ideas into purposeful brands and high-performing digital experiences that create lasting impact. We bring strategy, design, and technology together under one roof — working closely with our clients to deliver solutions that are not just beautiful, but measurably effective.
+            <h3 className={styles.msgTitle}>
+              Build what matters<span className={styles.orangeDot}>.</span>
+            </h3>
+
+            <p className={styles.msgBody}>
+              Transforming bold ideas into purposeful brands and high-performing digital experiences. Strategy, design, and technology united under one roof to drive measurable business impact.
             </p>
 
-            <div className={styles.highlightPill}>
-              <span className={styles.sparkIcon}>✦</span>
-              <span>Every project is a commitment to excellence.</span>
+            <div className={styles.msgBadge}>
+              <span className={styles.sparkOrange}>✦</span>
+              <span>Commitment to Excellence</span>
             </div>
-          </article>
+
+            {/* Speech bubble pointer pointing towards center doodle characters */}
+            <div className={styles.tailLeft} aria-hidden="true" />
+          </div>
 
         </div>
 
