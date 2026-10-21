@@ -80,8 +80,8 @@ export default function AboutCosuniq() {
                 <VisionIcon />
               </div>
               <div>
-                <span className={styles.msgTag}>OUR VISION</span>
-                <span className={styles.msgSubtitle}>Foresight & Enduring Craft</span>
+                <span className={styles.msgTag}>01 / OUR VISION</span>
+                <span className={styles.msgSubtitle}>Foresight & Longevity</span>
               </div>
             </div>
 
@@ -90,7 +90,7 @@ export default function AboutCosuniq() {
             </h3>
 
             <p className={styles.msgBody}>
-              We envision a world where ambitious brands don’t just keep up with change, but lead it. We see beyond temporary trends and engineer digital products built to endure.
+              We see beyond temporary trends to architect digital products and brand systems built to endure.
             </p>
 
             <div className={styles.msgBadge}>
@@ -121,8 +121,8 @@ export default function AboutCosuniq() {
                 className={styles.bigDoodleImage}
                 loading="lazy"
                 decoding="async"
-                width={1132}
-                height={687}
+                width={1164}
+                height={719}
               />
             </div>
 
@@ -139,7 +139,7 @@ export default function AboutCosuniq() {
                 <MissionIcon />
               </div>
               <div>
-                <span className={styles.msgTag}>OUR MISSION</span>
+                <span className={styles.msgTag}>02 / OUR MISSION</span>
                 <span className={styles.msgSubtitle}>Purposeful Execution</span>
               </div>
             </div>
@@ -149,12 +149,12 @@ export default function AboutCosuniq() {
             </h3>
 
             <p className={styles.msgBody}>
-              Transforming bold ideas into purposeful brands and high-performing digital experiences. Strategy, design, and technology united under one roof to drive measurable business impact.
+              Transforming bold ideas into high-performing digital experiences with measurable business impact.
             </p>
 
             <div className={styles.msgBadge}>
               <span className={styles.sparkOrange}>✦</span>
-              <span>Commitment to Excellence</span>
+              <span>Execution & Impact</span>
             </div>
 
             {/* Speech bubble pointer pointing towards center doodle characters */}
