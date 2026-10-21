@@ -385,8 +385,17 @@
 /* Responsive adjustments for mobile view */
 @media (max-width: 991px) {
   .mockupContainer {
-    transform: scale(0.75);
+    transform: scale(0.85);
     transform-origin: top center;
-    margin-bottom: -280px;
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mockupContainer {
+    transform: scale(0.78);
+    transform-origin: top center;
+    min-height: 480px;
+    margin-bottom: -50px;
   }
 }

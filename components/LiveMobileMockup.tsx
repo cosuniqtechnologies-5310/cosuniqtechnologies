@@ -8,11 +8,11 @@ interface LiveMobileMockupProps {
   activeFeature: string | null;
 }
 
-// These variants control the crossfade & slide animation when feature changes
+// These variants control the snappy crossfade & slide animation when feature changes
 const screenVariants: any = {
-  initial: { opacity: 0, y: 15, scale: 0.98 },
-  animate: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] } },
-  exit: { opacity: 0, y: -15, scale: 0.98, transition: { duration: 0.3, ease: [0.16, 1, 0.3, 1] } }
+  initial: { opacity: 0, y: 8 },
+  animate: { opacity: 1, y: 0, transition: { duration: 0.25, ease: [0.16, 1, 0.3, 1] } },
+  exit: { opacity: 0, y: -6, transition: { duration: 0.15, ease: [0.16, 1, 0.3, 1] } }
 };
 
 export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProps) {
@@ -34,10 +34,10 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
             </div>
             {/* Bar chart with an upward trend line */}
             <div className={styles.chartArea}>
-              <motion.div className={styles.bar} style={{ background: '#eee' }} initial={{ height: 0 }} animate={{ height: '30%' }} transition={{ duration: 0.6, delay: 0.1 }} />
-              <motion.div className={styles.bar} style={{ background: '#ddd' }} initial={{ height: 0 }} animate={{ height: '50%' }} transition={{ duration: 0.6, delay: 0.2 }} />
-              <motion.div className={styles.bar} style={{ background: '#ccc' }} initial={{ height: 0 }} animate={{ height: '70%' }} transition={{ duration: 0.6, delay: 0.3 }} />
-              <motion.div className={styles.bar} style={{ background: '#FF6B00' }} initial={{ height: 0 }} animate={{ height: '100%' }} transition={{ duration: 0.6, delay: 0.4 }} />
+              <motion.div className={styles.bar} style={{ background: '#eee' }} initial={{ height: 0 }} animate={{ height: '30%' }} transition={{ duration: 0.35, delay: 0.05 }} />
+              <motion.div className={styles.bar} style={{ background: '#ddd' }} initial={{ height: 0 }} animate={{ height: '50%' }} transition={{ duration: 0.35, delay: 0.1 }} />
+              <motion.div className={styles.bar} style={{ background: '#ccc' }} initial={{ height: 0 }} animate={{ height: '70%' }} transition={{ duration: 0.35, delay: 0.15 }} />
+              <motion.div className={styles.bar} style={{ background: '#FF6B00' }} initial={{ height: 0 }} animate={{ height: '100%' }} transition={{ duration: 0.35, delay: 0.2 }} />
               
               {/* Animated Trend Line SVG */}
               <svg className={styles.trendLine} viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -50,14 +50,14 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
                   strokeLinejoin="round"
                   initial={{ pathLength: 0, opacity: 0 }}
                   animate={{ pathLength: 1, opacity: 1 }}
-                  transition={{ duration: 1, delay: 0.8, ease: "easeInOut" }}
+                  transition={{ duration: 0.45, delay: 0.2, ease: "easeInOut" }}
                 />
                 <motion.circle 
                   cx="88" cy="0" r="4" 
                   fill="#FF6B00"
                   initial={{ scale: 0 }}
-                  animate={{ scale: [0, 1.5, 1] }}
-                  transition={{ duration: 0.5, delay: 1.7 }}
+                  animate={{ scale: [0, 1.4, 1] }}
+                  transition={{ duration: 0.3, delay: 0.5 }}
                 />
               </svg>
             </div>
@@ -65,9 +65,9 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
             {/* Floating Goal Card */}
             <motion.div 
               style={{ background: '#fff', border: '1px solid #eee', borderRadius: '12px', padding: '12px', display: 'flex', alignItems: 'center', gap: '12px', marginTop: '16px', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 1.4 }}
+              transition={{ duration: 0.3, delay: 0.25 }}
             >
               <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#FF6B00', display: 'flex', justifyContent: 'center', alignItems: 'center', flexShrink: 0 }}>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
@@ -94,9 +94,9 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
             <div className={styles.brandHero}>
               <motion.div 
                 className={styles.typographyIcon}
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: 0.85 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.3 }}
               >
                 Aa
               </motion.div>
@@ -105,10 +105,10 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
             <div className={styles.skeletonText} style={{ margin: '0 auto 1.5rem', width: '30%' }}></div>
             
             <div className={styles.colorPalette}>
-              <motion.div className={styles.colorSwatch} style={{ background: '#111' }} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}></motion.div>
-              <motion.div className={styles.colorSwatch} style={{ background: '#FF6B00' }} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }}></motion.div>
-              <motion.div className={styles.colorSwatch} style={{ background: '#ccc' }} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}></motion.div>
-              <motion.div className={styles.colorSwatch} style={{ background: '#eee' }} initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 }}></motion.div>
+              <motion.div className={styles.colorSwatch} style={{ background: '#111' }} initial={{ y: 6, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.05 }}></motion.div>
+              <motion.div className={styles.colorSwatch} style={{ background: '#FF6B00' }} initial={{ y: 6, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.1 }}></motion.div>
+              <motion.div className={styles.colorSwatch} style={{ background: '#ccc' }} initial={{ y: 6, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.15 }}></motion.div>
+              <motion.div className={styles.colorSwatch} style={{ background: '#eee' }} initial={{ y: 6, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.2 }}></motion.div>
             </div>
           </div>
         );
@@ -163,24 +163,24 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
               <div className={styles.browserDot}></div>
             </div>
             <div className={styles.browserContent}>
-              {/* Simulated code typing */}
+              {/* Snappy simulated code lines */}
               <div className={styles.codeLine}>
-                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 1, ease: "linear" }} style={{ background: '#FF6B00' }} />
+                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.25, ease: "linear" }} style={{ background: '#FF6B00' }} />
               </div>
               <div className={styles.codeLine} style={{ width: '80%' }}>
-                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.8, delay: 1, ease: "linear" }} style={{ background: '#111' }} />
+                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.25, delay: 0.08, ease: "linear" }} style={{ background: '#111' }} />
               </div>
               <div className={styles.codeLine} style={{ width: '60%' }}>
-                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.6, delay: 1.8, ease: "linear" }} style={{ background: '#ccc' }} />
+                <motion.span initial={{ width: 0 }} animate={{ width: '100%' }} transition={{ duration: 0.25, delay: 0.16, ease: "linear" }} style={{ background: '#ccc' }} />
               </div>
               
-              {/* Resulting UI block pops in */}
+              {/* Resulting UI block pops in without long delay */}
               <motion.div 
                 className={styles.skeletonBlock}
                 style={{ height: '50px', background: '#f5f5f5', marginTop: '20px', border: '1px solid #ddd' }}
-                initial={{ opacity: 0, scale: 0.9, y: 10 }}
+                initial={{ opacity: 0, scale: 0.95, y: 6 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ delay: 2.5, type: "spring" }}
+                transition={{ delay: 0.25, duration: 0.3, type: "spring" }}
               ></motion.div>
             </div>
           </div>
@@ -209,9 +209,9 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
             {/* App Launch Animation */}
             <motion.div 
               className={styles.appLaunchScreen}
-              initial={{ opacity: 0, y: 100, scale: 0.5 }}
-              animate={{ opacity: [0, 1, 1, 0], y: [100, 0, 0, 100], scale: [0.5, 1, 1, 0.5] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              initial={{ opacity: 0, y: 40, scale: 0.85 }}
+              animate={{ opacity: [0, 1, 1, 0], y: [40, 0, 0, 40], scale: [0.85, 1, 1, 0.85] }}
+              transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
             >
               <div className={styles.skeletonTitle} style={{ background: '#fff', width: '60%' }}></div>
               <div className={styles.skeletonText} style={{ background: 'rgba(255,255,255,0.7)', width: '40%' }}></div>
@@ -238,8 +238,8 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
                   className={styles.cartBadge}
                   style={{ background: '#FF6B00', position: 'absolute', top: '-8px', right: '-8px', width: '16px', height: '16px', fontSize: '10px' }}
                   initial={{ scale: 0 }}
-                  animate={{ scale: [0, 1.2, 1] }}
-                  transition={{ delay: 1, duration: 0.5 }}
+                  animate={{ scale: [0, 1.25, 1] }}
+                  transition={{ delay: 0.15, duration: 0.3 }}
                 >1</motion.div>
               </div>
             </div>
@@ -248,8 +248,8 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
               {/* Product Placeholder (Shopping Bag) */}
               <motion.div 
                 style={{ width: '50px', height: '60px', background: '#ddd', borderRadius: '4px', margin: 'auto', position: 'relative', marginTop: '40px' }}
-                animate={{ y: [-5, 5, -5] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                animate={{ y: [-4, 4, -4] }}
+                transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
               >
                 {/* Bag Handle */}
                 <div style={{ position: 'absolute', top: '-12px', left: '12px', right: '12px', height: '14px', border: '4px solid #ddd', borderBottom: 'none', borderRadius: '10px 10px 0 0' }}></div>
@@ -268,8 +268,8 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
             <motion.div 
               className={styles.checkoutBtn}
               style={{ background: '#111', color: '#fff', marginTop: '16px' }}
-              animate={{ scale: [1, 0.95, 1], background: ["#111", "#FF6B00", "#111"] }}
-              transition={{ duration: 0.5, delay: 0.8, repeat: Infinity, repeatDelay: 2 }}
+              animate={{ scale: [1, 0.96, 1], background: ["#111", "#FF6B00", "#111"] }}
+              transition={{ duration: 0.45, delay: 0.2, repeat: Infinity, repeatDelay: 2 }}
             >Add to Cart</motion.div>
           </div>
         );
@@ -285,9 +285,9 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
               {/* User asks a question */}
               <motion.div 
                 className={`${styles.chatBubble} ${styles.chatUser}`}
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 12 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 }}
+                transition={{ duration: 0.25, delay: 0.05 }}
               >
                 <div className={styles.skeletonText} style={{ background: 'rgba(255,255,255,0.8)', marginTop: 0 }}></div>
               </motion.div>
@@ -297,19 +297,19 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
                 className={styles.typingIndicator}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: [0, 1, 0] }}
-                transition={{ delay: 0.8, duration: 1.5 }}
+                transition={{ delay: 0.15, duration: 0.7 }}
               >
-                <motion.div className={styles.typingDot} animate={{ y: [0, -3, 0] }} transition={{ repeat: Infinity, duration: 0.6, delay: 0 }} />
-                <motion.div className={styles.typingDot} animate={{ y: [0, -3, 0] }} transition={{ repeat: Infinity, duration: 0.6, delay: 0.2 }} />
-                <motion.div className={styles.typingDot} animate={{ y: [0, -3, 0] }} transition={{ repeat: Infinity, duration: 0.6, delay: 0.4 }} />
+                <motion.div className={styles.typingDot} animate={{ y: [0, -3, 0] }} transition={{ repeat: Infinity, duration: 0.5, delay: 0 }} />
+                <motion.div className={styles.typingDot} animate={{ y: [0, -3, 0] }} transition={{ repeat: Infinity, duration: 0.5, delay: 0.15 }} />
+                <motion.div className={styles.typingDot} animate={{ y: [0, -3, 0] }} transition={{ repeat: Infinity, duration: 0.5, delay: 0.3 }} />
               </motion.div>
 
-              {/* AI Responds */}
+              {/* AI Responds without 2.3s delay */}
               <motion.div 
                 className={`${styles.chatBubble} ${styles.chatBot}`}
-                initial={{ opacity: 0, x: -20, display: 'none' }}
-                animate={{ opacity: 1, x: 0, display: 'block' }}
-                transition={{ delay: 2.3 }}
+                initial={{ opacity: 0, x: -12 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.35, duration: 0.3 }}
               >
                 <div className={styles.skeletonText} style={{ background: '#999', marginTop: 0, width: '100%', marginBottom: '6px' }}></div>
                 <div className={styles.skeletonText} style={{ background: '#999', marginTop: 0, width: '80%', marginBottom: '6px' }}></div>
@@ -336,13 +336,13 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
                     <motion.div 
                       className={styles.serverLight}
                       animate={{ opacity: [0.3, 1, 0.3] }}
-                      transition={{ duration: 0.8, repeat: Infinity, delay: i * 0.2 }}
+                      transition={{ duration: 0.8, repeat: Infinity, delay: i * 0.15 }}
                       style={{ background: '#FF6B00' }}
                     />
                     <motion.div 
                       className={styles.serverLight}
                       animate={{ opacity: [1, 0.3, 1] }}
-                      transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.4 }}
+                      transition={{ duration: 1.0, repeat: Infinity, delay: i * 0.25 }}
                       style={{ background: '#10b981' }} /* Keep green for server health */
                     />
                   </div>

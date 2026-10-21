@@ -317,6 +317,19 @@ export default function CapabilitiesUniverse() {
                 </div>
               ))}
             </div>
+
+            {/* Pagination dots for quick navigation */}
+            <div className={styles.mobileDots}>
+              {[0, 1, 2, 3].map((pairIdx) => (
+                <button
+                  key={pairIdx}
+                  type="button"
+                  className={`${styles.mobileDot} ${Math.floor(autoActiveIdx / 2) === pairIdx ? styles.mobileDotActive : ""}`}
+                  onClick={() => setAutoActiveIdx(pairIdx * 2)}
+                  aria-label={`Go to slide ${pairIdx + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
 

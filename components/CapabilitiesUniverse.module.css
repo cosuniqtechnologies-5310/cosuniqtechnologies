@@ -127,9 +127,9 @@
   height: 100%;
   position: relative;
   padding: 0 10px; /* Allow room for card scaling */
-  /* Fade out edges so cards smoothly appear/disappear */
-  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  /* Fade out edges gently so cards smoothly appear without staying hidden */
+  mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
 }
 
 .centerColumn {
@@ -153,11 +153,11 @@
   we translate exactly -50% to reset perfectly.
 */
 .scrollTrackLeft {
-  animation: scrollVerticalUp 40s linear infinite;
+  animation: scrollVerticalUp 18s linear infinite;
 }
 
 .scrollTrackRight {
-  animation: scrollVerticalDown 40s linear infinite;
+  animation: scrollVerticalDown 18s linear infinite;
 }
 
 @keyframes scrollVerticalUp {
@@ -291,6 +291,10 @@
   display: none;
 }
 
+.mobileDots {
+  display: none;
+}
+
 /* ── Responsive ────────────────────────────────── */
 @media (max-width: 1024px) {
   .layoutWrapper {
@@ -301,7 +305,7 @@
 
 @media (max-width: 768px) {
   .section {
-    padding: 5rem 0 4rem;
+    padding: 4rem 0 3.5rem;
   }
 
   .header {
@@ -317,13 +321,14 @@
   .ctaMobileOnly {
     display: flex !important;
     width: max-content;
-    margin: 1rem 0 0 0;
+    margin: 1.5rem auto 0;
   }
 
   .layoutWrapper {
     flex-direction: column;
     height: auto;
     overflow: visible;
+    gap: 1rem;
   }
   
   .column {
@@ -335,6 +340,7 @@
   .centerColumn {
     order: -1;
     z-index: 1;
+    width: 100%;
   }
 
   .leftColumn, .rightColumn {
@@ -346,15 +352,13 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 10px 0;
-    z-index: 10; /* Ensure slider sits on top of the phone */
-    background: #FFF6F0; /* Completely hide the phone behind the gap */
-    box-shadow: 0 -20px 20px #FFF6F0; /* Soft fade out to blend with the page */
+    padding: 6px 0 2px;
+    z-index: 10;
   }
   
   .mobileSliderTrack {
     display: flex;
-    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
   }
   
   .mobileSliderPair {
@@ -363,6 +367,31 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0.75rem;
     padding: 0 4px; /* small padding for card shadow */
+  }
+
+  .mobileDots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+    z-index: 10;
+  }
+
+  .mobileDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 99px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .mobileDotActive {
+    width: 22px;
+    background: #FF6B00;
   }
 
   .card {
