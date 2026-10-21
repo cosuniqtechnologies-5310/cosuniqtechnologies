@@ -15,6 +15,173 @@ const screenVariants: any = {
   exit: { opacity: 0, y: -6, transition: { duration: 0.15, ease: [0.16, 1, 0.3, 1] } }
 };
 
+// Custom handcrafted animated UI/UX Studio Doodle
+function UIUXDoodle() {
+  return (
+    <div style={{ position: 'relative', width: '100%', marginBottom: '14px' }}>
+      <svg
+        viewBox="0 0 240 148"
+        width="100%"
+        height="148"
+        fill="none"
+        style={{ display: 'block', overflow: 'visible' }}
+      >
+        {/* Artboard Canvas Frame */}
+        <rect
+          x="2"
+          y="2"
+          width="236"
+          height="144"
+          rx="14"
+          fill="#FFF9F5"
+          stroke="#FFE3D1"
+          strokeWidth="1.5"
+        />
+
+        {/* Window Top Controls */}
+        <circle cx="16" cy="14" r="3" fill="#FF5F56" />
+        <circle cx="26" cy="14" r="3" fill="#FFBD2E" />
+        <circle cx="36" cy="14" r="3" fill="#27C93F" />
+        <line x1="2" y1="24" x2="238" y2="24" stroke="#FFEADB" strokeWidth="1" />
+
+        {/* Floating Color Swatches Top Right */}
+        <g transform="translate(182, 14)">
+          <circle cx="0" cy="0" r="4" fill="#111827" stroke="#ffffff" strokeWidth="1" />
+          <circle cx="10" cy="0" r="4" fill="#FF6B00" stroke="#ffffff" strokeWidth="1" />
+          <circle cx="20" cy="0" r="4" fill="#FFE0CC" stroke="#ffffff" strokeWidth="1" />
+        </g>
+
+        {/* Left Section: Live Mobile Card Wireframe */}
+        <rect
+          x="14"
+          y="32"
+          width="82"
+          height="104"
+          rx="10"
+          fill="#ffffff"
+          stroke="#FF6B00"
+          strokeWidth="1.4"
+          strokeDasharray="3 3"
+        />
+
+        {/* User Avatar in Card */}
+        <circle cx="32" cy="48" r="9" fill="rgba(255, 107, 0, 0.16)" stroke="#FF6B00" strokeWidth="1.2" />
+        <path d="M 27 54 C 27 50.5 37 50.5 37 54" stroke="#FF6B00" strokeWidth="1.2" strokeLinecap="round" />
+
+        {/* UI Content lines in card */}
+        <line x1="48" y1="45" x2="84" y2="45" stroke="#111827" strokeWidth="2.5" strokeLinecap="round" />
+        <line x1="48" y1="52" x2="72" y2="52" stroke="#9CA3AF" strokeWidth="2" strokeLinecap="round" />
+
+        {/* Interactive CTA button inside Card */}
+        <motion.g animate={{ scale: [1, 0.96, 1] }} transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}>
+          <rect x="20" y="66" width="70" height="18" rx="9" fill="#FF6B00" />
+          <text x="55" y="78.5" fill="#ffffff" fontSize="7.5" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">Book Call</text>
+        </motion.g>
+
+        {/* Toggle Switch Component inside Card */}
+        <rect x="22" y="93" width="28" height="15" rx="7.5" fill="rgba(255, 107, 0, 0.2)" stroke="#FF6B00" strokeWidth="1" />
+        <motion.circle
+          cx="42"
+          cy="100.5"
+          r="5"
+          fill="#FF6B00"
+          animate={{ cx: [30, 42, 30] }}
+          transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
+        />
+
+        {/* Slider Bar inside Card */}
+        <rect x="22" y="117" width="66" height="4" rx="2" fill="#F3F4F6" />
+        <motion.rect
+          x="22"
+          y="117"
+          width="42"
+          height="4"
+          rx="2"
+          fill="#FF6B00"
+          animate={{ width: [24, 52, 24] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        />
+
+        {/* Right Section: Vector Bezier Curve & Pen Tool */}
+        {/* Curving vector path */}
+        <motion.path
+          d="M 112 108 C 130 60, 150 135, 180 75 C 192 50, 210 65, 222 52"
+          fill="none"
+          stroke="#FF6B00"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeDasharray="4 3"
+        />
+
+        {/* Tangent control handle lines */}
+        <line x1="162" y1="98" x2="198" y2="52" stroke="#9CA3AF" strokeWidth="1" strokeDasharray="2 2" />
+        <circle cx="162" cy="98" r="2.5" fill="#ffffff" stroke="#9CA3AF" strokeWidth="1.2" />
+        <circle cx="198" cy="52" r="2.5" fill="#ffffff" stroke="#9CA3AF" strokeWidth="1.2" />
+
+        {/* Main Vector Anchor Point */}
+        <rect x="176" y="71" width="8" height="8" rx="1.5" fill="#ffffff" stroke="#FF6B00" strokeWidth="2" />
+
+        {/* Animated Pen Tool Drawing the Curve */}
+        <motion.g
+          animate={{ x: [0, 8, 0], y: [0, -6, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <g transform="translate(182, 44) rotate(-35)">
+            <path d="M 0 0 L 6 12 L 2.5 15 L -2.5 15 L -6 12 Z" fill="#111827" stroke="#111827" strokeWidth="0.8" />
+            <polygon points="0,0 2,6 -2,6" fill="#FF6B00" />
+            <circle cx="0" cy="8.5" r="1.3" fill="#ffffff" />
+            <line x1="0" y1="15" x2="0" y2="28" stroke="#FF6B00" strokeWidth="2.5" strokeLinecap="round" />
+          </g>
+        </motion.g>
+
+        {/* Interactive Mouse Cursor Clicking on the Button */}
+        <motion.g
+          animate={{ x: [0, -6, 0], y: [0, 6, 0] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <g transform="translate(68, 62)">
+            <path
+              d="M 0 0 L 10 12 L 6 13 L 9 20 L 7 21 L 4 14 L 0 17 Z"
+              fill="#111827"
+              stroke="#ffffff"
+              strokeWidth="1.4"
+              strokeLinejoin="round"
+            />
+          </g>
+        </motion.g>
+
+        {/* Click ripple animation on the card button */}
+        <motion.circle
+          cx="72"
+          cy="75"
+          r="8"
+          fill="none"
+          stroke="#FF6B00"
+          strokeWidth="1.5"
+          animate={{ scale: [0.5, 1.8], opacity: [0.9, 0] }}
+          transition={{ duration: 1.4, repeat: Infinity, ease: "easeOut" }}
+        />
+
+        {/* Creative Sparkles & Stars */}
+        <motion.path
+          d="M 218 108 L 220 112 L 224 113 L 220 114 L 218 118 L 216 114 L 212 113 L 216 112 Z"
+          fill="#FF6B00"
+          animate={{ scale: [0.7, 1.3, 0.7], rotate: [0, 90, 0] }}
+          transition={{ duration: 2.6, repeat: Infinity }}
+          style={{ transformOrigin: "218px 113px" }}
+        />
+        <motion.path
+          d="M 120 128 L 121.5 131 L 124.5 132 L 121.5 133 L 120 136 L 118.5 133 L 115.5 132 L 118.5 131 Z"
+          fill="#FF6B00"
+          animate={{ scale: [0.8, 1.3, 0.8] }}
+          transition={{ duration: 2.1, repeat: Infinity, delay: 0.5 }}
+          style={{ transformOrigin: "120px 132px" }}
+        />
+      </svg>
+    </div>
+  );
+}
+
 export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProps) {
   
   // Always use brand orange glow
@@ -120,32 +287,46 @@ export default function LiveMobileMockup({ activeFeature }: LiveMobileMockupProp
               <h4 className={styles.realTitle}>UI / UX Design</h4>
               <p className={styles.realDesc}>Designing interfaces that perform, delight users, and drive conversions.</p>
             </div>
-            {/* Wireframe to styled UI transition */}
+            
+            {/* Beautiful Animated UI/UX Studio Doodle */}
+            <UIUXDoodle />
+
+            {/* Design Spec Chips */}
+            <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', marginBottom: '14px' }}>
+              <span style={{ fontSize: '11px', fontWeight: 700, padding: '4px 10px', borderRadius: '99px', background: '#FFF4EC', color: '#FF6B00', border: '1px solid #FFE0CC' }}>
+                ✦ Design Systems
+              </span>
+              <span style={{ fontSize: '11px', fontWeight: 700, padding: '4px 10px', borderRadius: '99px', background: '#F3F4F6', color: '#4B5563', border: '1px solid #E5E7EB' }}>
+                ⚡ Micro-Interactions
+              </span>
+            </div>
+
+            {/* Interactive Preview Button */}
             <motion.div 
-              className={styles.uiuxHeroImage}
-              animate={{ 
-                background: ["#f5f5f5", "#FF6B00"], 
-                borderColor: ["#ddd", "#FF6B00"] 
+              style={{ 
+                width: '85%', 
+                margin: '0 auto', 
+                padding: '10px 16px', 
+                borderRadius: '30px', 
+                background: '#111827', 
+                color: '#ffffff', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center', 
+                gap: '8px', 
+                fontWeight: 700, 
+                fontSize: '13px', 
+                boxShadow: '0 4px 14px rgba(0,0,0,0.15)', 
+                cursor: 'pointer' 
               }}
-              transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-            />
-            <motion.div 
-              className={styles.skeletonTitle} 
-              style={{ width: '70%', margin: '20px auto 8px' }}
-              animate={{ background: ["#eee", "#111"] }}
-              transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
-            />
-            <div className={styles.skeletonText} style={{ width: '50%', margin: '0 auto 24px' }}></div>
-            <motion.div 
-              className={styles.uiuxButton}
-              animate={{ 
-                background: ["#eee", "#111"], 
-                color: ["rgba(0,0,0,0)", "#fff"], 
-                width: ["50%", "80%"] 
-              }}
-              transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
             >
-              Get Started
+              <span>Explore Prototypes</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
             </motion.div>
           </div>
         );
