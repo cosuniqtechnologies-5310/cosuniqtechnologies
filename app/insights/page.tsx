@@ -51,9 +51,9 @@ export default function InsightsPage() {
       />
       <InitReveal />
       <InnerBanner
-        eyebrow="PERSPECTIVES & THOUGHT LEADERSHIP"
-        title="Engineering insights & design craft."
-        description="Actionable perspectives on modern web architecture, AI automation, product design, and digital growth from the builders at Cosuniq."
+        eyebrow="PERSPECTIVES & RESEARCH"
+        title="Insights"
+        description="Thoughts, technical perspectives, and design craft from the team at Cosuniq."
         bgImage="/assets/images/brainstorm.webp"
       />
       <BlogClient />

@@ -178,44 +178,36 @@ export default async function BlogPostPage({ params }: PageProps) {
         description={post.summary}
         bgImage={post.image}
       />
-      <article className={styles.singleArticleRoot} style={{ paddingTop: '3rem' }}>
+      <article className={styles.singleArticleRoot}>
         <div className="container">
           <div className={styles.articleContainer}>
-            {/* Top Navigation & Meta Bar */}
-            <div style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: '1rem',
-              marginBottom: '2rem',
-              paddingBottom: '1.25rem',
-              borderBottom: '1px solid rgba(0, 0, 0, 0.08)'
-            }}>
-              <Link href="/blog" style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                fontSize: '0.9rem',
-                fontWeight: 600,
-                color: 'var(--brand)'
-              }}>
-                <FiArrowLeft /> Back to all articles
+            {/* Top Navigation & Author Byline Row */}
+            <div className={styles.topNavMetaRow}>
+              <Link href="/blog" className={styles.backLink}>
+                <FiArrowLeft /> All articles
               </Link>
 
-              <div className={styles.articleMetaBar} style={{ paddingBottom: 0, borderBottom: 'none' }}>
-                <span>By {post.author}</span>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <FiCalendar /> {post.date}
-                </span>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <FiClock /> {post.readTime}
-                </span>
+              <div className={styles.authorBadge}>
+                <div className={styles.authorAvatar}>
+                  {post.author.slice(0, 1)}
+                </div>
+                <div className={styles.authorDetails}>
+                  <span className={styles.authorName}>{post.author}</span>
+                  <div className={styles.authorMeta}>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+                      <FiCalendar size={13} /> {post.date}
+                    </span>
+                    <span>•</span>
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem' }}>
+                      <FiClock size={13} /> {post.readTime}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Featured Hero Image */}
-            <div className={styles.articleHeroImg} style={{ marginTop: 0 }}>
+            <div className={styles.articleHeroImg}>
               <img
                 src={post.image}
                 alt={post.title}
@@ -231,7 +223,12 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <section key={idx}>
                   <h2>{section.heading}</h2>
                   {section.paragraphs.map((p, pIdx) => (
-                    <p key={pIdx}>{renderFormattedText(p)}</p>
+                    <p
+                      key={pIdx}
+                      className={idx === 0 && pIdx === 0 ? styles.leadParagraph : undefined}
+                    >
+                      {renderFormattedText(p)}
+                    </p>
                   ))}
 
                   {section.callout && (
@@ -243,7 +240,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                   {section.bullets && (
                     <ul className={styles.bulletsList}>
                       {section.bullets.map((b, bIdx) => (
-                        <li key={bIdx} className={styles.bulletItem}>{renderFormattedText(b)}</li>
+                        <li key={bIdx} className={styles.bulletItem}>
+                          {renderFormattedText(b)}
+                        </li>
                       ))}
                     </ul>
                   )}
@@ -251,27 +250,39 @@ export default async function BlogPostPage({ params }: PageProps) {
               ))}
             </div>
 
+            {/* Author Box at Bottom */}
+            <div className={styles.bottomAuthorCard}>
+              <div className={styles.bottomAuthorAvatar}>
+                {post.author.slice(0, 1)}
+              </div>
+              <div className={styles.bottomAuthorInfo}>
+                <h3>{post.author}</h3>
+                <p>
+                  Specialized insights and engineering practices from Cosuniq Technologies. We design, build, and scale high-performance web applications, mobile platforms, and digital systems.
+                </p>
+              </div>
+            </div>
+
             {/* Article Footer Navigation */}
             <footer className={styles.articleNavFooter}>
-              <Link href="/blog" style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                fontWeight: 700,
-                color: '#555555'
-              }}>
+              <Link href="/blog" className={styles.backLink}>
                 <FiArrowLeft /> All Articles
               </Link>
 
               {nextPost && (
-                <Link href={`/blog/${nextPost.slug}`} style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.4rem',
-                  fontWeight: 700,
-                  color: 'var(--brand)'
-                }}>
-                  Next: {nextPost.title.slice(0, 32)}... <FiArrowRight />
+                <Link
+                  href={`/blog/${nextPost.slug}`}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    fontWeight: 700,
+                    color: 'var(--brand)',
+                    fontSize: '0.95rem'
+                  }}
+                >
+                  <span>Next: {nextPost.title.slice(0, 36)}...</span>
+                  <FiArrowRight />
                 </Link>
               )}
             </footer>

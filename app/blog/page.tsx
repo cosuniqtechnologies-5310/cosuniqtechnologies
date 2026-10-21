@@ -51,9 +51,9 @@ export default function BlogPage() {
       />
       <InitReveal />
       <InnerBanner
-        eyebrow="PERSPECTIVES & THOUGHT LEADERSHIP"
-        title="Engineering insights & design craft."
-        description="Lessons learned building scalable digital products, high-conversion commerce architectures, and pragmatic AI systems for ambitious teams."
+        eyebrow="PERSPECTIVES & RESEARCH"
+        title="Our Blog"
+        description="Thoughts, technical perspectives, and design craft from the team at Cosuniq."
         bgImage="/assets/images/brainstorm.webp"
       />
       <BlogClient />

@@ -37,7 +37,8 @@
 
 @media (max-width: 900px) {
   .brand img {
-    height: 26px; /* smaller on mobile */
+    height: 26px;
+    /* smaller on mobile */
   }
 }
 
@@ -72,7 +73,8 @@
 
 .navItem {
   text-decoration: none;
-  color: #333333; /* Dark gray */
+  color: #333333;
+  /* Dark gray */
   font-weight: 600;
   font-size: 0.88rem;
   font-family: var(--font-plus-jakarta);
@@ -111,6 +113,7 @@
     width: 36px;
     height: 36px;
   }
+
   .roundCallIcon svg {
     width: 16px;
     height: 16px;
@@ -148,13 +151,17 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   z-index: 99;
   background: var(--brand);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: clamp(110px, 14vh, 135px) 2rem clamp(40px, 5vh, 60px);
 }
 
 .menuOverlay.academyTheme {
@@ -176,187 +183,202 @@
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 90vw;
-  max-width: 1400px;
-  margin-top: 60px; /* clear header */
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 .menuContent {
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* Makes children span full width for the border */
-  width: 55%;
+  align-items: stretch;
+  width: 58%;
 }
 
 .navLink {
   width: 100%;
-  font-size: clamp(2rem, 3.5vw, 4rem); /* Reduced to fit viewport nicely */
+  font-size: clamp(1.5rem, 2.3vw, 2.35rem);
   font-family: var(--font-plus-jakarta);
-  font-weight: 500; /* Lighter weight for better white balance */
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   position: relative;
   display: flex;
   align-items: center;
-  padding: 1.75rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: clamp(0.7rem, 1.4vh, 1.05rem) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .navLink:hover {
-  transform: translateX(15px);
+  transform: translateX(12px);
 }
 
 /* Remove the last border */
-.menuContent > div:last-child .navLink {
+.menuContent>div:last-child .navLink {
   border-bottom: none;
 }
 
 .linkInner {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: clamp(1rem, 1.5vw, 1.75rem);
   width: 100%;
 }
 
 .navNumber {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.4);
+  font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.78);
   font-family: var(--display);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   align-self: center;
+  min-width: 2.2rem;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover .navNumber {
+  color: #ffffff;
 }
 
 .navText {
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   flex-grow: 1;
+  color: #ffffff;
 }
 
 .navLink:hover .navText {
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.8);
-}
-
-.linkInner {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  color: #ffffff;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .arrow {
   color: #ffffff;
   opacity: 0;
-  transform: translateX(-40px) scale(0.8);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateX(-20px) scale(0.85);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.arrow svg {
+  width: 32px;
+  height: 32px;
 }
 
 .navLink:hover .arrow {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateX(0) scale(1);
 }
 
 .menuRight {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: clamp(2.5rem, 4vh, 3.5rem);
   text-align: left;
-  width: 35%;
+  width: 36%;
+  padding-left: clamp(1.5rem, 3vw, 3rem);
 }
 
 .menuRightBlock {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.85rem;
 }
 
 .menuRightBlock h4 {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.78);
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
 .menuRightBlock a {
   color: #ffffff;
   text-decoration: none;
-  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-size: clamp(1.15rem, 1.7vw, 1.55rem);
   font-family: var(--display);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  transition: color 0.2s ease;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: all 0.25s ease;
+  display: inline-block;
 }
 
 .menuRightBlock a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  transform: translateX(6px);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
 }
 
 .menuSocials {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .menuSocials a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   transition: all 0.3s ease;
 }
 
 .menuSocials a:hover {
   background: #ffffff;
-  color: var(--brand); /* will use orange or blue based on theme */
+  color: var(--brand);
+  /* will use orange or blue based on theme */
   transform: translateY(-4px) scale(1.05);
   border-color: #ffffff;
 }
 
-@media (max-width: 900px) {
-  .menuGrid {
-    flex-direction: column;
-    align-items: stretch;
-    width: 90vw;
-    gap: 2rem;
-    overflow-y: auto;
-    max-height: 100vh;
-    padding: 100px 0 40px;
-    margin-top: 0;
+@media (max-width: 1024px) {
+  .menuOverlay {
+    padding: 100px 1.5rem 40px;
   }
-  
+
+  .menuGrid {
+    width: 94vw;
+  }
+
+  .menuContent {
+    width: 60%;
+  }
+
+  .navLink {
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+    padding: 0.7rem 0;
+  }
+
   .menuRight {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
+    width: 38%;
+    padding-left: 1.5rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .menuOverlay {
+    padding: 85px 1.5rem 40px;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0 1.5rem;
-    overflow-y: auto;
   }
 
   .menuGrid {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    gap: 0;
-    padding: 90px 0 2rem;
-    max-height: none;
-    overflow-y: visible;
+    gap: 2.25rem;
   }
 
   .menuContent {
@@ -364,44 +386,139 @@
   }
 
   .navLink {
-    font-size: clamp(1.6rem, 7vw, 2.2rem);
-    padding: 1rem 0;
-    white-space: nowrap;
+    font-size: clamp(1.3rem, 3.8vw, 1.75rem);
+    padding: 0.75rem 0;
+  }
+
+  .menuRight {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    padding-left: 0;
+    padding-top: 1.75rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .menuOverlay {
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 82px 1.25rem 2.5rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .menuGrid {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 1.75rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menuContent {
+    width: 100%;
+  }
+
+  .navLink {
+    font-size: clamp(1.2rem, 5.2vw, 1.5rem);
+    font-weight: 700;
+    padding: 0.7rem 0;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .navLink:hover {
+    transform: none;
   }
 
   .linkInner {
-    gap: 0.75rem;
+    gap: 0.85rem;
   }
 
   .navNumber {
-    font-size: 0.9rem;
-    min-width: 2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+    min-width: 1.85rem;
+    letter-spacing: 0.05em;
   }
 
-  .arrow svg {
-    width: 28px;
-    height: 28px;
+  .navText {
+    white-space: normal;
+  }
+
+  .arrow {
+    display: none;
   }
 
   .menuRight {
     flex-direction: column;
     gap: 1.5rem;
     width: 100%;
+    padding-left: 0;
     padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
   .menuRightBlock {
-    gap: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .menuRightBlock h4 {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.16em;
   }
 
   .menuRightBlock a {
-    font-size: 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .menuSocials {
+    gap: 0.85rem;
   }
 
   .menuSocials a {
-    width: 42px;
-    height: 42px;
-    font-size: 1.1rem;
+    width: 44px;
+    height: 44px;
+    font-size: 1.15rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 380px) {
+  .menuOverlay {
+    padding: 78px 1rem 2rem;
+  }
+
+  .navLink {
+    font-size: 1.12rem;
+    padding: 0.6rem 0;
+  }
+
+  .linkInner {
+    gap: 0.65rem;
+  }
+
+  .navNumber {
+    font-size: 0.85rem;
+    min-width: 1.65rem;
+  }
+
+  .menuRightBlock a {
+    font-size: 1.05rem;
+  }
+
+  .menuSocials a {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
   }
 }

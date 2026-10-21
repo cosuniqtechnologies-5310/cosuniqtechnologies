@@ -48,9 +48,12 @@ export default function BlogClient() {
               />
             </div>
             <div className={styles.featuredBody}>
-              <span className={styles.categoryTag}>{featured.category}</span>
+              <div className={styles.badgeRow}>
+                <span className={styles.featuredBadge}>★ Featured Story</span>
+                <span className={styles.categoryTag}>{featured.category}</span>
+              </div>
               <h2 className={styles.featuredTitle}>
-                <Link href={`/blog/${featured.slug}`} style={{ color: 'inherit' }}>
+                <Link href={`/blog/${featured.slug}`}>
                   {featured.title}
                 </Link>
               </h2>
@@ -63,9 +66,11 @@ export default function BlogClient() {
                   <FiClock /> {featured.readTime}
                 </span>
               </div>
-              <Link href={`/blog/${featured.slug}`} className={styles.readMoreBtn}>
-                Read full article <FiArrowRight />
-              </Link>
+              <div>
+                <Link href={`/blog/${featured.slug}`} className={styles.readMoreBtn}>
+                  Read full article <FiArrowRight />
+                </Link>
+              </div>
             </div>
           </article>
         )}
@@ -85,16 +90,18 @@ export default function BlogClient() {
                 />
               </div>
               <div className={styles.cardBody}>
-                <span className={styles.categoryTag} style={{ marginBottom: '0.75rem' }}>{post.category}</span>
+                <div style={{ marginBottom: '0.75rem' }}>
+                  <span className={styles.categoryTag}>{post.category}</span>
+                </div>
                 <h3 className={styles.cardTitle}>
-                  <Link href={`/blog/${post.slug}`} style={{ color: 'inherit' }}>
+                  <Link href={`/blog/${post.slug}`}>
                     {post.title}
                   </Link>
                 </h3>
                 <p className={styles.cardSummary}>{post.summary}</p>
                 <div className={styles.cardFooter}>
-                  <span style={{ fontSize: '0.8rem', color: '#777777', fontWeight: 600 }}>{post.readTime}</span>
-                  <Link href={`/blog/${post.slug}`} className={styles.readMoreBtn} style={{ fontSize: '0.88rem' }}>
+                  <span style={{ fontSize: '0.82rem', color: '#777777', fontWeight: 600 }}>{post.readTime}</span>
+                  <Link href={`/blog/${post.slug}`} className={styles.readMoreBtn} style={{ fontSize: '0.9rem' }}>
                     Read <FiArrowRight />
                   </Link>
                 </div>
