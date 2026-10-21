@@ -100,7 +100,7 @@ export default function Contact() {
                   <span className={styles.cardLabel}>Email</span>
                 </div>
                 <h3>Drop us a line.</h3>
-                <a href="mailto:cosuniqtechnologies@gmail.com">cosuniqtechnologies@gmail.com</a>
+                <a href="mailto:founder@cosuniq.in">founder@cosuniq.in</a>
               </div>
 
               {/* Card 2 */}

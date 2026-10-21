@@ -108,7 +108,7 @@ export default function FullscreenMenu({ isOpen, onClose, isAcademy }: Fullscree
             >
               <div className={styles.menuRightBlock}>
                 <h4>Get in Touch</h4>
-                <a href="mailto:cosuniqtechnologies@gmail.com" onClick={handleLinkClick}>cosuniqtechnologies@gmail.com</a>
+                <a href="mailto:founder@cosuniq.in" onClick={handleLinkClick}>founder@cosuniq.in</a>
                 <a href="tel:+917358696546" onClick={handleLinkClick}>+91 73586 96546</a>
               </div>
               

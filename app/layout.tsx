@@ -124,6 +124,7 @@ export default function RootLayout({
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+917358696546",
+                    "email": "founder@cosuniq.in",
                     "contactType": "customer service",
                     "areaServed": "IN",
                     "availableLanguage": ["en", "ta"],
