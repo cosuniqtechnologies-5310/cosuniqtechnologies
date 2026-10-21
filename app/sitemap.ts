@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { servicesMap } from '../components/servicesData';
 import { blogPosts } from '../components/blogData';
+import { locationsMap } from '../components/locationsData';
 
 export const dynamic = 'force-static';
 
@@ -30,6 +31,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.85,
   }));
 
+  // Regional location pages (Phase 2 Local SEO)
+  const locationPages: MetadataRoute.Sitemap = Object.keys(locationsMap).map(slug => ({
+    url: `${baseUrl}/locations/${slug}`,
+    lastModified: lastMod,
+    changeFrequency: 'weekly',
+    priority: 0.85,
+  }));
+
   // Individual blog posts
   const blogArticlePages: MetadataRoute.Sitemap = blogPosts.map(post => ({
     url: `${baseUrl}/blog/${post.slug}`,
@@ -38,5 +47,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...corePages, ...servicePages, ...blogArticlePages];
+  return [...corePages, ...servicePages, ...locationPages, ...blogArticlePages];
 }
+
