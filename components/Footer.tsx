@@ -62,15 +62,21 @@ export default function Footer() {
           <div className={styles.linkColumns}>
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Studio</span>
-              <Link href="/about">About</Link>
-              <Link href="/portfolio">Work</Link>
+              <Link href="/about">Who We Are</Link>
+              <Link href="/case-studies">Case Studies</Link>
+              <Link href="/portfolio">Showcase</Link>
+              <Link href="/blog">Blogs</Link>
+              <Link href="/academy">Academy</Link>
               <Link href="/contact">Contact</Link>
             </div>
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Services</span>
-              <Link href="/services">What we do</Link>
-              <Link href="/services#software">Software & Apps</Link>
-              <Link href="/services#branding">Branding & Design</Link>
+              <Link href="/services">What We Do</Link>
+              <Link href="/services/web-development">Web Development</Link>
+              <Link href="/services/mobile-apps">Mobile Applications</Link>
+              <Link href="/services/ui-ux-design">UI/UX Design</Link>
+              <Link href="/services/ecommerce">E-Commerce</Link>
+              <Link href="/services/ai-software">AI & Software</Link>
             </div>
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contact</span>
@@ -90,8 +96,8 @@ export default function Footer() {
         {/* BOTTOM SECTION */}
         <div className={styles.bottomSection}>
           <span className={styles.legalLink} style={{ marginRight: 'auto', pointerEvents: 'none' }}>© {new Date().getFullYear()} Cosuniq Technologies. All rights reserved.</span>
-          <Link href="/privacy" className={styles.legalLink}>Privacy Policy</Link>
-          <Link href="/terms" className={styles.legalLink}>Terms of Service</Link>
+          <Link href="/privacy-policy" className={styles.legalLink}>Privacy Policy</Link>
+          <Link href="/terms-and-conditions" className={styles.legalLink}>Terms & Conditions</Link>
         </div>
 
       </div>

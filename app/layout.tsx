@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CustomCursor from "../components/CustomCursor";
 import GsapAnimations from "../components/GsapAnimations";
+import ScrollReset from "../components/ScrollReset";
 
 import type { Metadata } from "next";
 import Script from "next/script";
@@ -160,6 +161,7 @@ export default function RootLayout({
           `}
         </Script>
         <CustomCursor />
+        <ScrollReset />
         <GsapAnimations />
         <Header />
         <main>{children}</main>

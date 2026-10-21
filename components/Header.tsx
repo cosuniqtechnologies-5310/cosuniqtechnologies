@@ -63,6 +63,13 @@ export default function Header() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu  = () => setIsOpen(false);
+  const handleNavClick = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
+  };
 
   return (
     <>
@@ -82,17 +89,18 @@ export default function Header() {
           border: borderStyle,
         }}
       >
-        <Link href="/" className={styles.brand} aria-label="Cosuniq home">
+        <Link href="/" className={styles.brand} aria-label="Cosuniq home" onClick={handleNavClick}>
           <img src={isAcademy ? "/assets/cosuniq-academy.png" : "/assets/cosuniq-technologies.png"} alt={isAcademy ? "Cosuniq Academy" : "Cosuniq"} width={169} height={35} fetchPriority="high" />
         </Link>
 
         <nav className={styles.desktopNav}>
-          <MagneticWrapper><Link href="/"          className={styles.navItem}>Home</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/services"  className={styles.navItem}>Services</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/portfolio" className={styles.navItem}>Case Study</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/about"     className={styles.navItem}>About</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/contact"   className={styles.navItem}>Contact</Link></MagneticWrapper>
-          <MagneticWrapper><Link href="/academy"   className={styles.navItem}>Academy</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/services"      className={styles.navItem} onClick={handleNavClick}>What We Do</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/about"         className={styles.navItem} onClick={handleNavClick}>Who We Are</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/case-studies"  className={styles.navItem} onClick={handleNavClick}>Case Studies</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/portfolio"     className={styles.navItem} onClick={handleNavClick}>Showcase</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/blog"          className={styles.navItem} onClick={handleNavClick}>Blogs</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/contact"       className={styles.navItem} onClick={handleNavClick}>Contact</Link></MagneticWrapper>
+          <MagneticWrapper><Link href="/academy"       className={styles.navItem} onClick={handleNavClick}>Academy</Link></MagneticWrapper>
         </nav>
 
         <div className={styles.headerRight}>

@@ -274,7 +274,7 @@ const faqItems = [
 function OverviewSection() {
   const cards: { num: string; name: string; href: string; desc: string; icon: React.ReactNode; featured?: boolean; image?: string; imagePos?: 'left'|'right'|'top' }[] = [
     {
-      num: "01", name: "Strategy & Consulting", href: "#strategy",
+      num: "01", name: "Strategy & Consulting", href: "/services/strategy-consulting",
       desc: "Addressing your core brand strategy to connect directly with people. We dive deep into market research, user personas, and competitive analysis to build a strong foundation for scale.",
       image: "/assets/images/bento-strategy.webp",
       imagePos: "left",
@@ -285,7 +285,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "02", name: "Brand Identity", href: "#brand",
+      num: "02", name: "Brand Identity", href: "/services/brand-identity",
       desc: "Positioning your brand to be exactly what people need it to be. We craft compelling visual systems, memorable logos, and strategic messaging frameworks that truly resonate with your target audience.",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -294,7 +294,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "03", name: "UI / UX Design", href: "#design",
+      num: "03", name: "UI / UX Design", href: "/services/ui-ux-design",
       desc: "Designing interfaces that perform, delight users, and drive conversions. Our approach blends aesthetic excellence with cognitive psychology to create seamless user journeys.",
       image: "/assets/images/bento-ui-ux.webp",
       icon: (
@@ -304,7 +304,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "04", name: "Web Development", href: "#web-dev",
+      num: "04", name: "Web Development", href: "/services/web-development",
       desc: "Building fast, responsive websites and powerful web applications. We engineer secure, scalable, and high-performance digital platforms using modern tech stacks to drive your business forward.",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -313,7 +313,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "05", name: "Mobile App Development", href: "#mobile",
+      num: "05", name: "Mobile App Development", href: "/services/mobile-apps",
       desc: "Putting your business directly in their hands with engaging experiences. We build high-performance applications for iOS and Android using modern frameworks.",
       image: "/assets/images/bento-mobile.webp",
       imagePos: "right",
@@ -324,7 +324,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "06", name: "E-Commerce Solutions", href: "#ecommerce",
+      num: "06", name: "E-Commerce Solutions", href: "/services/ecommerce",
       desc: "Creating digital experiences that stand out and capture your audience. We build high-conversion online stores with seamless payment integrations, intuitive product discovery, and robust inventory management.",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -333,7 +333,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "07", name: "AI & Custom Software", href: "#software",
+      num: "07", name: "AI & Custom Software", href: "/services/ai-software",
       desc: "Driving your brand&apos;s sales directly to the market with built-to-convert solutions. We engineer robust software tailored exactly to your complex operational needs.",
       image: "/assets/images/bento-ai.webp",
       imagePos: "left",
@@ -344,7 +344,7 @@ function OverviewSection() {
       ),
     },
     {
-      num: "08", name: "Cloud & DevOps", href: "#cloud",
+      num: "08", name: "Cloud & DevOps", href: "/services/cloud-devops",
       desc: "Reliable infrastructure and deployment pipelines behind every product. We architect secure, highly available cloud environments and automated CI/CD workflows to ensure your applications run flawlessly at any scale.",
       icon: (
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -451,7 +451,7 @@ function StrategySection() {
                 <span className={styles.metaValue}>2 - 4 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/strategy-consulting" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/strategy_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="strategy Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -487,7 +487,7 @@ function BrandSection() {
                 <span className={styles.metaValue}>3 - 6 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/brand-identity" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/brand_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="brand Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -523,7 +523,7 @@ function WebDevSection() {
                 <span className={styles.metaValue}>3 - 6 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/web-development" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/webdev_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="web-dev Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -559,7 +559,7 @@ function DesignSection() {
                 <span className={styles.metaValue}>2 - 4 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/ui-ux-design" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/design_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="design Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -595,7 +595,7 @@ function EcommerceSection() {
                 <span className={styles.metaValue}>4 - 8 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/ecommerce" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/ecommerce_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="ecommerce Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -631,7 +631,7 @@ function SoftwareSection() {
                 <span className={styles.metaValue}>8 - 16 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/ai-software" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/software_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="software Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -667,7 +667,7 @@ function MobileSection() {
                 <span className={styles.metaValue}>6 - 12 Weeks</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/mobile-apps" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/mobile_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="mobile Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
@@ -703,7 +703,7 @@ function CloudSection() {
                 <span className={styles.metaValue}>Ongoing</span>
               </div>
             </div>
-            <Link href="/contact" className={styles.moreDetailsBtn}>Start now <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
+            <Link href="/services/cloud-devops" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
           <div className={styles.serviceVisual}><img src="/assets/services/cloud_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="cloud Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>

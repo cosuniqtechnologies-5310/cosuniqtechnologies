@@ -14,10 +14,11 @@ interface FullscreenMenuProps {
 }
 
 const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/services" },
-  { name: "Case Study", href: "/portfolio" },
-  { name: "About", href: "/about" },
+  { name: "What We Do", href: "/services" },
+  { name: "Who We Are", href: "/about" },
+  { name: "Case Studies", href: "/case-studies" },
+  { name: "Showcase", href: "/portfolio" },
+  { name: "Blogs", href: "/blog" },
   { name: "Contact", href: "/contact" },
   { name: "Academy", href: "/academy" }
 ];
@@ -61,6 +62,11 @@ export default function FullscreenMenu({ isOpen, onClose, isAcademy }: Fullscree
   const handleLinkClick = () => {
     document.body.style.overflow = "";
     document.documentElement.style.overflow = "";
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    }
     onClose();
   };
 

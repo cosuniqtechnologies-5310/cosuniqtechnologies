@@ -15,7 +15,12 @@ export default function GsapAnimations() {
   useEffect(() => {
     // ── Force scroll to top on route change before GSAP calculations ──
     if (typeof window !== "undefined") {
-      window.scrollTo(0, 0);
+      if ("scrollRestoration" in window.history) {
+        window.history.scrollRestoration = "manual";
+      }
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
     }
 
     // ── Respect prefers-reduced-motion ──────────────────────────────────

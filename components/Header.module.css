@@ -65,7 +65,7 @@
   pointer-events: auto;
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: clamp(0.6rem, 1.4vw, 1.6rem);
   flex: 1;
   justify-content: center;
 }
@@ -74,9 +74,10 @@
   text-decoration: none;
   color: #333333; /* Dark gray */
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-family: var(--font-plus-jakarta);
   transition: color 0.2s ease;
+  white-space: nowrap;
 }
 
 .navItem:hover {
