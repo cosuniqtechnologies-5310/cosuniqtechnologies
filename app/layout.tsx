@@ -111,6 +111,7 @@ export default function RootLayout({
                     "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production.",
                   "address": {
                     "@type": "PostalAddress",
+                    "addressRegion": "Tamil Nadu",
                     "addressCountry": "IN"
                   },
                   "knowsAbout": [

@@ -24,8 +24,31 @@ export const metadata: Metadata = {
 };
 
 export default function CaseStudiesPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cosuniq.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Studies",
+        "item": "https://cosuniq.in/case-studies"
+      }
+    ]
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <InitReveal />
       <InnerBanner
         eyebrow="PROVEN ENGINEERING & DESIGN"

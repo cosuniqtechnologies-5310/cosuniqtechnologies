@@ -17,6 +17,7 @@ export default function ResultsShowcase() {
 
         <div className={styles.grid}>
           {/* Card 1: Main Metric */}
+          {/* Card 1: Dedicated Team */}
           <div className={`${styles.card} ${styles.card1}`}>
             <div className={`${styles.glow} ${styles.glowTopRight}`}></div>
             <div className={styles.textContent}>
@@ -25,7 +26,7 @@ export default function ResultsShowcase() {
             </div>
             {/* The right-side overlapping image */}
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/team.webp" alt="Dedicated team" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/team.webp" alt="Dedicated in-house software engineering team at Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={467} />
             </div>
           </div>
 
@@ -37,14 +38,14 @@ export default function ResultsShowcase() {
             </div>
             {/* The right-side overlapping image */}
             <div className={styles.showcaseImg} style={{width:"160px"}}>
-              <img src="/assets/images/cash-flow.webp" alt="Transparent pricing" loading="lazy" decoding="async" width={500} height={711} />
+              <img src="/assets/images/cash-flow.webp" alt="Transparent pricing and project scoping at Cosuniq Technologies" loading="lazy" decoding="async" width={500} height={711} />
             </div>
           </div>
 
           {/* Card 3: Collaboration */}
           <div className={`${styles.card} ${styles.card3}`}>
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/colloboaration.webp" alt="Direct collaboration" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/colloboaration.webp" alt="Direct client collaboration with core developers and designers" loading="lazy" decoding="async" width={700} height={467} />
             </div>
             <div className={styles.textContent}>
               <span className={styles.value}>1:1</span>
@@ -55,7 +56,7 @@ export default function ResultsShowcase() {
           {/* Card 4: Workflow */}
           <div className={`${styles.card} ${styles.card4}`}>
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/speed.webp" alt="Faster iteration speed" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/speed.webp" alt="Rapid agile sprint deployment and iteration cycles" loading="lazy" decoding="async" width={700} height={467} />
             </div>
             <div className={styles.textContent}>
               <span className={styles.value}>2&times;</span>
@@ -72,7 +73,7 @@ export default function ResultsShowcase() {
             </div>
             {/* The right-side overlapping image */}
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/24-by-7-support.webp" style={{"objectFit": "contain", "width": "206px"}} alt="24/7 Support" loading="lazy" decoding="async" width={500} height={897} />
+              <img src="/assets/images/24-by-7-support.webp" style={{"objectFit": "contain", "width": "206px"}} alt="Continuous monitoring and proactive technical support" loading="lazy" decoding="async" width={500} height={897} />
             </div>
           </div>
 
@@ -83,7 +84,7 @@ export default function ResultsShowcase() {
               <p className={styles.label}>Your vision comes first. We build tailor-made solutions, not cookie-cutter templates.</p>
             </div>
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/custom-vision.webp" alt="Custom tailored vision" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/custom-vision.webp" alt="Tailor-made software architecture and design solutions" loading="lazy" decoding="async" width={700} height={467} />
             </div>
           </div>
 

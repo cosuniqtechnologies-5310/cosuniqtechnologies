@@ -59,8 +59,64 @@ export default async function BlogPostPage({ params }: PageProps) {
   const currentIndex = blogPosts.findIndex(p => p.slug === slug);
   const nextPost = blogPosts[(currentIndex + 1) % blogPosts.length];
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cosuniq.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blogs",
+        "item": "https://cosuniq.in/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://cosuniq.in/blog/${slug}`
+      }
+    ]
+  };
+
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.summary,
+    "image": post.image ? (post.image.startsWith("http") ? post.image : `https://cosuniq.in${post.image}`) : "https://cosuniq.in/assets/og-image.png",
+    "author": {
+      "@type": "Organization",
+      "@id": "https://cosuniq.in/#organization",
+      "name": "Cosuniq Technologies",
+      "url": "https://cosuniq.in"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://cosuniq.in/#organization",
+      "name": "Cosuniq Technologies"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://cosuniq.in/blog/${slug}`
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
+      />
       <InitReveal />
       <article className={styles.singleArticleRoot}>
         <div className="container">

@@ -53,8 +53,59 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     notFound();
   }
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cosuniq.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "What We Do",
+        "item": "https://cosuniq.in/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": service.name,
+        "item": `https://cosuniq.in/services/${slug}`
+      }
+    ]
+  };
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": `${service.name} Services`,
+    "serviceType": service.heroTitle,
+    "description": service.heroDesc,
+    "provider": {
+      "@type": "ProfessionalService",
+      "@id": "https://cosuniq.in/#organization",
+      "name": "Cosuniq Technologies"
+    },
+    "areaServed": [
+      { "@type": "Country", "name": "India" },
+      { "@type": "AdministrativeArea", "name": "Tamil Nadu" }
+    ],
+    "url": `https://cosuniq.in/services/${slug}`
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <InitReveal />
       <InnerBanner
         eyebrow={service.eyebrow}

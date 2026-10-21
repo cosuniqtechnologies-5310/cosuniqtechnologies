@@ -454,7 +454,7 @@ function StrategySection() {
             <Link href="/services/strategy-consulting" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/strategy_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="strategy Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/strategy_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Digital brand strategy and technical architecture consulting" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -490,7 +490,7 @@ function BrandSection() {
             <Link href="/services/brand-identity" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/brand_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="brand Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/brand_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Brand identity and design system creation" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -526,7 +526,7 @@ function WebDevSection() {
             <Link href="/services/web-development" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/webdev_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="web-dev Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/webdev_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Enterprise Next.js and React web development" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -562,7 +562,7 @@ function DesignSection() {
             <Link href="/services/ui-ux-design" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/design_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="design Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/design_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="User experience and UI interface design" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -598,7 +598,7 @@ function EcommerceSection() {
             <Link href="/services/ecommerce" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/ecommerce_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="ecommerce Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/ecommerce_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Custom e-commerce and high-converting storefront development" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -634,7 +634,7 @@ function SoftwareSection() {
             <Link href="/services/ai-software" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/software_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="software Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/software_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Custom software, APIs, and AI automation engineering" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -670,7 +670,7 @@ function MobileSection() {
             <Link href="/services/mobile-apps" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/mobile_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="mobile Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/mobile_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Native and cross-platform mobile application development" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
@@ -706,7 +706,7 @@ function CloudSection() {
             <Link href="/services/cloud-devops" className={styles.moreDetailsBtn}>Explore service details <FiArrowRight style={{ marginLeft: '6px' }} /></Link>
           </div>
 
-          <div className={styles.serviceVisual}><img src="/assets/services/cloud_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="cloud Story" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
+          <div className={styles.serviceVisual}><img src="/assets/services/cloud_story.webp" loading="lazy" decoding="async" width="800" height="533" alt="Cloud infrastructure, DevOps, and deployment pipelines" style={{ width: '100%', height: 'auto', borderRadius: '16px' }} /></div>
         </div>
       </div>
     </section>
