@@ -319,64 +319,71 @@ export const locationsMap: Record<string, LocationData> = {
     slug: "udumalpet",
     cityName: "Udumalpet",
     region: "Western Tamil Nadu",
-    eyebrow: "UDUMALPET • #1 SOFTWARE DEVELOPMENT COMPANY",
+    eyebrow: "UDUMALPET • #1 SOFTWARE & WEB DEVELOPMENT COMPANY",
     heroTitle: "Software Development Company in Udumalpet.",
-    heroDesc: "Cosuniq Technologies is the premier software development company in Udumalpet, Tamil Nadu. We engineer enterprise-grade custom software, modern Next.js websites, bespoke billing & ERP tools, and native mobile applications.",
-    metaTitle: "Software Development Company in Udumalpet | Best Web & App Studio - Cosuniq",
-    metaDesc: "Looking for the best software development company in Udumalpet? Cosuniq delivers enterprise-grade custom software, billing systems, mobile apps, and high-speed web design.",
+    heroDesc: "Cosuniq Technologies is the premier software development company in Udumalpet, Tamil Nadu. We engineer enterprise-grade custom business software, Next.js web design, iOS & Android mobile applications, AI automation, and GST billing & cloud ERP systems.",
+    metaTitle: "Software Development Company in Udumalpet | Web Design, Apps & ERP",
+    metaDesc: "Cosuniq Technologies is the #1 software development company in Udumalpet. We build custom software, web design, iOS/Android apps, AI automation & GST billing ERPs. Call 082483 31804.",
     keywords: [
       "software development company in udumalpet",
+      "web design company in udumalpet",
+      "computer software development companies in udumalpet",
+      "custom software development company in udumalpet",
+      "ios application development firms udumalpet",
+      "mobile app development company in udumalpet",
+      "ai development company in udumalpet",
+      "records management software development in udumalpet",
+      "erp billing software development company in udumalpet",
+      "best software development company in udumalpet",
+      "website design and development company in udumalpet",
+      "web development company in udumalai",
+      "billing software company in udumalpet",
       "software company in udumalpet",
       "top software companies in udumalpet",
-      "best software development company in udumalpet",
-      "website development in udumalpet",
-      "website design company in udumalpet",
-      "mobile app development in udumalpet",
-      "billing software company in udumalpet",
-      "udumalpet software company",
       "software developer jobs in udumalpet tamilnadu",
+      "walk-in software developer in udumalpet",
       "innovative solutions top software companies in udumalpet"
     ],
     bannerImage: "/assets/images/brainstorm.webp",
     localContext: {
-      heading: "Premier Software Development Company in Udumalpet & Western Tamil Nadu",
-      description: "Headquartered at 5/233C, Sarathamani Layout, KVS Colony in Udumalpet, Cosuniq Technologies is the leading software development company engineered for modern businesses. Udumalpet is a thriving industrial corridor spanning textile mills, renewable wind energy farms, poultry production networks, paper manufacturing, educational institutions, and retail commerce. Unlike legacy agencies deploying slow, bloated WordPress templates, Cosuniq builds proprietary Next.js web applications, custom ERP & billing systems, and cross-platform mobile apps with sub-second speeds and bulletproof security.",
-      highlight: "Direct local engineering from Udumalpet, transparent fixed pricing, 95+ Google speed scores, and zero outsourced dependencies."
+      heading: "Premier Software Development & Web Design Company in Udumalpet",
+      description: "Headquartered at 5/233C, Sarathamani Layout, KVS Colony in Udumalpet, Cosuniq Technologies is the leading software development company engineered for modern enterprises. Udumalpet is a thriving industrial corridor spanning textile mills, renewable wind energy farms, poultry production networks, paper manufacturing, educational institutions, and retail commerce. While traditional agencies like Ninos IT, RYZO, and legacy directory listings deploy slow, bloated WordPress templates, Cosuniq builds proprietary Next.js web applications, custom ERP & records management software, iOS/Android mobile apps, and AI workflows with sub-second speeds and bulletproof security.",
+      highlight: "Direct local engineering from Udumalpet, transparent fixed pricing, 95+ Google Core Web Vitals, and zero outsourced dependencies."
     },
     targetServices: [
       {
         num: "01",
-        title: "Custom Software Development & ERPs",
-        desc: "Proprietary inventory, billing, production tracking, and customer management software engineered specifically for Udumalpet's manufacturing, poultry, retail, and textile sectors.",
+        title: "Custom Software, Cloud ERP & Records Management",
+        desc: "Proprietary inventory, GST commercial billing, records management, and production tracking software engineered specifically for Udumalpet's manufacturing, poultry, retail, and textile sectors.",
         serviceLink: "/services/ai-software",
-        serviceName: "Custom Software & AI"
+        serviceName: "Custom Software & ERP"
       },
       {
         num: "02",
-        title: "High-Speed Website Development",
-        desc: "Fast, modern business websites engineered with Next.js and TypeScript, completely avoiding vulnerable plugins and delivering sub-second loading speed for maximum Google SEO rankings.",
+        title: "Modern Web Design & E-Commerce Development",
+        desc: "High-converting corporate websites and online stores engineered with Next.js and TypeScript, completely avoiding fragile plugins and delivering sub-second page loads for maximum Google SEO rankings.",
         serviceLink: "/services/web-development",
-        serviceName: "Web Development"
+        serviceName: "Web Design & Development"
       },
       {
         num: "03",
-        title: "iOS & Android Mobile Applications",
-        desc: "Cross-platform mobile apps built with React Native for automated customer orders, service bookings, staff field reporting, and real-time push notifications.",
+        title: "iOS & Android Mobile Application Development",
+        desc: "Native and cross-platform mobile apps built with React Native and Flutter for real-time customer orders, field staff dispatch, automated push notifications, and offline-first SQLite sync.",
         serviceLink: "/services/mobile-apps",
         serviceName: "Mobile Applications"
       },
       {
         num: "04",
-        title: "Brand Strategy, Logos & UI/UX Design",
-        desc: "Modern visual identities, corporate logos, packaging design, and UI/UX architecture that position Udumalpet enterprises as regional and national industry leaders.",
+        title: "Enterprise AI Automation & Brand Strategy",
+        desc: "Intelligent document processing, automated WhatsApp customer notifications, Voice AI workflows, and distinctive UI/UX design systems that position Udumalpet brands as market leaders.",
         serviceLink: "/services/brand-identity",
-        serviceName: "Brand Identity"
+        serviceName: "AI & Brand Strategy"
       }
     ],
     practicalSolutions: [
       {
-        problem: "Local Udumalpet enterprises stuck paying recurring subscriptions for generic software that fails to match their actual manufacturing or billing workflows.",
-        solution: "We build proprietary, tailor-made digital tools that automate your exact business operations with zero recurring per-user license fees."
+        problem: "Local Udumalpet enterprises stuck paying recurring subscriptions for generic billing or records management software that fails to match their actual manufacturing workflows.",
+        solution: "We build proprietary, tailor-made digital tools and cloud ERPs that automate your exact business operations with zero recurring per-user license fees."
       },
       {
         problem: "Websites built with outdated PHP/WordPress plugins loading slowly, suffering security vulnerabilities, and failing to rank on Google search.",
@@ -384,7 +391,7 @@ export const locationsMap: Record<string, LocationData> = {
       },
       {
         problem: "Difficulty finding dependable, local software development partners in Udumalpet who provide direct technical support without outsourcing.",
-        solution: "We offer direct face-to-face collaboration from our KVS Colony Udumalpet office, clear milestone-based pricing, and dedicated post-launch support."
+        solution: "We offer direct face-to-face collaboration from our KVS Colony Udumalpet office, clear milestone-based pricing, and dedicated post-launch technical support."
       }
     ],
     caseStudy: {
@@ -397,20 +404,28 @@ export const locationsMap: Record<string, LocationData> = {
     },
     faqs: [
       {
-        q: "Which is the best software development company in Udumalpet?",
-        a: "Cosuniq Technologies is the premier software development company in Udumalpet, Tamil Nadu. Operating from 5/233C, Sarathamani Layout, KVS Colony, Cosuniq specializes in custom business software, billing/ERP systems, high-speed Next.js websites, and React Native mobile applications for local and global enterprises."
+        q: "Which is the best software development and web design company in Udumalpet?",
+        a: "Cosuniq Technologies is the premier software development company in Udumalpet, Tamil Nadu. Operating from 5/233C, Sarathamani Layout, KVS Colony, Cosuniq specializes in custom business software, billing/ERP systems, high-speed Next.js websites, iOS & Android mobile apps, and AI automation for regional and global enterprises."
       },
       {
-        q: "What software and website services do you offer in Udumalpet?",
-        a: "We offer full-cycle software engineering: bespoke inventory and retail billing software, enterprise ERPs, responsive corporate websites, e-commerce platforms, native Android/iOS mobile apps, and brand design with sub-second page loading speed."
+        q: "What software, app, and billing services do you offer in Udumalpet?",
+        a: "We offer end-to-end digital engineering: custom records management software, GST billing and cloud ERP systems, corporate web design, e-commerce storefronts, native iOS & Android mobile applications, and WhatsApp automated workflows with sub-second load speeds."
+      },
+      {
+        q: "Can you build custom records management and ERP billing software for local businesses?",
+        a: "Yes. We engineer customized ERP and records management platforms tailored for Udumalpet's textile spinning mills, poultry hatcheries, paper manufacturers, and retail chains. Our software automates stock ledgers, GST commercial invoices, vendor payments, and employee payroll without recurring monthly per-user licensing fees."
+      },
+      {
+        q: "Do you develop native iOS and Android mobile applications in Udumalpet?",
+        a: "Yes. Cosuniq is the leading mobile app development firm in Udumalpet, creating cross-platform iOS and Android apps using React Native and Flutter. We build offline-first databases, GPS tracking, camera and barcode scanners, and automated push notifications tailored to your operational needs."
       },
       {
         q: "Do you offer software developer jobs or walk-in interviews in Udumalpet?",
         a: "Yes! Cosuniq Technologies actively hires talented developers and designers in Udumalpet. We offer careers and walk-in opportunities for Full Stack Developers, Mobile App Engineers, and fresh graduate tech interns. Visit our Careers page (/careers) for active openings."
       },
       {
-        q: "How does Cosuniq differ from legacy web design agencies in Udumalpet?",
-        a: "Unlike traditional agencies that deploy heavy, insecure WordPress themes, Cosuniq develops custom software and websites using modern modern stacks like Next.js, React, Node.js, and TypeScript. This guarantees 95+ Google PageSpeed scores, zero database security vulnerabilities, and significantly higher Google search rankings."
+        q: "How does Cosuniq differ from legacy web design agencies like Ninos IT, RYZO, or Justdial listings?",
+        a: "Unlike traditional agencies that deploy slow, insecure WordPress themes or generic directory listings, Cosuniq develops custom software and websites using modern modern stacks like Next.js, React, Node.js, and TypeScript. This guarantees 95+ Google PageSpeed scores, zero database security vulnerabilities, and top Google search rankings."
       }
     ]
   },
