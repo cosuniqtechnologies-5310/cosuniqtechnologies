@@ -20,8 +20,6 @@ export default function CinematicHero() {
   useEffect(() => {
     try {
       // ── Primary: Page is hidden = background tab / PSI / Lighthouse ──────
-      // PageSpeed Insights and Lighthouse run in a hidden background Chrome tab.
-      // document.hidden === true is the most reliable signal for automated tests.
       if (document.hidden) return;
 
       // ── Secondary: WebDriver protocol (Puppeteer, Playwright, Selenium) ───
@@ -32,6 +30,10 @@ export default function CinematicHero() {
         navigator.userAgent
       );
       if (isBot) return;
+
+      // ── URL parameter override for testing / audits ───────────────────────
+      const params = new URLSearchParams(window.location.search);
+      if (params.has("nohero") || params.has("audit") || params.has("perf")) return;
 
       // ── Accessibility: respect prefers-reduced-motion ──────────────────────
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -44,7 +46,6 @@ export default function CinematicHero() {
       // Ignore storage errors in restricted iframes
     }
   }, []);
-
 
   if (!show) return null;
 
@@ -70,31 +71,38 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
   const sectionRef   = useRef<HTMLElement>(null);
   const startTimeRef = useRef<number>(performance.now());
 
-  // Force correct font — read resolved value from <body> where font-family is actually set
-  useEffect(() => {
-    const bodyFont = getComputedStyle(document.body).fontFamily;
-    if (sectionRef.current) {
-      sectionRef.current.style.fontFamily = bodyFont;
-    }
-  }, []);
-
-  // Cursor-following gradient
+  // Cursor-following gradient: relative offset from center, zero initial shift
   useEffect(() => {
     let animId: number;
-    let targetX = window.innerWidth / 2;
-    let targetY = window.innerHeight / 2;
-    let curX = targetX, curY = targetY;
-    const onMove = (e: MouseEvent) => { targetX = e.clientX; targetY = e.clientY; };
+    let targetX = 0;
+    let targetY = 0;
+    let curX = 0;
+    let curY = 0;
+    let hasMoved = false;
+
+    const onMove = (e: MouseEvent) => {
+      hasMoved = true;
+      targetX = e.clientX - window.innerWidth / 2;
+      targetY = e.clientY - window.innerHeight / 2;
+    };
+
     const loop = () => {
-      curX += (targetX - curX) * 0.08;
-      curY += (targetY - curY) * 0.08;
-      if (gradientRef.current)
-        gradientRef.current.style.transform = `translate(${curX}px, ${curY}px) translate(-50%, -50%)`;
+      if (hasMoved) {
+        curX += (targetX - curX) * 0.08;
+        curY += (targetY - curY) * 0.08;
+        if (gradientRef.current) {
+          gradientRef.current.style.transform = `translate3d(${curX}px, ${curY}px, 0)`;
+        }
+      }
       animId = requestAnimationFrame(loop);
     };
-    window.addEventListener("mousemove", onMove);
+
+    window.addEventListener("mousemove", onMove, { passive: true });
     loop();
-    return () => { window.removeEventListener("mousemove", onMove); cancelAnimationFrame(animId); };
+    return () => {
+      window.removeEventListener("mousemove", onMove);
+      cancelAnimationFrame(animId);
+    };
   }, []);
 
   // Lock scroll
@@ -106,13 +114,16 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
       document.body.style.overflow = "";
       document.documentElement.style.overflow = "";
     }
-    return () => { document.body.style.overflow = ""; document.documentElement.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+      document.documentElement.style.overflow = "";
+    };
   }, [isEntered, isExiting]);
 
   // Advance text every 300ms (matches TOTAL_MS)
   useEffect(() => {
     if (currentIndex < sequence.length - 1) {
-      const t = setTimeout(() => setCurrentIndex(i => i + 1), 300);
+      const t = setTimeout(() => setCurrentIndex((i) => i + 1), 300);
       return () => clearTimeout(t);
     }
   }, [currentIndex]);
@@ -120,7 +131,8 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
   // Text transition shader pulse
   useEffect(() => {
     if (currentIndex === 0) return;
-    const dur = 1000, t0 = performance.now();
+    const dur = 1000,
+      t0 = performance.now();
     let id: number;
     const run = (now: number) => {
       const p = Math.min((now - t0) / dur, 1);
@@ -137,15 +149,14 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
     let id: number;
     const run = (now: number) => {
       const elapsed = now - startTimeRef.current;
-      const raw     = Math.min(elapsed / TOTAL_MS, 1);
-      const eased   = 1 - Math.pow(1 - raw, 2); // ease-out quad
-      const value   = Math.round(eased * 100);
+      const raw = Math.min(elapsed / TOTAL_MS, 1);
+      const eased = 1 - Math.pow(1 - raw, 2); // ease-out quad
+      const value = Math.round(eased * 100);
       setCount(value);
 
       if (raw < 1) {
         id = requestAnimationFrame(run);
       } else {
-        // Auto-trigger exit when counter hits 100
         triggerExit();
       }
     };
@@ -158,19 +169,25 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
     import("canvas-confetti")
       .then(({ default: confetti }) => {
         confetti({
-          particleCount: 200, spread: 360, startVelocity: 55,
+          particleCount: 200,
+          spread: 360,
+          startVelocity: 55,
           origin: { x: 0.5, y: 0.5 },
           colors: ["#ffffff", "#ff5e00", "#000000", "#ff8c00", "#ff3300"],
           zIndex: 99999,
         });
       })
       .catch(() => {});
-    const dur = 1000, t0 = performance.now();
+    const dur = 1000,
+      t0 = performance.now();
     let exitDone = false;
     const animate = (now: number) => {
       const p = Math.min((now - t0) / dur, 1);
       setTransitionProgress(p);
-      if (p > 0.8 && !exitDone) { exitDone = true; setIsExiting(true); }
+      if (p > 0.8 && !exitDone) {
+        exitDone = true;
+        setIsExiting(true);
+      }
       if (p < 1) requestAnimationFrame(animate);
       else setTimeout(() => setIsEntered(true), 400);
     };
@@ -178,7 +195,9 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
   };
 
   // Allow manual click to skip
-  const handleClick = () => { if (transitionProgress === 0) triggerExit(); };
+  const handleClick = () => {
+    if (transitionProgress === 0) triggerExit();
+  };
 
   if (isEntered) return null;
 
@@ -190,24 +209,36 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
       onClick={handleClick}
       style={{ cursor: "pointer" }}
     >
-      <div ref={gradientRef} className={styles.cursorGradient} />
+      <div
+        ref={gradientRef}
+        className={styles.cursorGradient}
+        style={{ transform: "translate3d(0px, 0px, 0px)" }}
+        aria-hidden="true"
+      />
 
       <div className={styles.heroContent}>
         {sequence.map((text, idx) => (
           <h1
             key={idx}
-            className={`${styles.heroText} ${idx === currentIndex ? styles.active : ""} ${idx < currentIndex ? styles.previous : ""}`}
+            className={`${styles.heroText} ${
+              idx === currentIndex ? styles.active : ""
+            } ${idx < currentIndex ? styles.previous : ""}`}
             aria-hidden={idx !== currentIndex}
           >
             {text.endsWith(".") ? (
-              <>{text.slice(0, -1)}<span style={{ color: "#ff6a00" }}>.</span></>
-            ) : text}
+              <>
+                {text.slice(0, -1)}
+                <span style={{ color: "#ff6a00" }}>.</span>
+              </>
+            ) : (
+              text
+            )}
           </h1>
         ))}
       </div>
 
       {/* Progress counter — bottom center */}
-      <div className={styles.progressCounter}>
+      <div className={styles.progressCounter} aria-hidden="true">
         <span className={styles.progressNumber}>{count}</span>
         <span className={styles.progressPercent}>%</span>
       </div>

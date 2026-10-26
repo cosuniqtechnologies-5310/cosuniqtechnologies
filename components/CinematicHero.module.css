@@ -9,6 +9,7 @@
   overflow: hidden;
   font-family: var(--font-plus-jakarta), sans-serif;
   transition: opacity 0.8s ease, transform 0.8s ease;
+  contain: strict;
 }
 
 .exiting {
@@ -19,13 +20,19 @@
 
 .cursorGradient {
   position: absolute;
+  top: 50%;
+  left: 50%;
   width: 500px;
   height: 500px;
+  margin-top: -250px;
+  margin-left: -250px;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(255, 106, 0, 0.18) 0%, transparent 70%);
   pointer-events: none;
+  transform: translate3d(0, 0, 0);
   will-change: transform;
   z-index: 0;
+  contain: strict;
 }
 
 .heroContent {
@@ -33,6 +40,7 @@
   z-index: 1;
   text-align: center;
   padding: 0 2rem;
+  contain: layout style;
 }
 
 .heroText {
@@ -71,12 +79,15 @@
   position: fixed;
   bottom: 2.5rem;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -50px;
+  width: 100px;
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 0.1em;
   z-index: 10;
   pointer-events: none;
+  contain: layout size;
 }
 
 .progressNumber {
@@ -86,9 +97,11 @@
   letter-spacing: -0.02em;
   color: #111111;
   font-variant-numeric: tabular-nums;
-  min-width: 2.5ch;
+  display: inline-block;
+  width: 3.2ch;
   text-align: right;
   line-height: 1;
+  contain: layout size;
 }
 
 .progressPercent {
@@ -98,4 +111,7 @@
   color: #FF6B00;
   line-height: 1;
   margin-bottom: 0.1em;
+  display: inline-block;
+  width: 1.2ch;
+  contain: layout size;
 }
