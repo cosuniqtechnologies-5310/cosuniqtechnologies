@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/academy`, lastModified: lastMod, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/contact`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.7 },
     { url: `${baseUrl}/privacy-policy`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/app-privacy-policy`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/terms-and-conditions`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
   ];
 
