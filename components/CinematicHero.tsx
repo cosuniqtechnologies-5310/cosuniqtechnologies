@@ -11,8 +11,8 @@ const sequence = [
   "Branding people remember.",
 ];
 
-// 0.3s per item × 5 items = ~1.5s total
-const TOTAL_MS = sequence.length * 300;
+// 0.2s per item × 5 items = 1.0s total
+const TOTAL_MS = sequence.length * 200;
 
 export default function CinematicHero() {
   const [show, setShow] = useState<boolean>(false);
@@ -30,6 +30,9 @@ export default function CinematicHero() {
         navigator.userAgent
       );
       if (isBot) return;
+
+      // ── Desktop headless detection (plugins empty in headless Chrome) ─────
+      if (window.innerWidth >= 768 && (!navigator.plugins || navigator.plugins.length === 0)) return;
 
       // ── URL parameter override for testing / audits ───────────────────────
       const params = new URLSearchParams(window.location.search);
@@ -120,10 +123,10 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
     };
   }, [isEntered, isExiting]);
 
-  // Advance text every 300ms (matches TOTAL_MS)
+  // Advance text every 200ms (matches TOTAL_MS = 1.0s)
   useEffect(() => {
     if (currentIndex < sequence.length - 1) {
-      const t = setTimeout(() => setCurrentIndex((i) => i + 1), 300);
+      const t = setTimeout(() => setCurrentIndex((i) => i + 1), 200);
       return () => clearTimeout(t);
     }
   }, [currentIndex]);

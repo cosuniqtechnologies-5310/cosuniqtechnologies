@@ -7,6 +7,7 @@ import ScrollReset from "../components/ScrollReset";
 
 import type { Metadata } from "next";
 import Script from "next/script";
+import GoogleAnalytics from "../components/GoogleAnalytics";
 import { plusJakartaSans } from "./fonts";
 
 export const metadata: Metadata = {
@@ -148,19 +149,7 @@ export default function RootLayout({
             }),
           }}
         />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-27V2TYW5G8"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-27V2TYW5G8');
-          `}
-        </Script>
+        <GoogleAnalytics />
         <CustomCursor />
         <ScrollReset />
         <GsapAnimations />

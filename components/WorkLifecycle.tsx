@@ -657,7 +657,7 @@ export default function WorkLifecycle() {
             position: 'relative',
             display: 'inline-flex',
             background: '#FF6B00',
-            color: '#ffffff',
+            color: '#111111',
             fontWeight: 800,
             fontSize: '1rem',
             padding: '0.4rem 1rem',
