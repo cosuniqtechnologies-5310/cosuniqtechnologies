@@ -106,6 +106,57 @@ export default async function LocationDetailPage({ params }: PageProps) {
     "url": `https://cosuniq.in/locations/${slug}`
   };
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `https://cosuniq.in/locations/${slug}#localbusiness`,
+    "name": `Cosuniq Technologies - Software Development Company in ${location.cityName}`,
+    "url": `https://cosuniq.in/locations/${slug}`,
+    "logo": "https://cosuniq.in/assets/cosuniq-technologies.png",
+    "image": "https://cosuniq.in/assets/og-image.png",
+    "telephone": "+917358696546",
+    "email": "founder@cosuniq.in",
+    "priceRange": "$$",
+    "description": location.metaDesc,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "5/233C, Sarathamani Layout, KVS Colony",
+      "addressLocality": location.cityName,
+      "addressRegion": "Tamil Nadu",
+      "postalCode": slug === "udumalpet" ? "642126" : "641001",
+      "addressCountry": "IN"
+    },
+    "geo": slug === "udumalpet" ? {
+      "@type": "GeoCoordinates",
+      "latitude": 10.5843,
+      "longitude": 77.2476
+    } : undefined,
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "48"
+    }
+  };
+
+  const faqSchema = location.faqs && location.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": location.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  } : null;
+
   return (
     <>
       <script
@@ -116,6 +167,16 @@ export default async function LocationDetailPage({ params }: PageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <InitReveal />
       <InnerBanner
         eyebrow={location.eyebrow}

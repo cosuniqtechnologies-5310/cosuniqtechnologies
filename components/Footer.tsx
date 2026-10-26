@@ -63,6 +63,7 @@ export default function Footer() {
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Studio</span>
               <Link href="/about">Who We Are</Link>
+              <Link href="/careers">Careers & Jobs</Link>
               <Link href="/case-studies">Case Studies</Link>
               <Link href="/portfolio">Showcase</Link>
               <Link href="/insights">Insights</Link>
