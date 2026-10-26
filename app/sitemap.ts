@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/privacy-policy`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/app-privacy-policy`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${baseUrl}/terms-and-conditions`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/cookie-policy`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${baseUrl}/disclaimer`, lastModified: lastMod, changeFrequency: 'yearly', priority: 0.4 },
   ];
 
   // Individual service pages

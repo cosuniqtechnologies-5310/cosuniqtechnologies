@@ -1,0 +1,11 @@
+# Cosuniq Technologies Security Vulnerability Disclosure Policy
+# RFC 9116: https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:security@cosuniq.in
+Contact: mailto:founder@cosuniq.in
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, ta
+Canonical: https://www.cosuniq.in/.well-known/security.txt
+Policy: https://www.cosuniq.in/terms-and-conditions
+Hiring: https://www.cosuniq.in/careers
+Acknowledgments: https://www.cosuniq.in/about

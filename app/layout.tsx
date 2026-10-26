@@ -8,6 +8,7 @@ import ScrollReset from "../components/ScrollReset";
 import type { Metadata } from "next";
 import Script from "next/script";
 import GoogleAnalytics from "../components/GoogleAnalytics";
+import ServiceWorkerRegister from "../components/ServiceWorkerRegister";
 import { plusJakartaSans } from "./fonts";
 
 export const metadata: Metadata = {
@@ -69,10 +70,17 @@ export const metadata: Metadata = {
     images: ["/assets/og-image.png"],
     creator: "@cosuniq",
   },
+  manifest: "/manifest.json",
   icons: {
-    icon: "/assets/favicon.png",
+    icon: [
+      { url: "/assets/favicon.png", sizes: "32x32", type: "image/png" },
+      { url: "/assets/favicon.webp", sizes: "192x192", type: "image/webp" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
     shortcut: "/assets/favicon.png",
-    apple: "/assets/favicon.png",
+    apple: [
+      { url: "/assets/favicon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   verification: {
     google: "google097b26a13a458c1c",
@@ -149,6 +157,7 @@ export default function RootLayout({
             }),
           }}
         />
+        <ServiceWorkerRegister />
         <GoogleAnalytics />
         <CustomCursor />
         <ScrollReset />
@@ -158,5 +167,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  );
+  );  
 }

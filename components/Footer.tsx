@@ -99,6 +99,8 @@ export default function Footer() {
           <span className={styles.legalLink} style={{ marginRight: 'auto', pointerEvents: 'none' }}>© {new Date().getFullYear()} Cosuniq Technologies. All rights reserved.</span>
           <Link href="/privacy-policy" className={styles.legalLink}>Privacy Policy</Link>
           <Link href="/terms-and-conditions" className={styles.legalLink}>Terms & Conditions</Link>
+          <Link href="/cookie-policy" className={styles.legalLink}>Cookie Policy</Link>
+          <Link href="/disclaimer" className={styles.legalLink}>Disclaimer</Link>
         </div>
 
       </div>

@@ -1,0 +1,32 @@
+{
+  "name": "Cosuniq Technologies",
+  "short_name": "Cosuniq",
+  "description": "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & mobile apps.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#FF6B00",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-IN",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/favicon.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+/* TEAM */
+  Founder & Engineering Lead: Gowtham
+  Contact: founder@cosuniq.in
+  Twitter: @cosuniq
+  LinkedIn: https://www.linkedin.com/company/cosuniq
+  Location: Udumalpet / Coimbatore, Tamil Nadu, India
+
+/* SITE */
+  Last update: 2026/10/26
+  Standards: HTML5, CSS3, ES2024, Web App Manifest
+  Framework: Next.js 16 (Turbopack, App Router)
+  Language: TypeScript
+  Animation: GSAP (GreenSock)
+  Styles: CSS Modules & Vanilla CSS Variables
+  Hosting: Vercel Global Edge Network
+  CMS / Data: Static Export Architecture
+
+/* THANKS */
+  To all our forward-thinking clients, partners, and the global open-source community.
