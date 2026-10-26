@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import InViewMount from "./InViewMount";
 
 // ── 01 Origin Doodle: Dewdrop / Seed resting on a curved leaf with gentle sparkle ──
 function OriginDoodle() {
@@ -699,7 +700,7 @@ export default function WorkLifecycle() {
           <article className="process-card">
             <span className="process-num">01</span>
             <div style={{ marginBottom: '1.5rem', height: '64px', display: 'flex', alignItems: 'center' }}>
-              <OriginDoodle />
+              <InViewMount minHeight={64} minWidth={64}><OriginDoodle /></InViewMount>
             </div>
             <h3 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>Origin</h3>
             <p style={{ margin: 0, maxWidth: '85%' }}>Strategy, planning, and aligning on goals before the work begins.</p>
@@ -708,7 +709,7 @@ export default function WorkLifecycle() {
           <article className="process-card">
             <span className="process-num">02</span>
             <div style={{ marginBottom: '1.5rem', height: '64px', display: 'flex', alignItems: 'center' }}>
-              <FormDoodle />
+              <InViewMount minHeight={64} minWidth={64}><FormDoodle /></InViewMount>
             </div>
             <h3 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>Form</h3>
             <p style={{ margin: 0, maxWidth: '85%' }}>Gathering ideas, laying the strategic foundation, and core design.</p>
@@ -717,7 +718,7 @@ export default function WorkLifecycle() {
           <article className="process-card">
             <span className="process-num">03</span>
             <div style={{ marginBottom: '1.5rem', height: '64px', display: 'flex', alignItems: 'center' }}>
-              <MetamorphosisDoodle />
+              <InViewMount minHeight={64} minWidth={64}><MetamorphosisDoodle /></InViewMount>
             </div>
             <h3 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>Metamorphosis</h3>
             <p style={{ margin: 0, maxWidth: '85%' }}>Intense transformation—building systems and primary development.</p>
@@ -726,7 +727,7 @@ export default function WorkLifecycle() {
           <article className="process-card">
             <span className="process-num">04</span>
             <div style={{ marginBottom: '1.5rem', height: '64px', display: 'flex', alignItems: 'center' }}>
-              <EmergenceDoodle />
+              <InViewMount minHeight={64} minWidth={64}><EmergenceDoodle /></InViewMount>
             </div>
             <h3 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>Emergence</h3>
             <p style={{ margin: 0, maxWidth: '85%' }}>Emergence through refinement, rigorous testing, and final polish.</p>
@@ -735,7 +736,7 @@ export default function WorkLifecycle() {
           <article className="process-card">
             <span className="process-num">05</span>
             <div style={{ marginBottom: '1.5rem', height: '64px', display: 'flex', alignItems: 'center' }}>
-              <FlightDoodle />
+              <InViewMount minHeight={64} minWidth={64}><FlightDoodle /></InViewMount>
             </div>
             <h3 style={{ fontSize: '1.4rem', marginBottom: '0.75rem' }}>Flight</h3>
             <p style={{ margin: 0, maxWidth: '85%' }}>Launch, scalable commercial momentum, and ongoing growth.</p>

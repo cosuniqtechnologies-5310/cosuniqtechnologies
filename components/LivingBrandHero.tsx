@@ -4,12 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import styles from "./LivingBrandHero.module.css";
-import dynamic from "next/dynamic";
-
-const MagneticCore = dynamic(() => import("./MagneticCore"), { 
-  ssr: false,
-  loading: () => <div style={{ width: '100%', height: '100%', minHeight: '380px' }} />
-});
+import MagneticCore from "./MagneticCoreGate";
 
 export default function LivingBrandHero() {
   const containerRef = useRef<HTMLDivElement>(null);

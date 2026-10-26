@@ -61,7 +61,7 @@ export default function Footer() {
           
           <div className={styles.linkColumns}>
             <div className={styles.linkCol}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Studio</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Studio</span>
               <Link href="/about">Who We Are</Link>
               <Link href="/case-studies">Case Studies</Link>
               <Link href="/portfolio">Showcase</Link>
@@ -70,7 +70,7 @@ export default function Footer() {
               <Link href="/contact">Contact Us</Link>
             </div>
             <div className={styles.linkCol}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Services</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Services</span>
               <Link href="/services">What We Do</Link>
               <Link href="/services/web-development">Web Development</Link>
               <Link href="/services/mobile-apps">Mobile Applications</Link>
@@ -79,15 +79,15 @@ export default function Footer() {
               <Link href="/services/ai-software">AI & Software</Link>
             </div>
             <div className={styles.linkCol}>
-              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contact</span>
+              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contact</span>
               <a href="mailto:founder@cosuniq.in">founder@cosuniq.in</a>
               <a href="tel:+917358696546">+91 73586 96546</a>
               
               <div className={styles.socialIcons} style={{ marginTop: '0.5rem' }}>
-                <a href="#" className={styles.socialIcon} aria-label="LinkedIn"><FiLinkedin /></a>
-                <a href="#" className={styles.socialIcon} aria-label="YouTube"><FiYoutube /></a>
-                <a href="#" className={styles.socialIcon} aria-label="X"><SiX style={{ fontSize: '0.85rem' }} /></a>
-                <a href="#" className={styles.socialIcon} aria-label="Instagram"><FiInstagram /></a>
+                <a href="#" className={styles.socialIcon} aria-label="LinkedIn"><FiLinkedin aria-hidden="true" focusable="false" /></a>
+                <a href="#" className={styles.socialIcon} aria-label="YouTube"><FiYoutube aria-hidden="true" focusable="false" /></a>
+                <a href="#" className={styles.socialIcon} aria-label="X"><SiX aria-hidden="true" focusable="false" style={{ fontSize: '0.85rem' }} /></a>
+                <a href="#" className={styles.socialIcon} aria-label="Instagram"><FiInstagram aria-hidden="true" focusable="false" /></a>
               </div>
             </div>
           </div>

@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useRef } from "react";
 import styles from "./CinematicHero.module.css";
-import confetti from "canvas-confetti";
 
 const sequence = [
   "Your brand can do more.",
@@ -156,14 +155,16 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
 
   const triggerExit = () => {
     onExit?.();
-    try {
-      confetti({
-        particleCount: 200, spread: 360, startVelocity: 55,
-        origin: { x: 0.5, y: 0.5 },
-        colors: ["#ffffff", "#ff5e00", "#000000", "#ff8c00", "#ff3300"],
-        zIndex: 99999,
-      });
-    } catch (e) {}
+    import("canvas-confetti")
+      .then(({ default: confetti }) => {
+        confetti({
+          particleCount: 200, spread: 360, startVelocity: 55,
+          origin: { x: 0.5, y: 0.5 },
+          colors: ["#ffffff", "#ff5e00", "#000000", "#ff8c00", "#ff3300"],
+          zIndex: 99999,
+        });
+      })
+      .catch(() => {});
     const dur = 1000, t0 = performance.now();
     let exitDone = false;
     const animate = (now: number) => {

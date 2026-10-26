@@ -3,10 +3,12 @@
   padding: 1rem 1rem 0 1rem;
   font-family: var(--font-plus-jakarta), sans-serif;
   --footer-brand: #ff6a00;
+  --footer-brand-text: #c2410c; /* AA-contrast orange for small text on white */
 }
 
 .footerWrapper.academyTheme {
   --footer-brand: #005aff;
+  --footer-brand-text: #005aff;
 }
 
 .footerContainer {

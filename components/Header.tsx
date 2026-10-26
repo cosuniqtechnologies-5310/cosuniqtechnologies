@@ -90,7 +90,7 @@ export default function Header() {
         }}
       >
         <Link href="/" className={styles.brand} aria-label="Cosuniq home" onClick={handleNavClick}>
-          <img src={isAcademy ? "/assets/cosuniq-academy.png" : "/assets/cosuniq-technologies.png"} alt={isAcademy ? "Cosuniq Academy" : "Cosuniq Technologies"} width={169} height={35} fetchPriority="high" />
+          <img src={isAcademy ? "/assets/cosuniq-academy-2x.webp" : "/assets/cosuniq-technologies-2x.webp"} alt={isAcademy ? "Cosuniq Academy" : "Cosuniq Technologies"} width={169} height={35} fetchPriority="high" />
         </Link>
 
         <nav className={styles.desktopNav}>

@@ -147,7 +147,7 @@
   align-items: center;
   gap: 0.55rem;
   background: #ffffff;
-  color: #FF6B00;
+  color: #C2410C;
   font-family: var(--font-plus-jakarta), sans-serif;
   font-weight: 800;
   text-transform: uppercase;
@@ -356,7 +356,7 @@
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
-  color: #FF6B00;
+  color: #C2410C;
   text-transform: uppercase;
 }
 
@@ -401,7 +401,7 @@
   padding: 0.32rem 0.85rem;
   font-size: 0.72rem;
   font-weight: 700;
-  color: #FF6B00;
+  color: #C2410C;
   letter-spacing: 0.02em;
 }
 

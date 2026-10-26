@@ -96,7 +96,7 @@ export default function WorkSlider() {
 
         <div className="work-slider" ref={sliderRef}>
           <article className="work-slide">
-            <img className="work-slide__bg" src="/assets/images/sellgy_ui.webp" alt="Sellgy high-performance e-commerce platform by Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={440} />
+            <img className="work-slide__bg" src="/assets/images/sellgy_ui.webp" srcSet="/assets/images/sellgy_ui-480.webp 480w, /assets/images/sellgy_ui.webp 700w" sizes="(max-width: 768px) 100vw, 400px" alt="Sellgy high-performance e-commerce platform by Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={440} />
             <div className="work-slide__overlay"></div>
             <div className="work-slide__content">
               <div className="tags"><span>Product</span><span>E-com</span></div>
@@ -108,7 +108,7 @@ export default function WorkSlider() {
           </article>
 
           <article className="work-slide">
-            <img className="work-slide__bg" src="/assets/images/classbell_ui.webp" alt="Classbell institutional mobile app engineered by Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={440} />
+            <img className="work-slide__bg" src="/assets/images/classbell_ui.webp" srcSet="/assets/images/classbell_ui-480.webp 480w, /assets/images/classbell_ui.webp 700w" sizes="(max-width: 768px) 100vw, 400px" alt="Classbell institutional mobile app engineered by Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={440} />
             <div className="work-slide__overlay"></div>
             <div className="work-slide__content">
               <div className="tags"><span>Mobile App</span></div>
@@ -120,7 +120,7 @@ export default function WorkSlider() {
           </article>
 
           <article className="work-slide">
-            <img className="work-slide__bg" src="/assets/images/shopify_sync_ui.webp" alt="Shopify real-time inventory synchronization engine" loading="lazy" decoding="async" width={700} height={440} />
+            <img className="work-slide__bg" src="/assets/images/shopify_sync_ui.webp" srcSet="/assets/images/shopify_sync_ui-480.webp 480w, /assets/images/shopify_sync_ui.webp 700w" sizes="(max-width: 768px) 100vw, 400px" alt="Shopify real-time inventory synchronization engine" loading="lazy" decoding="async" width={700} height={440} />
             <div className="work-slide__overlay"></div>
             <div className="work-slide__content">
               <div className="tags"><span>Inventory</span><span>Shopify</span></div>
@@ -132,7 +132,7 @@ export default function WorkSlider() {
           </article>
 
           <article className="work-slide">
-            <img className="work-slide__bg" src="/assets/images/orangebabe_mockup.webp" alt="Orangebabe children e-commerce web platform" loading="lazy" decoding="async" width={700} height={440} />
+            <img className="work-slide__bg" src="/assets/images/orangebabe_mockup.webp" srcSet="/assets/images/orangebabe_mockup-480.webp 480w, /assets/images/orangebabe_mockup.webp 700w" sizes="(max-width: 768px) 100vw, 400px" alt="Orangebabe children e-commerce web platform" loading="lazy" decoding="async" width={700} height={440} />
             <div className="work-slide__overlay"></div>
             <div className="work-slide__content">
               <div className="tags"><span>E-com</span><span>Brand</span></div>

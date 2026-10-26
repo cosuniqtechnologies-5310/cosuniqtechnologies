@@ -26,7 +26,7 @@ export default function ResultsShowcase() {
             </div>
             {/* The right-side overlapping image */}
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/team.webp" alt="Dedicated in-house software engineering team at Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/team.webp" srcSet="/assets/images/team-400.webp 400w, /assets/images/team.webp 700w" sizes="(max-width: 600px) 100vw, 360px" alt="Dedicated in-house software engineering team at Cosuniq Technologies" loading="lazy" decoding="async" width={700} height={467} />
             </div>
           </div>
 
@@ -38,14 +38,14 @@ export default function ResultsShowcase() {
             </div>
             {/* The right-side overlapping image */}
             <div className={styles.showcaseImg} style={{width:"160px"}}>
-              <img src="/assets/images/cash-flow.webp" alt="Transparent pricing and project scoping at Cosuniq Technologies" loading="lazy" decoding="async" width={500} height={711} />
+              <img src="/assets/images/cash-flow.webp" srcSet="/assets/images/cash-flow-300.webp 300w, /assets/images/cash-flow.webp 500w" sizes="165px" alt="Transparent pricing and project scoping at Cosuniq Technologies" loading="lazy" decoding="async" width={500} height={711} />
             </div>
           </div>
 
           {/* Card 3: Collaboration */}
           <div className={`${styles.card} ${styles.card3}`}>
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/colloboaration.webp" alt="Direct client collaboration with core developers and designers" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/colloboaration.webp" srcSet="/assets/images/colloboaration-400.webp 400w, /assets/images/colloboaration.webp 700w" sizes="(max-width: 600px) 100vw, 360px" alt="Direct client collaboration with core developers and designers" loading="lazy" decoding="async" width={700} height={467} />
             </div>
             <div className={styles.textContent}>
               <span className={styles.value}>1:1</span>
@@ -56,7 +56,7 @@ export default function ResultsShowcase() {
           {/* Card 4: Workflow */}
           <div className={`${styles.card} ${styles.card4}`}>
             <div className={styles.showcaseImg}>
-              <img src="/assets/images/speed.webp" alt="Rapid agile sprint deployment and iteration cycles" loading="lazy" decoding="async" width={700} height={467} />
+              <img src="/assets/images/speed.webp" srcSet="/assets/images/speed-400.webp 400w, /assets/images/speed.webp 700w" sizes="(max-width: 600px) 100vw, 360px" alt="Rapid agile sprint deployment and iteration cycles" loading="lazy" decoding="async" width={700} height={467} />
             </div>
             <div className={styles.textContent}>
               <span className={styles.value}>2&times;</span>

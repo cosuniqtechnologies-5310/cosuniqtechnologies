@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./CapabilitiesUniverse.module.css";
 import LiveMobileMockup from "./LiveMobileMockup";
+import InViewMount from "./InViewMount";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    ICON SYSTEM (STRICT CONSISTENCY)
@@ -254,7 +255,9 @@ export default function CapabilitiesUniverse() {
 
           {/* Center Column: Live Mobile Mockup */}
           <div className={styles.centerColumn}>
-            <LiveMobileMockup activeFeature={activeFeatureId} />
+            <InViewMount minHeight={500} rootMargin="300px" style={{ height: "100%", width: "100%" }}>
+              <LiveMobileMockup activeFeature={activeFeatureId} />
+            </InViewMount>
           </div>
 
           {/* Right Column (Desktop Only) */}

@@ -181,12 +181,13 @@ const particleFragmentShader = `
 
 function MagneticParticles({ 
   scrollProgressRef,
-  colorTheme = "orange"
+  colorTheme = "orange",
+  count = 12000
 }: { 
   scrollProgressRef: React.MutableRefObject<number>;
   colorTheme?: "orange" | "yellow";
+  count?: number;
 }) {
-  const count = 12000;
   const meshRef = useRef<THREE.Points>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
   const targetMouse = useRef([0, 0]);
@@ -369,18 +370,35 @@ function MagneticParticles({
 
 export default function MagneticCore({ 
   scrollProgressRef,
-  colorTheme = "orange"
+  colorTheme = "orange",
+  count = 12000
 }: { 
   scrollProgressRef: React.MutableRefObject<number>;
   colorTheme?: "orange" | "yellow";
+  count?: number;
 }) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(true);
+
+  // Stop rendering frames while scrolled out of view
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting), { rootMargin: "100px" });
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   return (
-    <Canvas 
-      camera={{ position: [0, 0, 15], fov: 45 }} 
-      dpr={[1, 2]} 
-      style={{ width: "100%", height: "100%" }}
-    >
-      <MagneticParticles scrollProgressRef={scrollProgressRef} colorTheme={colorTheme} />
-    </Canvas>
+    <div ref={wrapperRef} style={{ width: "100%", height: "100%", minHeight: "inherit" }}>
+      <Canvas 
+        camera={{ position: [0, 0, 15], fov: 45 }} 
+        dpr={[1, 1.5]} 
+        frameloop={inView ? "always" : "never"}
+        style={{ width: "100%", height: "100%" }}
+      >
+        <MagneticParticles scrollProgressRef={scrollProgressRef} colorTheme={colorTheme} count={count} />
+      </Canvas>
+    </div>
   );
 }
