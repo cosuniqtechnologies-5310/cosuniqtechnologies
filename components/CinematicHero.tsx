@@ -34,6 +34,11 @@ export default function CinematicHero() {
       // ── Desktop headless detection (plugins empty in headless Chrome) ─────
       if (window.innerWidth >= 768 && (!navigator.plugins || navigator.plugins.length === 0)) return;
 
+      // ── Mobile & Touch devices: Skip intro overlay completely ────────────
+      // Mobile screens have no mouse cursor and require immediate paint.
+      // Eliminates NO_LCP error, high mobile Speed Index, and paint delay.
+      if (window.innerWidth < 1024 || window.matchMedia("(pointer: coarse)").matches) return;
+
       // ── URL parameter override for testing / audits ───────────────────────
       const params = new URLSearchParams(window.location.search);
       if (params.has("nohero") || params.has("audit") || params.has("perf")) return;
@@ -221,8 +226,9 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
 
       <div className={styles.heroContent}>
         {sequence.map((text, idx) => (
-          <h1
+          <div
             key={idx}
+            role="text"
             className={`${styles.heroText} ${
               idx === currentIndex ? styles.active : ""
             } ${idx < currentIndex ? styles.previous : ""}`}
@@ -236,7 +242,7 @@ function CinematicHeroInner({ onExit }: { onExit?: () => void }) {
             ) : (
               text
             )}
-          </h1>
+          </div>
         ))}
       </div>
 
