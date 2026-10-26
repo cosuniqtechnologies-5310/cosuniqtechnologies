@@ -354,7 +354,7 @@ export const locationsMap: Record<string, LocationData> = {
     bannerImage: "/assets/images/brainstorm.webp",
     localContext: {
       heading: "Premier Software Development & Web Design Company in Udumalpet",
-      description: "Headquartered at 5/233C, Sarathamani Layout, KVS Colony in Udumalpet, Cosuniq Technologies is the leading software development company engineered for modern enterprises across Udumalpet, Pollachi, Tiruppur, Coimbatore, and Palani. Udumalpet is a thriving industrial corridor spanning textile mills, renewable wind energy farms, poultry production networks, paper manufacturing, educational institutions, and retail commerce. While traditional agencies like Ninos IT, RYZO, and legacy directory listings deploy slow, bloated WordPress templates, Cosuniq builds proprietary Next.js web applications, custom cloud ERP & records management software, internal tools & CRMs, iOS/Android mobile apps, and AI workflows with sub-second speeds and bulletproof security.",
+      description: "Headquartered at 5/233C, Sarathamani Layout, KVS Colony in Udumalpet, Cosuniq Technologies is the leading software development company engineered for modern enterprises across Udumalpet, Pollachi, Tiruppur, Coimbatore, and Palani. Udumalpet is a thriving industrial corridor spanning textile mills, renewable wind energy farms, poultry production networks, paper manufacturing, educational institutions, and retail commerce. While traditional agencies and generic web shops deploy slow, bloated WordPress templates, Cosuniq builds proprietary Next.js web applications, custom cloud ERP & records management software, internal tools & CRMs, iOS/Android mobile apps, and AI workflows with sub-second speeds and bulletproof security.",
       highlight: "Direct local engineering from Udumalpet, transparent fixed pricing, 100% code ownership, 95+ Google Core Web Vitals, and zero outsourced dependencies."
     },
     targetServices: [
@@ -420,7 +420,7 @@ export const locationsMap: Record<string, LocationData> = {
       },
       {
         q: "Can you replace legacy offline billing or desktop software with modern cloud systems?",
-        a: "Yes. Many businesses in Udumalpet still use outdated offline desktop systems like Tally, CUBES, or Infofix that can only be accessed on one office computer. Cosuniq builds secure cloud web applications and custom CRMs that allow business owners and managers to access live sales ledgers, inventory counts, and GST invoices from anywhere on their mobile phone, tablet, or laptop."
+        a: "Yes. Many businesses in Udumalpet still rely on outdated offline desktop software or spreadsheets that can only be accessed on one office computer. Cosuniq builds secure cloud web applications and custom CRMs that allow business owners and managers to access live sales ledgers, inventory counts, and GST invoices from anywhere on their mobile phone, tablet, or laptop."
       },
       {
         q: "Can you build custom records management and ERP billing software for local businesses?",
@@ -435,7 +435,7 @@ export const locationsMap: Record<string, LocationData> = {
         a: "Yes! Cosuniq Technologies actively hires talented developers and designers in Udumalpet. We offer careers and walk-in opportunities for Full Stack Developers, Mobile App Engineers, and fresh graduate tech interns. Visit our Careers page (/careers) for active openings."
       },
       {
-        q: "How does Cosuniq differ from legacy web design agencies like Ninos IT, RYZO, or Justdial listings?",
+        q: "How does Cosuniq differ from traditional web design agencies and directory listings?",
         a: "Unlike traditional agencies that deploy slow, insecure WordPress themes or generic directory listings, Cosuniq develops custom software and websites using modern modern stacks like Next.js, React, Node.js, and TypeScript. This guarantees 95+ Google PageSpeed scores, zero database security vulnerabilities, and top Google search rankings."
       }
     ]
