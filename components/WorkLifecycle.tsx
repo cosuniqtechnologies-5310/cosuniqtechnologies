@@ -241,45 +241,53 @@ function EmergenceDoodle() {
       transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }}
     >
       {/* Central slender body */}
-      <line x1="32" y1="20" x2="32" y2="44" strokeWidth="2.2" />
+      <line x1="32" y1="20" x2="32" y2="44" strokeWidth="2.4" />
       <circle cx="32" cy="17" r="2.8" fill="#FF6B00" />
       {/* Antenna curls */}
-      <path d="M 31 14 C 27 8 20 10 22 14" strokeWidth="1.4" />
-      <path d="M 33 14 C 37 8 44 10 42 14" strokeWidth="1.4" />
+      <motion.g
+        style={{ transformOrigin: "32px 17px" }}
+        animate={{ rotate: [-2, 3, -2] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+      >
+        <path d="M 31 14 C 27 8 20 10 22 14" strokeWidth="1.4" />
+        <path d="M 33 14 C 37 8 44 10 42 14" strokeWidth="1.4" />
+      </motion.g>
 
-      {/* Wing fluttering animation */}
+      {/* Wing unfolding / breathing flex animation */}
       <motion.g
         style={{ transformOrigin: "32px 30px" }}
-        animate={{ scaleX: [1, 0.75, 1] }}
-        transition={{ duration: 0.8, repeat: Infinity, ease: "easeInOut" }}
+        animate={{ scaleX: [0.72, 1.04, 0.72], scaleY: [0.94, 1.02, 0.94] }}
+        transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
       >
         {/* Upper wings */}
         <path
           d="M 30 24 C 12 11 6 27 22 35 C 28 37 30 33 30 30 Z"
-          fill="rgba(255, 107, 0, 0.16)"
+          fill="rgba(255, 107, 0, 0.18)"
           strokeWidth="1.8"
         />
         <path
           d="M 34 24 C 52 11 58 27 42 35 C 36 37 34 33 34 30 Z"
-          fill="rgba(255, 107, 0, 0.16)"
+          fill="rgba(255, 107, 0, 0.18)"
           strokeWidth="1.8"
         />
 
         {/* Lower wings */}
         <path
           d="M 30 33 C 14 37 16 51 26 43 C 29 41 30 37 30 35 Z"
-          fill="rgba(255, 107, 0, 0.1)"
+          fill="rgba(255, 107, 0, 0.12)"
           strokeWidth="1.8"
         />
         <path
           d="M 34 33 C 50 37 48 51 38 43 C 35 41 34 37 34 35 Z"
-          fill="rgba(255, 107, 0, 0.1)"
+          fill="rgba(255, 107, 0, 0.12)"
           strokeWidth="1.8"
         />
 
         {/* Wing doodle spots */}
         <circle cx="20" cy="25" r="2.2" fill="#FF6B00" stroke="none" />
         <circle cx="44" cy="25" r="2.2" fill="#FF6B00" stroke="none" />
+        <circle cx="22" cy="40" r="1.4" fill="#FF6B00" stroke="none" />
+        <circle cx="42" cy="40" r="1.4" fill="#FF6B00" stroke="none" />
       </motion.g>
 
       {/* Shattered shell fragments below */}
@@ -291,7 +299,7 @@ function EmergenceDoodle() {
         d="M 12 16 L 13 18.5 L 15.5 19.5 L 13 20.5 L 12 23 L 11 20.5 L 8.5 19.5 L 11 18.5 Z"
         fill="#FF6B00"
         stroke="none"
-        animate={{ scale: [0.6, 1.2, 0.6] }}
+        animate={{ scale: [0.6, 1.25, 0.6] }}
         transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
         style={{ transformOrigin: "12px 19.5px" }}
       />
@@ -299,7 +307,7 @@ function EmergenceDoodle() {
         d="M 52 16 L 53 18.5 L 55.5 19.5 L 53 20.5 L 52 23 L 51 20.5 L 48.5 19.5 L 51 18.5 Z"
         fill="#FF6B00"
         stroke="none"
-        animate={{ scale: [0.6, 1.2, 0.6] }}
+        animate={{ scale: [0.6, 1.25, 0.6] }}
         transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
         style={{ transformOrigin: "52px 19.5px" }}
       />
@@ -307,146 +315,333 @@ function EmergenceDoodle() {
   );
 }
 
-// ── 05 Flight Doodle: Majestic soaring butterfly in full triumphant flight ──
+// ── 05 Flight Doodle: Majestic soaring butterfly in full triumphant 3D flight ──
 function FlightDoodle() {
   return (
-    <motion.svg
-      width="64"
-      height="64"
-      viewBox="0 0 64 64"
-      fill="none"
-      stroke="#FF6B00"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      style={{ overflow: "visible" }}
-      animate={{ y: [0, -4, 0] }}
-      transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
+    <motion.div
+      style={{
+        position: "relative",
+        width: 76,
+        height: 64,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        perspective: 600,
+        overflow: "visible",
+      }}
+      whileHover={{ scale: 1.12 }}
+      transition={{ type: "spring", stiffness: 350, damping: 20 }}
     >
-      {/* Flight Wind Swooshes (Upward Momentum) */}
-      <path
-        d="M 12 56 C 22 52 42 52 52 56"
-        stroke="#FF6B00"
-        strokeWidth="1.6"
-        strokeDasharray="3 3"
-        opacity="0.5"
-      />
-      <path
-        d="M 20 61 C 28 58 36 58 44 61"
-        stroke="#FF6B00"
-        strokeWidth="1.4"
-        strokeDasharray="2 2"
-        opacity="0.35"
-      />
-
-      {/* Left Wings Group */}
-      <motion.g
-        style={{ transformOrigin: "32px 30px" }}
-        animate={{ scaleX: [1, 0.72, 1] }}
-        transition={{ duration: 0.55, repeat: Infinity, ease: "easeInOut" }}
+      {/* Background Ambience: Ascending Air Currents & Dust Particles */}
+      <svg
+        width="76"
+        height="64"
+        viewBox="0 0 76 64"
+        fill="none"
+        style={{ position: "absolute", inset: 0, overflow: "visible", pointerEvents: "none" }}
       >
-        {/* Left Upper Wing - Large & Sweeping */}
-        <path
-          d="M 30 22 C 14 6 4 14 6 28 C 8 36 20 38 30 32 Z"
-          fill="rgba(255, 107, 0, 0.22)"
+        {/* Soft upward thermal breeze arcs */}
+        <motion.path
+          d="M 14 54 C 26 49 50 49 62 54"
           stroke="#FF6B00"
-          strokeWidth="2.2"
+          strokeWidth="1.6"
+          strokeDasharray="3 3"
+          strokeLinecap="round"
+          animate={{ y: [0, -3, 0], opacity: [0.3, 0.7, 0.3] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
         />
-        {/* Left Wing Pattern Accent */}
-        <path
-          d="M 14 22 C 18 16 26 22 24 28 C 20 30 16 26 14 22 Z"
+        <motion.path
+          d="M 22 59 C 30 57 46 57 54 59"
+          stroke="#FF6B00"
+          strokeWidth="1.2"
+          strokeDasharray="2 2"
+          strokeLinecap="round"
+          animate={{ y: [0, -2, 0], opacity: [0.2, 0.6, 0.2] }}
+          transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+        />
+
+        {/* Trailing golden pollen / flight dust particles drifting downwards */}
+        <motion.circle
+          cx="38"
+          cy="46"
+          r="1.8"
+          fill="#FF6B00"
+          animate={{
+            y: [0, 8, 16],
+            opacity: [0, 0.95, 0],
+            scale: [0.6, 1.1, 0.3],
+          }}
+          transition={{ duration: 1.8, repeat: Infinity, ease: "easeOut" }}
+        />
+        <motion.circle
+          cx="33"
+          cy="43"
+          r="1.3"
+          fill="#FF9E40"
+          animate={{
+            y: [0, 7, 14],
+            opacity: [0, 0.85, 0],
+            scale: [0.5, 1, 0.2],
+          }}
+          transition={{ duration: 2.1, repeat: Infinity, ease: "easeOut", delay: 0.7 }}
+        />
+        <motion.circle
+          cx="43"
+          cy="44"
+          r="1.4"
+          fill="#FF6B00"
+          animate={{
+            y: [0, 9, 18],
+            opacity: [0, 0.85, 0],
+            scale: [0.5, 1, 0.2],
+          }}
+          transition={{ duration: 1.9, repeat: Infinity, ease: "easeOut", delay: 1.3 }}
+        />
+
+        {/* Twinkling Ascent Flight Stars */}
+        <motion.path
+          d="M 68 8 L 69.5 11 L 72.5 12 L 69.5 13 L 68 16 L 66.5 13 L 63.5 12 L 66.5 11 Z"
           fill="#FF6B00"
           stroke="none"
-          opacity="0.85"
+          animate={{
+            scale: [0.75, 1.35, 0.75],
+            rotate: [0, 90, 0],
+            opacity: [0.5, 1, 0.5],
+          }}
+          transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+          style={{ transformOrigin: "68px 12px" }}
         />
-        <circle cx="16" cy="18" r="2" fill="#ffffff" stroke="none" />
-
-        {/* Left Lower Wing */}
-        <path
-          d="M 30 32 C 14 36 12 48 24 49 C 29 48 30 42 31 38 Z"
-          fill="rgba(255, 107, 0, 0.16)"
-          stroke="#FF6B00"
-          strokeWidth="2"
-        />
-        <circle cx="22" cy="43" r="2" fill="#FF6B00" stroke="none" />
-      </motion.g>
-
-      {/* Right Wings Group */}
-      <motion.g
-        style={{ transformOrigin: "32px 30px" }}
-        animate={{ scaleX: [1, 0.72, 1] }}
-        transition={{ duration: 0.55, repeat: Infinity, ease: "easeInOut" }}
-      >
-        {/* Right Upper Wing - Large & Sweeping */}
-        <path
-          d="M 34 22 C 50 6 60 14 58 28 C 56 36 44 38 34 32 Z"
-          fill="rgba(255, 107, 0, 0.22)"
-          stroke="#FF6B00"
-          strokeWidth="2.2"
-        />
-        {/* Right Wing Pattern Accent */}
-        <path
-          d="M 50 22 C 46 16 38 22 40 28 C 44 30 48 26 50 22 Z"
+        <motion.path
+          d="M 8 10 L 9.5 13 L 12.5 14 L 9.5 15 L 8 18 L 6.5 15 L 3.5 14 L 6.5 13 Z"
           fill="#FF6B00"
           stroke="none"
-          opacity="0.85"
+          animate={{
+            scale: [0.75, 1.35, 0.75],
+            rotate: [0, -90, 0],
+            opacity: [0.5, 1, 0.5],
+          }}
+          transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+          style={{ transformOrigin: "8px 14px" }}
         />
-        <circle cx="48" cy="18" r="2" fill="#ffffff" stroke="none" />
+      </svg>
 
-        {/* Right Lower Wing */}
-        <path
-          d="M 34 32 C 50 36 52 48 40 49 C 35 48 34 42 33 38 Z"
-          fill="rgba(255, 107, 0, 0.16)"
-          stroke="#FF6B00"
-          strokeWidth="2"
-        />
-        <circle cx="42" cy="43" r="2" fill="#FF6B00" stroke="none" />
-      </motion.g>
+      {/* Main Living 3D Butterfly: Soaring Flight Trajectory with Aerodynamic Lift */}
+      <motion.div
+        style={{
+          position: "relative",
+          width: 58,
+          height: 46,
+          transformStyle: "preserve-3d",
+        }}
+        animate={{
+          y: [0, 2, -6, -4, -10, -8, -11, -9, -5, -2, 0],
+          x: [0, 1.5, 2.5, 3.5, 4, 2, 0, -2.5, -3.5, -1.5, 0],
+          rotateZ: [0, -2, 4, 1, 5, 2, 0, -3, -5, -2, 0],
+        }}
+        transition={{
+          duration: 2.6,
+          repeat: Infinity,
+          ease: "easeInOut",
+          times: [0, 0.1, 0.22, 0.32, 0.44, 0.54, 0.64, 0.76, 0.86, 0.94, 1],
+        }}
+      >
+        {/* Left Wing (3D Perspective Wing Flap) */}
+        <motion.div
+          style={{
+            position: "absolute",
+            right: "calc(50% + 1px)",
+            top: 1,
+            width: 28,
+            height: 42,
+            transformOrigin: "100% 50%",
+            transformStyle: "preserve-3d",
+            willChange: "transform",
+          }}
+          animate={{
+            rotateY: [0, 72, -8, 68, -6, 62, 0, 14, 10, 16, 0],
+            rotateX: [0, 8, -4, 7, -3, 5, 0, -3, -2, -3, 0],
+          }}
+          transition={{
+            duration: 2.6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            times: [0, 0.1, 0.22, 0.32, 0.44, 0.54, 0.64, 0.76, 0.86, 0.94, 1],
+          }}
+        >
+          <svg
+            width="28"
+            height="42"
+            viewBox="0 0 28 42"
+            fill="none"
+            stroke="#FF6B00"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{ width: "100%", height: "100%", overflow: "visible" }}
+          >
+            {/* Left Upper Forewing */}
+            <path
+              d="M 27 18 C 17 6 6 8 3 13 C 1 18 5 25 15 26 C 21 27 26 23 27 21 Z"
+              fill="rgba(255, 107, 0, 0.24)"
+              stroke="#FF6B00"
+              strokeWidth="2.2"
+            />
+            {/* Left Forewing Radiating Vein & Pattern */}
+            <path d="M 26 19 C 17 14 11 12 5 13" stroke="#FF6B00" strokeWidth="1.4" />
+            <path d="M 16 16 C 11 19 8 21 4 18" stroke="#FF6B00" strokeWidth="1.2" />
+            <path
+              d="M 12 13 C 15 9 22 13 20 18 C 17 20 13 17 12 13 Z"
+              fill="#FF6B00"
+              stroke="none"
+              opacity="0.88"
+            />
+            {/* White gem accent dots on wing margin */}
+            <circle cx="5" cy="13" r="1.4" fill="#ffffff" stroke="none" />
+            <circle cx="10" cy="10" r="1.2" fill="#ffffff" stroke="none" />
 
-      {/* Central Slender Body */}
-      <path
-        d="M 32 18 L 32 44"
-        stroke="#FF6B00"
-        strokeWidth="3.2"
-        strokeLinecap="round"
-      />
-      <circle cx="32" cy="15" r="3.2" fill="#FF6B00" stroke="none" />
+            {/* Left Lower Hindwing */}
+            <path
+              d="M 26 22 C 16 23 7 28 8 35 C 9 41 19 41 24 37 C 26 35 27 28 27 23 Z"
+              fill="rgba(255, 107, 0, 0.18)"
+              stroke="#FF6B00"
+              strokeWidth="1.9"
+            />
+            <path d="M 26 25 C 18 29 14 34 11 36" stroke="#FF6B00" strokeWidth="1.2" />
+            <circle cx="15" cy="35" r="1.8" fill="#FF6B00" stroke="none" />
+            {/* Swallowtail delicate notch */}
+            <path d="M 11 38 C 10 40 8 40.5 7 39" stroke="#FF6B00" strokeWidth="1.4" />
+          </svg>
+        </motion.div>
 
-      {/* Curled Expressive Antennae */}
-      <path
-        d="M 30.5 12 C 27 5 18 6 19 11"
-        stroke="#FF6B00"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-      />
-      <circle cx="19" cy="11" r="1.4" fill="#FF6B00" stroke="none" />
+        {/* Right Wing (3D Perspective Wing Flap) */}
+        <motion.div
+          style={{
+            position: "absolute",
+            left: "calc(50% + 1px)",
+            top: 1,
+            width: 28,
+            height: 42,
+            transformOrigin: "0% 50%",
+            transformStyle: "preserve-3d",
+            willChange: "transform",
+          }}
+          animate={{
+            rotateY: [0, -72, 8, -68, 6, -62, 0, -14, -10, -16, 0],
+            rotateX: [0, 8, -4, 7, -3, 5, 0, -3, -2, -3, 0],
+          }}
+          transition={{
+            duration: 2.6,
+            repeat: Infinity,
+            ease: "easeInOut",
+            times: [0, 0.1, 0.22, 0.32, 0.44, 0.54, 0.64, 0.76, 0.86, 0.94, 1],
+          }}
+        >
+          <svg
+            width="28"
+            height="42"
+            viewBox="0 0 28 42"
+            fill="none"
+            stroke="#FF6B00"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{ width: "100%", height: "100%", overflow: "visible" }}
+          >
+            {/* Right Upper Forewing */}
+            <path
+              d="M 1 18 C 11 6 22 8 25 13 C 27 18 23 25 13 26 C 7 27 2 23 1 21 Z"
+              fill="rgba(255, 107, 0, 0.24)"
+              stroke="#FF6B00"
+              strokeWidth="2.2"
+            />
+            {/* Right Forewing Radiating Vein & Pattern */}
+            <path d="M 2 19 C 11 14 17 12 23 13" stroke="#FF6B00" strokeWidth="1.4" />
+            <path d="M 12 16 C 17 19 20 21 24 18" stroke="#FF6B00" strokeWidth="1.2" />
+            <path
+              d="M 16 13 C 13 9 6 13 8 18 C 11 20 15 17 16 13 Z"
+              fill="#FF6B00"
+              stroke="none"
+              opacity="0.88"
+            />
+            {/* White gem accent dots on wing margin */}
+            <circle cx="23" cy="13" r="1.4" fill="#ffffff" stroke="none" />
+            <circle cx="18" cy="10" r="1.2" fill="#ffffff" stroke="none" />
 
-      <path
-        d="M 33.5 12 C 37 5 46 6 45 11"
-        stroke="#FF6B00"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-      />
-      <circle cx="45" cy="11" r="1.4" fill="#FF6B00" stroke="none" />
+            {/* Right Lower Hindwing */}
+            <path
+              d="M 2 22 C 12 23 21 28 20 35 C 19 41 9 41 4 37 C 2 35 1 28 1 23 Z"
+              fill="rgba(255, 107, 0, 0.18)"
+              stroke="#FF6B00"
+              strokeWidth="1.9"
+            />
+            <path d="M 2 25 C 10 29 14 34 17 36" stroke="#FF6B00" strokeWidth="1.2" />
+            <circle cx="13" cy="35" r="1.8" fill="#FF6B00" stroke="none" />
+            {/* Swallowtail delicate notch */}
+            <path d="M 17 38 C 18 40 20 40.5 21 39" stroke="#FF6B00" strokeWidth="1.4" />
+          </svg>
+        </motion.div>
 
-      {/* Sparkles & Ascending Stars */}
-      <motion.path
-        d="M 57 8 L 58.5 11 L 61.5 12 L 58.5 13 L 57 16 L 55.5 13 L 52.5 12 L 55.5 11 Z"
-        fill="#FF6B00"
-        stroke="none"
-        animate={{ scale: [0.75, 1.35, 0.75], rotate: [0, 90, 0] }}
-        transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut" }}
-        style={{ transformOrigin: "57px 12px" }}
-      />
-      <motion.path
-        d="M 7 8 L 8.5 11 L 11.5 12 L 8.5 13 L 7 16 L 5.5 13 L 2.5 12 L 5.5 11 Z"
-        fill="#FF6B00"
-        stroke="none"
-        animate={{ scale: [0.75, 1.35, 0.75], rotate: [0, -90, 0] }}
-        transition={{ duration: 2.2, repeat: Infinity, ease: "easeInOut", delay: 0.4 }}
-        style={{ transformOrigin: "7px 12px" }}
-      />
-    </motion.svg>
+        {/* Center Slender Body & Expressive Curled Antennae */}
+        <div
+          style={{
+            position: "absolute",
+            left: "50%",
+            top: 0,
+            width: 18,
+            height: 46,
+            transform: "translateX(-50%)",
+            pointerEvents: "none",
+          }}
+        >
+          <svg
+            width="18"
+            height="46"
+            viewBox="0 0 18 46"
+            fill="none"
+            stroke="#FF6B00"
+            style={{ width: "100%", height: "100%", overflow: "visible" }}
+          >
+            {/* Slender Thorax & Abdomen */}
+            <path
+              d="M 9 14 L 9 39"
+              stroke="#FF6B00"
+              strokeWidth="3.2"
+              strokeLinecap="round"
+            />
+            {/* Segmented body ring markings */}
+            <line x1="7.5" y1="23" x2="10.5" y2="23" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" />
+            <line x1="7.5" y1="28" x2="10.5" y2="28" stroke="#ffffff" strokeWidth="1.2" strokeLinecap="round" />
+            <line x1="7.8" y1="33" x2="10.2" y2="33" stroke="#ffffff" strokeWidth="1.1" strokeLinecap="round" />
+
+            {/* Head */}
+            <circle cx="9" cy="11.5" r="3" fill="#FF6B00" stroke="none" />
+
+            {/* Curled Expressive Antennae with spring flex */}
+            <motion.g
+              style={{ transformOrigin: "9px 11.5px" }}
+              animate={{ rotate: [-3, 4, -2, 3, -3] }}
+              transition={{ duration: 1.3, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <path
+                d="M 8 9 C 5 2 -1 4 1 8"
+                stroke="#FF6B00"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                fill="none"
+              />
+              <circle cx="1" cy="8" r="1.3" fill="#FF6B00" stroke="none" />
+
+              <path
+                d="M 10 9 C 13 2 19 4 17 8"
+                stroke="#FF6B00"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                fill="none"
+              />
+              <circle cx="17" cy="8" r="1.3" fill="#FF6B00" stroke="none" />
+            </motion.g>
+          </svg>
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
