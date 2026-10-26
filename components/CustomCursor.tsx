@@ -6,8 +6,8 @@ export default function CustomCursor() {
   const [canHover, setCanHover] = useState(false);
 
   useEffect(() => {
-    // Basic check for non-touch devices
-    const isHoverable = window.matchMedia("(hover: hover) and (pointer: fine)").matches || window.innerWidth > 768;
+    // Check for real pointer devices with hover capability (desktop mouse)
+    const isHoverable = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     setCanHover(isHoverable);
 
     if (isHoverable) {
@@ -26,11 +26,13 @@ export default function CustomCursor() {
           y = e.clientY;
           cursorDot.style.left = x + "px";
           cursorDot.style.top = y + "px";
-          
-          // Dynamically check if hovering a clickable element
-          const target = e.target as HTMLElement;
-          const isClickable = target.closest('a, button, summary, [role="button"]') || window.getComputedStyle(target).cursor === 'pointer';
-          
+
+          // Fast selector match without synchronous getComputedStyle reflow
+          const target = e.target as HTMLElement | null;
+          const isClickable = Boolean(
+            target?.closest('a, button, summary, [role="button"], input, select, textarea, label, [data-clickable]')
+          );
+
           if (isClickable) {
             cursor.classList.add("is-hover");
           } else {

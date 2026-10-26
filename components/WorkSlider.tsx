@@ -4,34 +4,37 @@ import { useRef, useState, useEffect } from "react";
 
 export default function WorkSlider() {
   const sliderRef = useRef<HTMLDivElement>(null);
-  const [showArrows, setShowArrows] = useState(false);
+  const [showArrows, setShowArrows] = useState(true);
 
   useEffect(() => {
+    let animId: number;
     const checkOverflow = () => {
       if (sliderRef.current) {
-        // scrollWidth > clientWidth detects if the container has scrollable overflow
         const isOverflowing = sliderRef.current.scrollWidth > sliderRef.current.clientWidth + 5;
-        // fallback heuristic just in case scrollWidth is acting up in this layout
         const hasManyChildren = sliderRef.current.children.length > 3;
         setShowArrows(isOverflowing || hasManyChildren);
       }
     };
-    
-    checkOverflow();
 
-    // Use ResizeObserver for robust layout-shift detection
+    // Defer geometric layout checks to idle or next frame to prevent forced reflow on mount
+    if ("requestIdleCallback" in window) {
+      (window as any).requestIdleCallback(() => checkOverflow(), { timeout: 2000 });
+    } else {
+      animId = requestAnimationFrame(() => checkOverflow());
+    }
+
     const observer = new ResizeObserver(() => checkOverflow());
     if (sliderRef.current) {
       observer.observe(sliderRef.current);
-      // Observe the first child as well, since its size dictates the scrollWidth
       if (sliderRef.current.firstElementChild) {
         observer.observe(sliderRef.current.firstElementChild);
       }
     }
-    
-    window.addEventListener("resize", checkOverflow);
+
+    window.addEventListener("resize", checkOverflow, { passive: true });
     return () => {
       observer.disconnect();
+      if (animId) cancelAnimationFrame(animId);
       window.removeEventListener("resize", checkOverflow);
     };
   }, []);
