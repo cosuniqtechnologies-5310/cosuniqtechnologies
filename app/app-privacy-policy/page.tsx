@@ -139,7 +139,13 @@ export default function AppPrivacyPolicyPage() {
                     cosuniqtechnologies@gmail.com
                   </a>
                 </p>
-                <p>Location: Chennai, Tamil Nadu, India</p>
+                <p>
+                  Phone: <a href="tel:+917358696546">+91 73586 96546</a>
+                </p>
+                <p>
+                  Address: 5/233C, Sarathamani Layout, KVS Colony, Udumalaipettai, Tamil Nadu
+                  642126, India
+                </p>
               </div>
             </div>
           </div>
