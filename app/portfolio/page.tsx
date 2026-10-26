@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Showcase — Our Works | Cosuniq Technologies",
     description: "Explore Cosuniq's selected work — e-commerce, mobile apps, SaaS, and brand platforms.",
-    url: "https://cosuniq.in/portfolio",
+    url: "https://www.cosuniq.in/portfolio",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Showcase" }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Explore Cosuniq's selected work — e-commerce, mobile apps, SaaS, and brand platforms.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/portfolio" },
+  alternates: { canonical: "https://www.cosuniq.in/portfolio" },
 };
 
 export default function Portfolio() {
@@ -32,13 +32,13 @@ export default function Portfolio() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Showcase",
-        "item": "https://cosuniq.in/portfolio"
+        "item": "https://www.cosuniq.in/portfolio"
       }
     ]
   };

@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     "E-commerce Development",
     "Brand Strategy & Identity"
   ],
-  alternates: { canonical: "https://cosuniq.in" },
+  alternates: { canonical: "https://www.cosuniq.in" },
   openGraph: {
     title: "Cosuniq Technologies | Creative Digital Agency & Software Development",
     description: "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & mobile apps. Every brand has a story. We help you build it.",
-    url: "https://cosuniq.in",
+    url: "https://www.cosuniq.in",
     siteName: "Cosuniq Technologies",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Technologies" }],
     type: "website"

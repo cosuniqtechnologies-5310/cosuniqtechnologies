@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact | Cosuniq Technologies",
     description: "Get in touch with Cosuniq Technologies. Share a brief about your project and we'll reply with next steps.",
-    url: "https://cosuniq.in/contact",
+    url: "https://www.cosuniq.in/contact",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Contact Cosuniq Technologies" }],
   },
   twitter: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Get in touch with Cosuniq Technologies. Share a brief about your project.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/contact" },
+  alternates: { canonical: "https://www.cosuniq.in/contact" },
 };
 
 export default function Contact() {
@@ -29,13 +29,13 @@ export default function Contact() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Contact",
-        "item": "https://cosuniq.in/contact"
+        "item": "https://www.cosuniq.in/contact"
       }
     ]
   };

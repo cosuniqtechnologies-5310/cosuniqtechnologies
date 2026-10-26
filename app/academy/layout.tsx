@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Cosuniq Academy | Learn Design & Development",
     description:
       "Join Cosuniq Academy — hands-on training in design, development, and digital skills led by industry professionals.",
-    url: "https://cosuniq.in/academy",
+    url: "https://www.cosuniq.in/academy",
     images: [
       {
         url: "/assets/og-image.png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: "Hands-on training in design, development, and digital skills.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/academy" },
+  alternates: { canonical: "https://www.cosuniq.in/academy" },
 };
 
 export default function AcademyLayout({

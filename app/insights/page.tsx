@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Insights & Technical Perspectives | Cosuniq Technologies",
     description: "Deep technical articles, software architecture guides, and design perspectives from Cosuniq Technologies.",
-    url: "https://cosuniq.in/insights",
+    url: "https://www.cosuniq.in/insights",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Insights" }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Deep technical articles, software architecture guides, and design perspectives from Cosuniq Technologies.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/insights" },
+  alternates: { canonical: "https://www.cosuniq.in/insights" },
 };
 
 export default function InsightsPage() {
@@ -32,13 +32,13 @@ export default function InsightsPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights",
-        "item": "https://cosuniq.in/insights"
+        "item": "https://www.cosuniq.in/insights"
       }
     ]
   };

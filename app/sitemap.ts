@@ -6,8 +6,8 @@ import { locationsMap } from '../components/locationsData';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://cosuniq.in';
-  const lastMod = new Date('2026-10-21');
+  const baseUrl = 'https://www.cosuniq.in';
+  const lastMod = new Date('2026-10-26');
 
   // Core pages
   const corePages: MetadataRoute.Sitemap = [

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Case Studies | Cosuniq Technologies",
     description: "Explore in-depth case studies by Cosuniq Technologies — solving complex software, mobile app, and e-commerce challenges.",
-    url: "https://cosuniq.in/case-studies",
+    url: "https://www.cosuniq.in/case-studies",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Case Studies" }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Explore in-depth case studies by Cosuniq Technologies.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/case-studies" },
+  alternates: { canonical: "https://www.cosuniq.in/case-studies" },
 };
 
 export default function CaseStudiesPage() {
@@ -32,13 +32,13 @@ export default function CaseStudiesPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Case Studies",
-        "item": "https://cosuniq.in/case-studies"
+        "item": "https://www.cosuniq.in/case-studies"
       }
     ]
   };

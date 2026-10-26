@@ -11,7 +11,7 @@ import GoogleAnalytics from "../components/GoogleAnalytics";
 import { plusJakartaSans } from "./fonts";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cosuniq.in"),
+  metadataBase: new URL("https://www.cosuniq.in"),
   title: {
     default: "Cosuniq Technologies | Creative Digital Agency",
     template: "%s | Cosuniq Technologies",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "video production",
     "software development India",
   ],
-  authors: [{ name: "Cosuniq Technologies", url: "https://cosuniq.in" }],
+  authors: [{ name: "Cosuniq Technologies", url: "https://www.cosuniq.in" }],
   creator: "Cosuniq Technologies",
   publisher: "Cosuniq Technologies",
   robots: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://cosuniq.in",
+    url: "https://www.cosuniq.in",
     siteName: "Cosuniq Technologies",
     title: "Cosuniq Technologies | Creative Digital Agency",
     description:
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     google: "google097b26a13a458c1c",
   },
   alternates: {
-    canonical: "https://cosuniq.in",
+    canonical: "https://www.cosuniq.in",
   },
 };
 
@@ -102,11 +102,11 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "ProfessionalService",
-                  "@id": "https://cosuniq.in/#organization",
+                  "@id": "https://www.cosuniq.in/#organization",
                   "name": "Cosuniq Technologies",
-                  "url": "https://cosuniq.in",
-                  "logo": "https://cosuniq.in/assets/cosuniq-technologies.png",
-                  "image": "https://cosuniq.in/assets/og-image.png",
+                  "url": "https://www.cosuniq.in",
+                  "logo": "https://www.cosuniq.in/assets/cosuniq-technologies.png",
+                  "image": "https://www.cosuniq.in/assets/og-image.png",
                   "priceRange": "$$",
                   "description":
                     "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production.",
@@ -140,10 +140,10 @@ export default function RootLayout({
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://cosuniq.in/#website",
-                  "url": "https://cosuniq.in",
+                  "@id": "https://www.cosuniq.in/#website",
+                  "url": "https://www.cosuniq.in",
                   "name": "Cosuniq Technologies",
-                  "publisher": { "@id": "https://cosuniq.in/#organization" },
+                  "publisher": { "@id": "https://www.cosuniq.in/#organization" },
                 },
               ],
             }),

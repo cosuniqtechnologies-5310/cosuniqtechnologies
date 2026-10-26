@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Academy | Cosuniq Technologies",
     description: "Cosuniq Academy — mentor-led courses on AI engineering, branding, and startup building. Learn. Build. Ship.",
-    url: "https://cosuniq.in/academy",
+    url: "https://www.cosuniq.in/academy",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Academy" }],
   },
   twitter: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "Cosuniq Academy — mentor-led courses on AI engineering, branding, and startup building.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/academy" },
+  alternates: { canonical: "https://www.cosuniq.in/academy" },
 };
 
 export default function Academy() {
@@ -29,13 +29,13 @@ export default function Academy() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Academy",
-        "item": "https://cosuniq.in/academy"
+        "item": "https://www.cosuniq.in/academy"
       }
     ]
   };

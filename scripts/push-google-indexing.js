@@ -36,7 +36,7 @@ function getSitemapUrls() {
 
   // Fallback list if sitemap hasn't been written to disk yet
   if (urls.length === 0) {
-    const baseUrl = 'https://cosuniq.in';
+    const baseUrl = 'https://www.cosuniq.in';
     const core = [
       '',
       '/services',

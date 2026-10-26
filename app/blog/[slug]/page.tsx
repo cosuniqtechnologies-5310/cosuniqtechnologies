@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${post.title} | Cosuniq Technologies`,
       description: post.summary,
-      url: `https://cosuniq.in/blog/${slug}`,
+      url: `https://www.cosuniq.in/blog/${slug}`,
       images: [{ url: post.image || "/assets/og-image.png", width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.summary,
       images: [post.image || "/assets/og-image.png"],
     },
-    alternates: { canonical: `https://cosuniq.in/blog/${slug}` },
+    alternates: { canonical: `https://www.cosuniq.in/blog/${slug}` },
   };
 }
 
@@ -121,19 +121,19 @@ export default async function BlogPostPage({ params }: PageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights",
-        "item": "https://cosuniq.in/insights"
+        "item": "https://www.cosuniq.in/insights"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://cosuniq.in/blog/${slug}`
+        "item": `https://www.cosuniq.in/blog/${slug}`
       }
     ]
   };
@@ -143,21 +143,21 @@ export default async function BlogPostPage({ params }: PageProps) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.summary,
-    "image": post.image ? (post.image.startsWith("http") ? post.image : `https://cosuniq.in${post.image}`) : "https://cosuniq.in/assets/og-image.png",
+    "image": post.image ? (post.image.startsWith("http") ? post.image : `https://www.cosuniq.in${post.image}`) : "https://www.cosuniq.in/assets/og-image.png",
     "author": {
       "@type": "Organization",
-      "@id": "https://cosuniq.in/#organization",
+      "@id": "https://www.cosuniq.in/#organization",
       "name": "Cosuniq Technologies",
-      "url": "https://cosuniq.in"
+      "url": "https://www.cosuniq.in"
     },
     "publisher": {
       "@type": "Organization",
-      "@id": "https://cosuniq.in/#organization",
+      "@id": "https://www.cosuniq.in/#organization",
       "name": "Cosuniq Technologies"
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://cosuniq.in/blog/${slug}`
+      "@id": `https://www.cosuniq.in/blog/${slug}`
     }
   };
 

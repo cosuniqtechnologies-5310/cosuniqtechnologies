@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "tech jobs western tamil nadu"
   ],
   alternates: {
-    canonical: "https://cosuniq.in/careers"
+    canonical: "https://www.cosuniq.in/careers"
   },
   openGraph: {
     title: "Careers & Software Developer Jobs in Udumalpet | Cosuniq Technologies",
     description:
       "Join Cosuniq Technologies in Udumalpet. Build modern Next.js web applications, custom enterprise software, and mobile platforms with direct technical ownership.",
-    url: "https://cosuniq.in/careers",
+    url: "https://www.cosuniq.in/careers",
     siteName: "Cosuniq Technologies",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Careers at Cosuniq Technologies Udumalpet" }],
     type: "website"
@@ -49,13 +49,13 @@ export default function CareersPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Careers",
-        "item": "https://cosuniq.in/careers"
+        "item": "https://www.cosuniq.in/careers"
       }
     ]
   };
@@ -89,8 +89,8 @@ export default function CareersPage() {
     "hiringOrganization": {
       "@type": "Organization",
       "name": "Cosuniq Technologies",
-      "sameAs": "https://cosuniq.in",
-      "logo": "https://cosuniq.in/assets/cosuniq-technologies.png"
+      "sameAs": "https://www.cosuniq.in",
+      "logo": "https://www.cosuniq.in/assets/cosuniq-technologies.png"
     },
     "jobLocation": {
       "@type": "Place",

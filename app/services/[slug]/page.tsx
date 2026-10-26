@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: `${service.name} | Cosuniq Technologies`,
       description: service.metaDesc,
-      url: `https://cosuniq.in/services/${slug}`,
+      url: `https://www.cosuniq.in/services/${slug}`,
       images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: service.name }],
     },
     twitter: {
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: service.metaDesc,
       images: ["/assets/og-image.png"],
     },
-    alternates: { canonical: `https://cosuniq.in/services/${slug}` },
+    alternates: { canonical: `https://www.cosuniq.in/services/${slug}` },
   };
 }
 
@@ -61,19 +61,19 @@ export default async function ServiceDetailPage({ params }: PageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "What We Do",
-        "item": "https://cosuniq.in/services"
+        "item": "https://www.cosuniq.in/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": service.name,
-        "item": `https://cosuniq.in/services/${slug}`
+        "item": `https://www.cosuniq.in/services/${slug}`
       }
     ]
   };
@@ -86,14 +86,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
     "description": service.heroDesc,
     "provider": {
       "@type": "ProfessionalService",
-      "@id": "https://cosuniq.in/#organization",
+      "@id": "https://www.cosuniq.in/#organization",
       "name": "Cosuniq Technologies"
     },
     "areaServed": [
       { "@type": "Country", "name": "India" },
       { "@type": "AdministrativeArea", "name": "Tamil Nadu" }
     ],
-    "url": `https://cosuniq.in/services/${slug}`
+    "url": `https://www.cosuniq.in/services/${slug}`
   };
 
   return (

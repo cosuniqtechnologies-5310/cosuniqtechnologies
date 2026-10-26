@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Portfolio & Work | Cosuniq Technologies",
     description:
       "Explore Cosuniq's selected projects across software, e-commerce, branding, and video production.",
-    url: "https://cosuniq.in/portfolio",
+    url: "https://www.cosuniq.in/portfolio",
     images: [
       {
         url: "/assets/og-image.png",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: "Explore Cosuniq's selected projects across software, branding, and video.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/portfolio" },
+  alternates: { canonical: "https://www.cosuniq.in/portfolio" },
 };
 
 export default function PortfolioLayout({

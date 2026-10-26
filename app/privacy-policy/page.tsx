@@ -7,7 +7,7 @@ import styles from "../../components/LegalPage.module.css";
 export const metadata: Metadata = {
   title: "Privacy Policy | Cosuniq Technologies",
   description: "Read Cosuniq Technologies' Privacy Policy. Learn how we collect, protect, and handle your personal information and project data.",
-  alternates: { canonical: "https://cosuniq.in/privacy-policy" },
+  alternates: { canonical: "https://www.cosuniq.in/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -19,13 +19,13 @@ export default function PrivacyPolicyPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Privacy Policy",
-        "item": "https://cosuniq.in/privacy-policy"
+        "item": "https://www.cosuniq.in/privacy-policy"
       }
     ]
   };

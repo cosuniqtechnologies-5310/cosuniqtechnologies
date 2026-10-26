@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       title: location.metaTitle,
       description: location.metaDesc,
-      url: `https://cosuniq.in/locations/${slug}`,
+      url: `https://www.cosuniq.in/locations/${slug}`,
       images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: `${location.cityName} Digital Services` }],
     },
     twitter: {
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: location.metaDesc,
       images: ["/assets/og-image.png"],
     },
-    alternates: { canonical: `https://cosuniq.in/locations/${slug}` },
+    alternates: { canonical: `https://www.cosuniq.in/locations/${slug}` },
   };
 }
 
@@ -70,19 +70,19 @@ export default async function LocationDetailPage({ params }: PageProps) {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "What We Do",
-        "item": "https://cosuniq.in/services"
+        "item": "https://www.cosuniq.in/services"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": location.cityName,
-        "item": `https://cosuniq.in/locations/${slug}`
+        "item": `https://www.cosuniq.in/locations/${slug}`
       }
     ]
   };
@@ -95,7 +95,7 @@ export default async function LocationDetailPage({ params }: PageProps) {
     "description": location.metaDesc,
     "provider": {
       "@type": "ProfessionalService",
-      "@id": "https://cosuniq.in/#organization",
+      "@id": "https://www.cosuniq.in/#organization",
       "name": "Cosuniq Technologies"
     },
     "areaServed": [
@@ -103,17 +103,17 @@ export default async function LocationDetailPage({ params }: PageProps) {
       { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
       { "@type": "Country", "name": "India" }
     ],
-    "url": `https://cosuniq.in/locations/${slug}`
+    "url": `https://www.cosuniq.in/locations/${slug}`
   };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": `https://cosuniq.in/locations/${slug}#localbusiness`,
+    "@id": `https://www.cosuniq.in/locations/${slug}#localbusiness`,
     "name": `Cosuniq Technologies - Software Development Company in ${location.cityName}`,
-    "url": `https://cosuniq.in/locations/${slug}`,
-    "logo": "https://cosuniq.in/assets/cosuniq-technologies.png",
-    "image": "https://cosuniq.in/assets/og-image.png",
+    "url": `https://www.cosuniq.in/locations/${slug}`,
+    "logo": "https://www.cosuniq.in/assets/cosuniq-technologies.png",
+    "image": "https://www.cosuniq.in/assets/og-image.png",
     "telephone": "+917358696546",
     "email": "founder@cosuniq.in",
     "priceRange": "$$",

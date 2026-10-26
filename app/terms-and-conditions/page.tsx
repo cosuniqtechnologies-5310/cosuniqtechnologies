@@ -6,7 +6,7 @@ import styles from "../../components/LegalPage.module.css";
 export const metadata: Metadata = {
   title: "Terms and Conditions | Cosuniq Technologies",
   description: "Read the Terms and Conditions of service for Cosuniq Technologies. Outlining client agreements, intellectual property rights, and service standards.",
-  alternates: { canonical: "https://cosuniq.in/terms-and-conditions" },
+  alternates: { canonical: "https://www.cosuniq.in/terms-and-conditions" },
 };
 
 export default function TermsAndConditionsPage() {

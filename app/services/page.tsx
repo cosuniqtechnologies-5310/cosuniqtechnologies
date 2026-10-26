@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Services | Cosuniq Technologies",
     description: "Explore Cosuniq's full range of digital services — web development, UI/UX design, e-commerce, custom software, mobile apps, and cloud infrastructure.",
-    url: "https://cosuniq.in/services",
+    url: "https://www.cosuniq.in/services",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Services" }],
   },
   twitter: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Explore Cosuniq's full range of digital services.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/services" },
+  alternates: { canonical: "https://www.cosuniq.in/services" },
 };
 
 export default function Services() {
@@ -30,13 +30,13 @@ export default function Services() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "What We Do",
-        "item": "https://cosuniq.in/services"
+        "item": "https://www.cosuniq.in/services"
       }
     ]
   };

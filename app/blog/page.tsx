@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blogs & Insights | Cosuniq Technologies",
     description: "Deep technical articles, design system guides, and software engineering insights from Cosuniq.",
-    url: "https://cosuniq.in/blog",
+    url: "https://www.cosuniq.in/blog",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Cosuniq Blogs" }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description: "Deep technical articles, design system guides, and software engineering insights from Cosuniq.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/blog" },
+  alternates: { canonical: "https://www.cosuniq.in/blog" },
 };
 
 export default function BlogPage() {
@@ -32,13 +32,13 @@ export default function BlogPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://cosuniq.in"
+        "item": "https://www.cosuniq.in"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights",
-        "item": "https://cosuniq.in/blog"
+        "item": "https://www.cosuniq.in/blog"
       }
     ]
   };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Cosuniq Technologies",
     description:
       "Get in touch with Cosuniq Technologies. Tell us about your project and let's build something amazing together.",
-    url: "https://cosuniq.in/contact",
+    url: "https://www.cosuniq.in/contact",
     images: [{ url: "/assets/og-image.png", width: 1200, height: 630, alt: "Contact Cosuniq Technologies" }],
   },
   twitter: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: "Start your project with Cosuniq Technologies today.",
     images: ["/assets/og-image.png"],
   },
-  alternates: { canonical: "https://cosuniq.in/contact" },
+  alternates: { canonical: "https://www.cosuniq.in/contact" },
 };
 
 export default function ContactLayout({

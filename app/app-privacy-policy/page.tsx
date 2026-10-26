@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "SKL SCHOOL App Privacy Policy | Cosuniq Technologies",
   description:
     "Privacy, account access and account deletion policy for the SKL SCHOOL mobile application, developed by Cosuniq Technologies for authorized students, teachers and school administrators.",
-  alternates: { canonical: "https://cosuniq.in/app-privacy-policy" },
+  alternates: { canonical: "https://www.cosuniq.in/app-privacy-policy" },
 };
 
 export default function AppPrivacyPolicyPage() {
@@ -19,13 +19,13 @@ export default function AppPrivacyPolicyPage() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://cosuniq.in",
+        item: "https://www.cosuniq.in",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "SKL SCHOOL App Privacy Policy",
-        item: "https://cosuniq.in/app-privacy-policy",
+        item: "https://www.cosuniq.in/app-privacy-policy",
       },
     ],
   };
