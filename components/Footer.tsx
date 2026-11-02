@@ -80,6 +80,15 @@ export default function Footer() {
               <Link href="/services/ai-software">AI & Software</Link>
             </div>
             <div className={styles.linkCol}>
+              <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Locations</span>
+              <Link href="/locations/chennai">Chennai</Link>
+              <Link href="/locations/coimbatore">Coimbatore</Link>
+              <Link href="/locations/tiruppur">Tiruppur</Link>
+              <Link href="/locations/pollachi">Pollachi</Link>
+              <Link href="/locations/udumalpet">Udumalpet</Link>
+              <Link href="/locations/palani">Palani</Link>
+            </div>
+            <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contact</span>
               <a href="mailto:founder@cosuniq.in">founder@cosuniq.in</a>
               <a href="tel:+917358696546">+91 73586 96546</a>

@@ -51,7 +51,7 @@ export default function LivingBrandHero() {
         >
           <span className={`eyebrow ${styles.eyebrowWrap}`}>
             <span className="spark spark--inline" />
-            Creative Technology + Branding
+            Website Design • Web Development • Creative Branding
           </span>
           
           <h1 className={styles.headline}>
@@ -73,11 +73,11 @@ export default function LivingBrandHero() {
           </h1>
           
           <p className={styles.description}>
-            Branding, websites, web apps and mobile experiences built to grow your business.
+            Premier website design, website development, custom web applications, and branding built to rank and grow your business.
           </p>
           
           <div className={styles.services}>
-            Branding &nbsp;&middot;&nbsp; Websites &nbsp;&middot;&nbsp; Web Apps &nbsp;&middot;&nbsp; Mobile Apps
+            Website Design &nbsp;&middot;&nbsp; Web Development &nbsp;&middot;&nbsp; UI/UX &nbsp;&middot;&nbsp; Branding
           </div>
           
           <div className={styles.ctaGroup}>

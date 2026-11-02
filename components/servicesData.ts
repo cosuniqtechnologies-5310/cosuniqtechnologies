@@ -6,6 +6,7 @@ export interface ServiceData {
   heroDesc: string;
   metaTitle: string;
   metaDesc: string;
+  keywords?: string[];
   bannerImage: string;
   deliverables: {
     num: string;
@@ -39,8 +40,21 @@ export const servicesMap: Record<string, ServiceData> = {
     eyebrow: "01 / HIGH-PERFORMANCE WEB ENGINEERING",
     heroTitle: "Web applications engineered for velocity, scale & security.",
     heroDesc: "We build modern enterprise web applications, customer portals, and high-converting marketing platforms using Next.js, React, Node.js, and cloud-native architecture.",
-    metaTitle: "Website Design & Web Development Services | Next.js Engineering",
-    metaDesc: "Custom website design and web development services by Cosuniq Technologies. Building enterprise-grade, lightning-fast portfolio websites, SaaS portals, and Next.js applications.",
+    metaTitle: "Website Design & Website Development Company | Next.js Engineering",
+    metaDesc: "Top-rated website design and website development company. Cosuniq Technologies engineers custom corporate websites, SaaS web applications, and high-speed digital platforms.",
+    keywords: [
+      "website development company",
+      "website design",
+      "website development",
+      "website creation",
+      "website developer near me",
+      "best website development company",
+      "custom website development",
+      "website development cost india",
+      "ui designs for website",
+      "website developer",
+      "website design and development services"
+    ],
     bannerImage: "/assets/images/laptop.webp",
     deliverables: [
       {
@@ -93,7 +107,9 @@ export const servicesMap: Record<string, ServiceData> = {
     faqs: [
       { q: "What tech stack do you recommend for new web applications?", a: "For modern production web apps, we primarily build with Next.js (App Router), TypeScript, Tailwind CSS on the frontend, and Node.js or Go with PostgreSQL and Redis on the backend deployed on AWS or Vercel." },
       { q: "How long does a custom web development project take?", a: "A focused corporate web portal or MVP takes approximately 4–8 weeks. Complex multi-tenant SaaS platforms typically take 10–16 weeks with sprint-by-sprint staging releases." },
-      { q: "Do you build SEO-friendly web applications?", a: "Yes. All web applications are engineered with server-side rendering (SSR) or static site generation (SSG), automatic OpenGraph metadata, structured JSON-LD schemas, and near-perfect Core Web Vitals." }
+      { q: "Do you build SEO-friendly web applications?", a: "Yes. All web applications are engineered with server-side rendering (SSR) or static site generation (SSG), automatic OpenGraph metadata, structured JSON-LD schemas, and near-perfect Core Web Vitals." },
+      { q: "What is the average website development cost in India?", a: "In India, professional custom website development typically ranges from ₹25,000 for bespoke business showcase sites to ₹1,00,000+ for complex web applications and multi-vendor platforms. Cosuniq provides fixed milestone pricing with zero hidden maintenance fees." },
+      { q: "Why hire Cosuniq over freelance website developers or template builders?", a: "Freelancers and generic template builders often deploy vulnerable, slow WordPress plugins. Cosuniq provides an in-house engineering team that writes clean, hand-crafted Next.js code, delivers 95+ Google Lighthouse scores, and guarantees 100% intellectual property ownership." }
     ]
   },
 
@@ -166,8 +182,19 @@ export const servicesMap: Record<string, ServiceData> = {
     eyebrow: "03 / PRODUCT EXPERIENCE & DESIGN SYSTEMS",
     heroTitle: "Interfaces that perform, delight users, and drive conversions.",
     heroDesc: "We merge human cognitive psychology with state-of-the-art visual craft to create digital products that feel intuitive from the very first tap.",
-    metaTitle: "UI/UX & Product Design Services | Cosuniq Technologies",
-    metaDesc: "World-class UI/UX design, wireframing, user research, and comprehensive Figma design systems engineered by Cosuniq Technologies.",
+    metaTitle: "UI Design & UX Product Design Agency | UI Designs for Website & Apps",
+    metaDesc: "Top UI design agency delivering conversion-focused UI designs for websites, web applications, and mobile apps. Figma design systems and UX prototyping.",
+    keywords: [
+      "ui design",
+      "ui designs for website",
+      "ui design templates for web applications",
+      "ui design tools",
+      "ui design meaning",
+      "ui designer",
+      "ui ux design agency",
+      "figma ui design",
+      "web application ui design"
+    ],
     bannerImage: "/assets/images/bento-ui-ux.webp",
     deliverables: [
       {
@@ -229,8 +256,19 @@ export const servicesMap: Record<string, ServiceData> = {
     eyebrow: "04 / BRAND STRATEGY & VISUAL SYSTEMS",
     heroTitle: "Brand identities that establish authority and command attention.",
     heroDesc: "We craft iconic logo marks, comprehensive typography systems, and strategic positioning frameworks that turn modern businesses into unmistakable market leaders.",
-    metaTitle: "Brand Identity & Visual Strategy | Cosuniq Technologies",
-    metaDesc: "Comprehensive brand strategy, logo systems, brand guidelines, and visual identity design by Cosuniq Technologies.",
+    metaTitle: "Branding Design Agency & Logo Design | Visual Strategy & Identity",
+    metaDesc: "Top branding design agency delivering iconic logo systems, branding design templates, visual guidelines, and strategic brand positioning.",
+    keywords: [
+      "branding design agency",
+      "branding design",
+      "branding design logo",
+      "branding design template",
+      "branding design ideas",
+      "branding design examples",
+      "brand identity design",
+      "creative branding agency",
+      "logo design company"
+    ],
     bannerImage: "/assets/images/hero-brand.webp",
     deliverables: [
       {

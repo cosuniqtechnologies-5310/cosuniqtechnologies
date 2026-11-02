@@ -351,10 +351,12 @@ export const blogPosts: BlogPost[] = [
     summary: "A transparent breakdown of website development cost factors: domain & hosting infrastructure, custom design vs templates, CMS choices, third-party integrations, and ongoing maintenance for modern businesses.",
     image: "/assets/images/laptop.webp",
     keywords: [
-      "how much does a website cost",
+      "website development cost india",
       "website development cost",
+      "how much does a website cost",
       "website design pricing",
       "custom website development cost",
+      "website design cost in india",
       "business website cost factors",
       "web development pricing guide"
     ],
@@ -819,6 +821,133 @@ export const blogPosts: BlogPost[] = [
         heading: "Launch Your High-Performance Website with Cosuniq Technologies",
         paragraphs: [
           "Ready to elevate your online presence with Google-dominating speed and modern design? Explore our [website development in udumalpet](/locations/udumalpet) location hub, browse our [case studies](/case-studies), or [schedule a free technical discovery call](/contact) with our engineering team today."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "website-development-hsn-code-and-gst-rate-india",
+    title: "Website Development HSN Code & GST Rate in India: Complete Guide (SAC 998314)",
+    category: "Web Development",
+    readTime: "6 min read",
+    date: "November 2, 2026",
+    author: "Cosuniq Engineering & Finance Team",
+    summary: "Complete breakdown of website development HSN code and GST rate in India: SAC code 998314, 18% GST calculation, invoicing requirements, export rules, and input tax credit (ITC).",
+    image: "/assets/images/laptop.webp",
+    keywords: [
+      "website development hsn code and gst rate",
+      "website development sac code",
+      "website design gst rate",
+      "website development hsn code",
+      "gst on web development services",
+      "sac code 998314",
+      "website development company in chennai",
+      "website development cost india"
+    ],
+    content: [
+      {
+        heading: "What is the HSN / SAC Code for Website Development in India?",
+        paragraphs: [
+          "One of the most frequent accounting and legal questions Indian business owners, startups, and IT agencies ask is: what is the website development HSN code and GST rate in India? When hiring a website development company or issuing invoices for web design, using the correct code is essential for tax compliance and Input Tax Credit (ITC).",
+          "Under the Indian Goods and Services Tax (GST) system, physical goods use HSN (Harmonized System of Nomenclature) codes, while services use SAC (Services Accounting Code). For website development, web design, and digital software engineering, the official GST classification code is SAC 998314.",
+          "SAC 998314 falls under Chapter 99, Heading 9983 ('Other professional, technical and business services'), specifically covering 'Information technology design and development services'."
+        ],
+        callout: "For all website development, website design, and custom software services in India, the mandatory classification code is SAC 998314."
+      },
+      {
+        heading: "What is the Applicable GST Rate on Website Development Services?",
+        paragraphs: [
+          "The applicable GST rate for website development, website design, UI/UX design, and web application engineering in India is 18%. This tax rate applies uniformly across all digital engineering and IT consultancy services.",
+          "The breakdown of the 18% GST depends on whether the transaction is intra-state or inter-state:"
+        ],
+        bullets: [
+          "Intra-State Supply (Client and agency in the same state, e.g., Tamil Nadu to Tamil Nadu): 9% CGST (Central GST) + 9% SGST (State GST) = 18% Total",
+          "Inter-State Supply (Client in one state and agency in another, e.g., Tamil Nadu to Karnataka or Maharashtra): 18% IGST (Integrated GST)",
+          "Export of Website Development Services (Client located outside India): 0% GST (Zero-Rated Supply) when transacted under a valid Letter of Undertaking (LUT) with payment received in convertible foreign currency"
+        ]
+      },
+      {
+        heading: "Invoice Requirements for Website Development & Design Services",
+        paragraphs: [
+          "A compliant GST tax invoice issued by a website development company must clearly display specific statutory information to ensure the client can seamlessly claim Input Tax Credit (ITC):",
+          "1. 6-Digit SAC Code: Explicitly state 'SAC: 998314' alongside the service item description (e.g., 'Next.js Website Design & Custom Web Development Services').",
+          "2. GSTIN of Both Parties: Valid 15-digit GST identification numbers for both the technology agency and the recipient business.",
+          "3. Place of Supply (POS): Clearly indicate the two-digit state code where services are deemed provided.",
+          "4. HSN/SAC Summary Table: A separate taxable value, CGST/SGST/IGST breakdown, and total invoice amount in words and figures."
+        ]
+      },
+      {
+        heading: "Claiming Input Tax Credit (ITC) on Website Development Expenses",
+        paragraphs: [
+          "Because a business website is an essential operational marketing and sales asset, any registered business in India that purchases website development services can claim 100% Input Tax Credit (ITC) on the 18% GST charged on the invoice.",
+          "To claim ITC, ensure that the vendor files their GSTR-1 on time so the credit reflects automatically in your company's GSTR-2B statement. At Cosuniq Technologies, all client invoices are fully compliant with SAC 998314, enabling our corporate clients across Chennai, Coimbatore, and pan-India to offset their input tax immediately."
+        ]
+      },
+      {
+        heading: "Partner with an Accountable Web Development Company",
+        paragraphs: [
+          "Working with an established, GST-compliant technology partner gives you financial predictability, legal peace of mind, and enterprise-grade code. Explore our [website development services](/services/web-development) or [reach out to Cosuniq Technologies](/contact) for a clear, GST-compliant project proposal."
+        ]
+      }
+    ]
+  },
+  {
+    slug: "what-is-a-website-meaning-in-tamil-website-creation-guide",
+    title: "Website Meaning in Tamil: Complete Guide to Website Creation & Web Design (வலைத்தளம் என்றால் என்ன?)",
+    category: "Web Development",
+    readTime: "7 min read",
+    date: "November 2, 2026",
+    author: "Cosuniq Creative & Engineering Team",
+    summary: "Website meaning in Tamil (வலைத்தளம் என்றால் என்ன?): Learn how modern website creation, domain, hosting, UI design, and web development help businesses in Tamil Nadu grow online.",
+    image: "/assets/images/laptop.webp",
+    keywords: [
+      "website meaning in tamil",
+      "website creation",
+      "website in tamil",
+      "website design meaning in tamil",
+      "website developer",
+      "website design coimbatore",
+      "website development company in chennai",
+      "வலைத்தளம் என்றால் என்ன"
+    ],
+    content: [
+      {
+        heading: "Website Meaning in Tamil: வலைத்தளம் என்றால் என்ன? (எளிய விளக்கம்)",
+        paragraphs: [
+          "இணையத்தில் தினமும் லட்சக்கணக்கான மக்கள் தேடும் ஒரு முக்கியமான கேள்வி: Website meaning in Tamil என்ன? தமிழில் 'Website' என்பதை 'வலைத்தளம்' அல்லது 'இணையதளம்' என்று அழைக்கிறோம்.",
+          "ஒரு தொழில் அல்லது வணிகத்திற்கு நிஜ உலகில் ஒரு கடை அல்லது அலுவலகம் (Physical Office or Store) எப்படி முகவரியாக இருக்கிறதோ, அதேபோல இணைய உலகில் (Internet) உங்கள் வணிகத்திற்கு இருக்கும் நிரந்தர டிஜிட்டல் முகவரியே (Digital Address) வலைத்தளம் (Website) ஆகும்.",
+          "இணையத்தில் உங்கள் நிறுவனத்தின் தயாரிப்புகள், சேவைகள், தொலைபேசி எண், முகவரி மற்றும் வாடிக்கையாளர் கருத்துக்கள் அனைத்தையும் 24 மணி நேரமும் உலகளவில் காண்பிக்க வலைத்தளம் பயன்படுகிறது. A website acts as your company's 24/7 automated salesperson, answering client queries and booking orders while you sleep."
+        ],
+        callout: "வலைத்தளம் (Website) என்பது வெறும் தகவல் பலகை அல்ல; அது உங்கள் வணிகத்தை வாடிக்கையாளர்களிடம் கொண்டு சேர்த்து விற்பனையை அதிகரிக்கும் ஒரு சக்திவாய்ந்த டிஜிட்டல் சொத்து (Digital Asset)."
+      },
+      {
+        heading: "Website Creation: வலைத்தளம் உருவாக்க தேவையான 4 அடிப்படை அம்சங்கள்",
+        paragraphs: [
+          "ஒரு தொழில்முறை வலைத்தளத்தை (Professional Website Creation) வெற்றிகரமாக உருவாக்க நான்கு அடிப்படை தூண்கள் தேவைப்படுகின்றன:",
+          "1. இணையப் பெயர் (Domain Name): உங்கள் வலைத்தளத்தின் பெயர் மற்றும் முகவரி (உதாரணமாக: www.cosuniq.in). இதுவே உங்கள் நிறுவனத்தின் டிஜிட்டல் பிராண்ட் ஆகும்.",
+          "2. வெப் ஹோஸ்டிங் (Web Hosting / Cloud Server): உங்கள் வலைத்தளத்தின் கோப்புகள், படங்கள் மற்றும் தரவுகள் சேமிக்கப்படும் பாதுகாப்பான அதிவேக கிளவுட் சேவையகம் (Cloud Server).",
+          "3. பயனர் இடைமுக வடிவமைப்பு (UI / UX Design): பார்வையாளர்களை கவரும் வண்ணம் தெளிவான வண்ணங்கள், எழுத்துருக்கள் மற்றும் எளிதான வழிசெலுத்தலுடன் கூடிய வடிவமைப்பு (Figma Design).",
+          "4. குறியீட்டு கட்டமைப்பு (Clean Code & Web Development): Next.js, React போன்ற நவீன தொழில்நுட்பங்களைப் பயன்படுத்தி மின்னல் வேகத்தில் ஏற்றப்படும் தூய நிரலாக்க கட்டமைப்பு."
+        ]
+      },
+      {
+        heading: "சமூக வலைத்தளங்கள் (Social Media) மட்டும் போதுமா? ஏன் தனி வலைத்தளம் அவசியம்?",
+        paragraphs: [
+          "இன்றைய காலகட்டத்தில் பல வணிகங்கள் இன்ஸ்டாகிராம் (Instagram), ஃபேஸ்புக் (Facebook) போன்ற சமூக வலைத்தள பக்கங்களை மட்டுமே நம்பியிருக்கின்றன. ஆனால் சமூக வலைத்தளங்களின் அல்காரிதம்கள் (Algorithms) எந்த நேரத்திலும் மாறலாம்; மேலும் உங்கள் பக்கம் எந்த நேரத்திலும் முடக்கப்படலாம்.",
+          "மாறாக, ஒரு தனிப்பயன் வலைத்தளம் (Custom Website) என்பது உங்கள் நிறுவனத்தின் முழு கட்டுப்பாட்டில் இருக்கும் 100% சொந்த டிஜிட்டல் சொத்து. வாடிக்கையாளர்கள் கூகுளில் தேடும்போது (Google Search), உங்கள் வலைத்தளம் முதல் பக்கத்தில் வந்தால் மட்டுமே நம்பகத்தன்மையும் புதிய வணிக வாய்ப்புகளும் அதிகரிக்கும்."
+        ],
+        bullets: [
+          "நம்பகத்தன்மை (Brand Authority & Trust): சொந்த வலைத்தளம் உள்ள வணிகங்களை மட்டுமே கார்ப்பரேட் மற்றும் சர்வதேச வாடிக்கையாளர்கள் பெரிதும் நம்புகின்றனர்",
+          "கூகுள் தேடலில் முதலிடம் (Google SEO Rankings): உங்கள் ஊரிலும் மாநிலத்திலும் உள்ள வாடிக்கையாளர்கள் உங்களை எளிதாக கண்டறிய முடியும்",
+          "தானியங்கி விற்பனை (Automated Inquiries & Lead Generation): வாடிக்கையாளர்கள் நேரடியாக வாட்ஸ்அப் அல்லது படிவம் மூலம் தொடர்பு கொள்ளும் வசதி",
+          "100% உரிமையாளர் கட்டுப்பாடு (Full Code & Data Ownership): சமூக வலைத்தளங்களை போல பிறரின் கட்டுப்பாட்டில் இயங்க வேண்டியதில்லை"
+        ]
+      },
+      {
+        heading: "தமிழ்நாட்டில் சிறந்த வலைத்தளத்தை உருவாக்க Cosuniq Technologies எவ்வாறு உதவுகிறது?",
+        paragraphs: [
+          "Cosuniq Technologies நிறுவனம், [சென்னை](/locations/chennai), [கோயம்புத்தூர்](/locations/coimbatore), [திருப்பூர்](/locations/tiruppur), [பொள்ளாச்சி](/locations/pollachi), மற்றும் [உடுமலைப்பேட்டை](/locations/udumalpet) போன்ற தமிழகத்தின் முன்னணி நகரங்களில் இயங்கும் நிறுவனங்களுக்கு உலகத்தரம் வாய்ந்த வலைத்தள வடிவமைப்பு (Website Design) மற்றும் மென்பொருள் சேவைகளை வழங்குகிறது.",
+          "மெதுவான மற்றும் பழைய வேர்ட்பிரஸ் (WordPress) டெம்ப்ளேட்களை தவிர்க்கவும். அதிநவீன Next.js தொழில்நுட்பத்தில் ஒரு நொடிக்கும் குறைவான வேகத்தில் (Sub-Second Speed) இயங்கும் வலைத்தளத்தை உருவாக்க எங்கள் [Web Development சேவைகளை](/services/web-development) பார்வையிடவும் அல்லது எங்களை [தொடர்பு கொள்ளவும்](/contact)."
         ]
       }
     ]

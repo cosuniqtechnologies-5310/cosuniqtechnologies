@@ -28,7 +28,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: service.metaTitle,
     description: service.metaDesc,
-    keywords: [service.name, "Cosuniq Technologies", "digital services", "software development", "India"],
+    keywords: [
+      ...(service.keywords || []),
+      service.name,
+      "Cosuniq Technologies",
+      "digital services",
+      "software development",
+      "India"
+    ],
     openGraph: {
       title: `${service.name} | Cosuniq Technologies`,
       description: service.metaDesc,

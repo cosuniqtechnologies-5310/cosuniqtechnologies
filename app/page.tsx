@@ -12,8 +12,8 @@ import WorkLifecycle from "../components/WorkLifecycle";
 import ResultsShowcase from "../components/ResultsShowcase";
 
 export const metadata: Metadata = {
-  title: "Cosuniq Technologies | Creative Digital Agency & Software Development",
-  description: "Cosuniq Technologies is a premier creative digital agency delivering high-performance software, custom web applications, SaaS, e-commerce, and memorable brand identities.",
+  title: "Cosuniq Technologies | Top Website Design & Website Development Company",
+  description: "Cosuniq Technologies is an industry-leading website design and website development company. We engineer high-speed custom websites, Next.js applications, UI/UX designs, and brand identities across Chennai, Coimbatore, and Tamil Nadu.",
   keywords: [
     "Cosuniq Technologies",
     "Creative Digital Agency",
@@ -22,11 +22,22 @@ export const metadata: Metadata = {
     "UI UX Design Agency",
     "Mobile App Development",
     "E-commerce Development",
-    "Brand Strategy & Identity"
+    "Brand Strategy & Identity",
+    "website development company in chennai",
+    "website development company in coimbatore",
+    "website design company in coimbatore",
+    "website designers in chennai",
+    "website development",
+    "website design",
+    "website creation",
+    "website developer near me",
+    "website development cost india",
+    "ui designs for website",
+    "branding design agency"
   ],
   alternates: { canonical: "https://www.cosuniq.in" },
   openGraph: {
-    title: "Cosuniq Technologies | Creative Digital Agency & Software Development",
+    title: "Cosuniq Technologies | Top Website Design & Website Development Company",
     description: "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & mobile apps. Every brand has a story. We help you build it.",
     url: "https://www.cosuniq.in",
     siteName: "Cosuniq Technologies",

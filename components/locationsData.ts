@@ -40,19 +40,128 @@ export interface LocationData {
 }
 
 export const locationsMap: Record<string, LocationData> = {
+  "chennai": {
+    slug: "chennai",
+    cityName: "Chennai",
+    region: "Tamil Nadu (Chennai Metro & IT Corridor)",
+    eyebrow: "CHENNAI • TOP WEBSITE DESIGN & DEVELOPMENT COMPANY",
+    heroTitle: "Premier Website Development & Website Design Company in Chennai.",
+    heroDesc: "Cosuniq Technologies is an industry-leading website development and website design company in Chennai. We engineer high-speed Next.js websites, bespoke SaaS platforms, custom enterprise software, and conversion-focused UI/UX design for startups and enterprises across OMR, Guindy, Anna Nagar, and T. Nagar.",
+    metaTitle: "Best Website Development Company in Chennai | Website Designers Chennai",
+    metaDesc: "Cosuniq Technologies is the premier website development company and top website designers in Chennai. Custom website design, Next.js web applications, UI/UX, and branding.",
+    keywords: [
+      "website development company in chennai",
+      "website designers in chennai",
+      "website development chennai",
+      "website design company in chennai",
+      "best website development company in chennai",
+      "website designer near me",
+      "website design chennai",
+      "web development company in chennai",
+      "website creation chennai",
+      "ecommerce website development in chennai",
+      "software development company in chennai",
+      "ui designs for website chennai",
+      "branding design agency chennai"
+    ],
+    bannerImage: "/assets/images/laptop.webp",
+    localContext: {
+      heading: "Architecting Digital Velocity for India's Gateway & SaaS Capital",
+      description: "Chennai is one of India's premier economic, automotive, healthcare, and SaaS hubs — home to the vibrant OMR IT Corridor, Guindy industrial estate, and thriving commercial centers like T. Nagar and Anna Nagar. While many traditional agencies still deploy slow, insecure WordPress themes, Cosuniq Technologies builds bespoke, edge-cached Next.js web platforms, custom cloud applications, and conversion-focused UI/UX design systems. We engineer digital assets that load in sub-second times, pass Google Core Web Vitals with flying colors, and rank at the top of Google search.",
+      highlight: "Sub-second Next.js architecture, enterprise security, 100% intellectual property ownership, and direct engineering collaboration."
+    },
+    targetServices: [
+      {
+        num: "01",
+        title: "Website Design & Custom Web Development",
+        desc: "High-performance corporate websites, SaaS web applications, and customer portals engineered with Next.js and TypeScript for sub-second speeds and top Google search rankings.",
+        serviceLink: "/services/web-development",
+        serviceName: "Web Development"
+      },
+      {
+        num: "02",
+        title: "UI / UX & Digital Product Design",
+        desc: "Human-centered UI designs for websites, interactive Figma prototypes, and scalable design token systems that drive conversions and user engagement.",
+        serviceLink: "/services/ui-ux-design",
+        serviceName: "UI/UX Design"
+      },
+      {
+        num: "03",
+        title: "E-Commerce Website Development & Headless Shopify",
+        desc: "High-converting online storefronts, headless Next.js commerce, and multi-channel inventory sync engineered for high transaction volume.",
+        serviceLink: "/services/ecommerce",
+        serviceName: "E-Commerce Solutions"
+      },
+      {
+        num: "04",
+        title: "AI, Custom Software & Cloud Solutions",
+        desc: "Tailored CRM/ERP software, workflow automations, and LLM integrations that replace fragmented legacy systems and save hundreds of administrative hours.",
+        serviceLink: "/services/ai-software",
+        serviceName: "AI & Custom Software"
+      }
+    ],
+    practicalSolutions: [
+      {
+        problem: "Enterprises in Chennai losing prospective leads to competitors because their existing website loads slowly and fails Google Core Web Vitals.",
+        solution: "We build statically generated, edge-rendered Next.js web applications that achieve 95+ Google Lighthouse scores and sub-second Largest Contentful Paint (LCP)."
+      },
+      {
+        problem: "Chennai startups struggling with generic website templates that fail to convey technical authority or distinct brand identity.",
+        solution: "We craft custom Figma visual design systems with interactive prototypes, bespoke typography, and pixel-perfect developer handoff."
+      },
+      {
+        problem: "Difficulty finding dependable local tech partners in Chennai who provide transparent milestones without hidden vendor lock-in.",
+        solution: "We provide 100% code and intellectual property ownership, transparent sprint-based milestones, and direct 1:1 collaboration with senior engineers."
+      }
+    ],
+    caseStudy: {
+      title: "Sellgy Multi-Vendor Marketplace",
+      tag: "E-Commerce & High Concurrency",
+      metricVal: "4.2x",
+      metricLbl: "Faster Checkout Speed",
+      desc: "Re-engineered core web architecture from a slow monolithic stack to Next.js and Node.js microservices, handling 10k+ concurrent shoppers flawlessly.",
+      link: "/case-studies"
+    },
+    faqs: [
+      {
+        q: "Which is the best website development company in Chennai?",
+        a: "Cosuniq Technologies is a premier website development company and top website design studio serving clients across Chennai and Tamil Nadu. We specialize in custom Next.js web development, sub-second performance, UI/UX design, and custom software engineering."
+      },
+      {
+        q: "What does website development cost in Chennai, India?",
+        a: "Website development costs depend on project scope. A bespoke corporate website typically ranges from ₹25,000 to ₹75,000, while complex SaaS platforms and custom web applications range from ₹1,00,000 upwards. Cosuniq provides transparent, fixed-scope proposals with zero hidden costs."
+      },
+      {
+        q: "Why choose Next.js web development over WordPress in Chennai?",
+        a: "WordPress sites frequently suffer from plugin vulnerabilities, database overhead, and slow page speeds that hurt Google search rankings. Next.js delivers statically generated, server-rendered pages with zero database attack surfaces, 95+ Core Web Vitals scores, and superior SEO performance."
+      },
+      {
+        q: "Do you provide website designers near me in Chennai?",
+        a: "Yes. Our design and engineering team works closely with founders and enterprises throughout Chennai — including OMR, Guindy, Anna Nagar, Velachery, and T. Nagar — offering both virtual and direct collaborative sessions."
+      }
+    ]
+  },
+
   "coimbatore": {
     slug: "coimbatore",
     cityName: "Coimbatore",
     region: "Western Tamil Nadu",
-    eyebrow: "COIMBATORE • TOP WEBSITE DESIGN & SOFTWARE STUDIO",
-    heroTitle: "High-performance software engineering & modern web development in Coimbatore.",
-    heroDesc: "We partner with ambitious enterprises, industrial manufacturers, healthcare providers, and high-growth startups across Coimbatore to build scalable digital products, ecommerce platforms, and high-speed websites.",
-    metaTitle: "Best Website Design & Development Company in Coimbatore | Cosuniq",
-    metaDesc: "Cosuniq is a top website design and development company in Coimbatore. We build high-performance business websites, ecommerce stores, and custom software.",
+    eyebrow: "COIMBATORE • TOP WEBSITE DESIGN & DEVELOPMENT COMPANY",
+    heroTitle: "High-performance website development & modern website design in Coimbatore.",
+    heroDesc: "We partner with ambitious enterprises, industrial manufacturers, healthcare providers, and high-growth startups across Coimbatore to build scalable digital products, high-converting website design, and sub-second web applications.",
+    metaTitle: "Best Website Development & Website Design Company in Coimbatore | Cosuniq",
+    metaDesc: "Cosuniq is the premier website development company and top website design company in Coimbatore. Sub-second Next.js web development, e-commerce, and UI/UX design.",
     keywords: [
+      "website development company in coimbatore",
       "website design company in coimbatore",
+      "website designers in coimbatore",
+      "website design coimbatore",
+      "website development coimbatore",
       "best website design company in coimbatore",
+      "best website development company in coimbatore",
       "website design & development company in coimbatore",
+      "website designer near me",
+      "website creation coimbatore",
       "ecommerce website design company in coimbatore",
       "top website design company in coimbatore",
       "matrimony website design company in coimbatore",
@@ -129,6 +238,10 @@ export const locationsMap: Record<string, LocationData> = {
       {
         q: "Can you modernize our existing business software without disrupting active operations?",
         a: "Yes. We specialize in phased migrations — building secure APIs and modern web frontends alongside legacy databases to ensure zero business downtime during transition."
+      },
+      {
+        q: "What services does your website development company in Coimbatore provide?",
+        a: "Cosuniq Technologies provides end-to-end digital solutions in Coimbatore: custom website development with Next.js, responsive website design, UI/UX prototyping in Figma, e-commerce stores, custom software/ERPs, and local SEO to help your business rank #1 on Google."
       }
     ]
   },

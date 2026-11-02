@@ -14,21 +14,30 @@ import { plusJakartaSans } from "./fonts";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.cosuniq.in"),
   title: {
-    default: "Cosuniq Technologies | Creative Digital Agency",
+    default: "Cosuniq Technologies | Website Design & Website Development Company",
     template: "%s | Cosuniq Technologies",
   },
   description:
-    "Cosuniq Technologies — full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production. Every brand has a story. We help you build it.",
+    "Cosuniq Technologies is a premier website design and website development company. We engineer custom websites, Next.js web applications, UI/UX designs, and brand identities across Chennai, Coimbatore, and India.",
   keywords: [
     "Cosuniq Technologies",
+    "website development",
+    "website design",
+    "website development company in chennai",
+    "website development company in coimbatore",
+    "website designers in chennai",
+    "website design company in coimbatore",
+    "website creation",
+    "website developer near me",
+    "website development cost india",
+    "ui designs for website",
+    "branding design agency",
+    "web development company",
     "creative agency",
     "digital agency",
-    "web development",
-    "branding",
     "UI UX design",
     "SaaS development",
     "e-commerce",
-    "video production",
     "software development India",
   ],
   authors: [{ name: "Cosuniq Technologies", url: "https://www.cosuniq.in" }],
@@ -50,23 +59,23 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://www.cosuniq.in",
     siteName: "Cosuniq Technologies",
-    title: "Cosuniq Technologies | Creative Digital Agency",
+    title: "Cosuniq Technologies | Website Design & Website Development Company",
     description:
-      "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production. Every brand has a story. We help you build it.",
+      "Premier website design and website development company. We engineer custom websites, Next.js web applications, UI/UX designs, and brand identities across Chennai, Coimbatore, and India.",
     images: [
       {
         url: "/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cosuniq Technologies — Creative Digital Agency",
+        alt: "Cosuniq Technologies — Website Design & Website Development Company",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cosuniq Technologies | Creative Digital Agency",
+    title: "Cosuniq Technologies | Website Design & Website Development Company",
     description:
-      "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production.",
+      "Premier website design and website development company delivering custom websites, SaaS, UI/UX, and branding.",
     images: ["/assets/og-image.png"],
     creator: "@cosuniq",
   },
@@ -117,21 +126,71 @@ export default function RootLayout({
                   "image": "https://www.cosuniq.in/assets/og-image.png",
                   "priceRange": "$$",
                   "description":
-                    "Full-service creative agency delivering software, SaaS, CRM, e-commerce, branding & video production.",
+                    "Premier website design and website development company delivering custom Next.js web applications, UI/UX designs, SaaS portals, and distinctive brand identities.",
                   "address": {
                     "@type": "PostalAddress",
                     "addressRegion": "Tamil Nadu",
                     "addressCountry": "IN"
                   },
+                  "areaServed": [
+                    { "@type": "City", "name": "Chennai" },
+                    { "@type": "City", "name": "Coimbatore" },
+                    { "@type": "City", "name": "Tiruppur" },
+                    { "@type": "City", "name": "Pollachi" },
+                    { "@type": "City", "name": "Udumalpet" },
+                    { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
+                    { "@type": "Country", "name": "India" }
+                  ],
                   "knowsAbout": [
-                    "Web Development",
-                    "Mobile App Development",
+                    "Website Development",
+                    "Website Design",
+                    "Website Creation",
                     "UI/UX Design",
-                    "Brand Strategy",
+                    "Branding Design",
+                    "Next.js Engineering",
+                    "Mobile App Development",
                     "AI & Custom Software",
                     "Cloud & DevOps",
                     "E-Commerce Solutions"
                   ],
+                  "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Website Design & Digital Engineering Services",
+                    "itemListElement": [
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Website Development & Web Design",
+                          "description": "Custom Next.js website design and development, corporate portals, and high-speed web applications."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "UI / UX Design",
+                          "description": "Human-centered UI designs for websites, interactive Figma prototypes, and design systems."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Branding Design Agency",
+                          "description": "Iconic logo systems, brand guidelines, and distinctive visual identities."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "E-Commerce Website Development",
+                          "description": "High-converting online storefronts, headless Shopify, and inventory synchronization."
+                        }
+                      }
+                    ]
+                  },
                   "contactPoint": {
                     "@type": "ContactPoint",
                     "telephone": "+917358696546",
