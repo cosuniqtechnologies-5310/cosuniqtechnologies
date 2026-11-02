@@ -78,6 +78,7 @@ export default function Footer() {
               <Link href="/services/ui-ux-design">UI/UX Design</Link>
               <Link href="/services/ecommerce">E-Commerce</Link>
               <Link href="/services/ai-software">AI & Software</Link>
+              <Link href="/services/graphic-design">Graphic Design</Link>
             </div>
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Locations</span>
@@ -87,6 +88,8 @@ export default function Footer() {
               <Link href="/locations/pollachi">Pollachi</Link>
               <Link href="/locations/udumalpet">Udumalpet</Link>
               <Link href="/locations/palani">Palani</Link>
+              <Link href="/locations/dharapuram">Dharapuram</Link>
+              <Link href="/locations/tanjavur">Tanjavur</Link>
             </div>
             <div className={styles.linkCol}>
               <span style={{ fontSize: '0.85rem', color: 'var(--footer-brand-text)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Contact</span>

@@ -43,6 +43,31 @@ export const servicesMap: Record<string, ServiceData> = {
     metaTitle: "Website Design & Website Development Company | Next.js Engineering",
     metaDesc: "Top-rated website design and website development company. Cosuniq Technologies engineers custom corporate websites, SaaS web applications, and high-speed digital platforms.",
     keywords: [
+      "web development company in coimbatore",
+      "custom website design services tirupur",
+      "web application development agency chennai",
+      "e-commerce website developers in pollachi",
+      "wordpress website development udumalpet",
+      "website redesign services palani",
+      "shopify store developers dharapuram",
+      "business website design company tanjavur",
+      "web development agency near me",
+      "react js web development company coimbatore",
+      "mern stack developers in chennai",
+      "custom php web development tirupur",
+      "node js backend development agency",
+      "full stack web development company coimbatore",
+      "headless shopify development services",
+      "lightweight custom theme development",
+      "web portal development agency chennai",
+      "garment industry website development tirupur",
+      "textile export web design company coimbatore",
+      "retail store e-commerce website pollachi",
+      "hospital & clinic website development palani",
+      "real estate web portal development chennai",
+      "school and college website design udumalpet",
+      "B2B web application agency tirupur",
+      "custom CRM web application development",
       "website development company",
       "website design",
       "website development",
@@ -51,9 +76,7 @@ export const servicesMap: Record<string, ServiceData> = {
       "best website development company",
       "custom website development",
       "website development cost india",
-      "ui designs for website",
-      "website developer",
-      "website design and development services"
+      "ui designs for website"
     ],
     bannerImage: "/assets/images/laptop.webp",
     deliverables: [
@@ -121,6 +144,31 @@ export const servicesMap: Record<string, ServiceData> = {
     heroDesc: "We design, develop, and publish fluid mobile applications with offline-first capabilities, real-time push gateways, and delightful 60fps micro-animations.",
     metaTitle: "Mobile App Development Services | iOS & Android",
     metaDesc: "Cross-platform and native mobile app development by Cosuniq Technologies. Building high-performance iOS and Android apps using React Native and Flutter.",
+    keywords: [
+      "mobile app development company in coimbatore",
+      "android app developers in tirupur",
+      "ios app development agency chennai",
+      "cross platform mobile app development pollachi",
+      "mobile app development cost in tamil nadu",
+      "custom app development agency udumalpet",
+      "mobile app developers near dharapuram",
+      "app development agency tanjavur",
+      "react native app development company chennai",
+      "flutter mobile app developers coimbatore",
+      "hybrid app development services tirupur",
+      "progressive web app (PWA) development",
+      "mobile app UI UX design services",
+      "delivery app development company coimbatore",
+      "grocery shopping app developers pollachi",
+      "educational mobile app design palani",
+      "billing app development for retail store",
+      "enterprise mobile app solutions chennai",
+      "textile inventory management app tirupur",
+      "restaurant online ordering app development",
+      "react native developers coimbatore",
+      "flutter app development chennai",
+      "ios app development agency tirupur"
+    ],
     bannerImage: "/assets/images/bento-mobile.webp",
     deliverables: [
       {
@@ -185,15 +233,32 @@ export const servicesMap: Record<string, ServiceData> = {
     metaTitle: "UI Design & UX Product Design Agency | UI Designs for Website & Apps",
     metaDesc: "Top UI design agency delivering conversion-focused UI designs for websites, web applications, and mobile apps. Figma design systems and UX prototyping.",
     keywords: [
+      "ui ux design agency in chennai",
+      "user experience design studio coimbatore",
+      "ui ux designer for startups tirupur",
+      "mobile app ui ux design pollachi",
+      "website user interface design udumalpet",
+      "ui ux design services in dharapuram",
+      "Product design consultancy tanjavur",
+      "ui ux design studio palani",
+      "saas product ui ux design agency",
+      "dashboard interface design coimbatore",
+      "e-commerce ux audit and redesign",
+      "design system creation for web apps",
+      "wireframing and prototyping services chennai",
+      "mobile app visual design studio",
+      "web app wireframe design services",
+      "hire ui ux designer in coimbatore",
+      "ui ux design cost for mobile app",
+      "landing page conversion rate design",
+      "user research and usability testing chennai",
+      "enterprise software interface redesign",
       "ui design",
       "ui designs for website",
       "ui design templates for web applications",
-      "ui design tools",
-      "ui design meaning",
-      "ui designer",
-      "ui ux design agency",
-      "figma ui design",
-      "web application ui design"
+      "ui designer in coimbatore",
+      "ui ux design studio chennai",
+      "figma ui design services coimbatore"
     ],
     bannerImage: "/assets/images/bento-ui-ux.webp",
     deliverables: [
@@ -259,15 +324,38 @@ export const servicesMap: Record<string, ServiceData> = {
     metaTitle: "Branding Design Agency & Logo Design | Visual Strategy & Identity",
     metaDesc: "Top branding design agency delivering iconic logo systems, branding design templates, visual guidelines, and strategic brand positioning.",
     keywords: [
+      "branding design agency in coimbatore",
+      "brand identity design studio chennai",
+      "logo design company in tirupur",
+      "corporate branding services pollachi",
+      "professional logo designers udumalpet",
+      "branding company in udumalpet",
+      "branding design agency udumalpet",
+      "logo design services in udumalpet",
+      "brand identity designer udumalpet",
+      "minimalist logo design udumalpet",
+      "professional brand designer near pollachi and udumalpet",
+      "brand positioning agency for startups in udumalpet",
+      "branding company in dharapuram",
+      "brand identity design agency tanjavur",
+      "logo and brand design studio palani",
+      "minimalist logo design coimbatore",
+      "brand strategy and positioning agency",
+      "company brand guidelines design",
+      "brand style guide creation services",
+      "rebranding agency for small business chennai",
+      "startup brand identity package",
+      "garment brand logo design tirupur",
+      "restaurant branding and menu design pollachi",
+      "real estate brand identity coimbatore",
+      "retail store branding agency tanjavur",
+      "healthcare brand design services palani",
+      "corporate identity packaging design",
+      "minimalist logo designer chennai",
+      "rebranding services in chennai",
+      "brand strategy consultants chennai",
       "branding design agency",
-      "branding design",
-      "branding design logo",
-      "branding design template",
-      "branding design ideas",
-      "branding design examples",
-      "brand identity design",
-      "creative branding agency",
-      "logo design company"
+      "branding design logo"
     ],
     bannerImage: "/assets/images/hero-brand.webp",
     deliverables: [
@@ -395,6 +483,21 @@ export const servicesMap: Record<string, ServiceData> = {
     heroDesc: "We engineer proprietary digital platforms, custom CRM/ERP engines, and LLM-powered automation pipelines that transform complex manual work into effortless speed.",
     metaTitle: "AI & Custom Software Development | Cosuniq Technologies",
     metaDesc: "Custom software engineering and AI automation by Cosuniq Technologies. Building bespoke SaaS platforms, CRM/ERP systems, and intelligent workflows.",
+    keywords: [
+      "custom software development company coimbatore",
+      "enterprise software solution agency chennai",
+      "saas product development company tirupur",
+      "cloud application engineering agency",
+      "custom ERP software development pollachi",
+      "business process automation software udumalpet",
+      "API integration and development services",
+      "custom CRM software developers coimbatore",
+      "web application maintenance company chennai",
+      "dedicated software development team india",
+      "custom software development",
+      "ai software development",
+      "erp software development"
+    ],
     bannerImage: "/assets/images/bento-ai.webp",
     deliverables: [
       {
@@ -573,6 +676,92 @@ export const servicesMap: Record<string, ServiceData> = {
     faqs: [
       { q: "Who is this consulting service for?", a: "It is designed for founders launching new digital products, enterprise leaders modernizing legacy systems, and companies wanting an unbiased technical audit before committing large capital." },
       { q: "What is the final deliverable?", a: "You receive a complete Product Requirements Document (PRD), system architecture diagram, user flow map, sprint roadmap, and precise budget forecast." }
+    ]
+  },
+
+  "graphic-design": {
+    slug: "graphic-design",
+    name: "Graphic Design & Marketing Collateral",
+    eyebrow: "09 / PRINT, PACKAGING & DIGITAL VISUALS",
+    heroTitle: "Marketing collateral, product packaging & creative digital design.",
+    heroDesc: "We design high-impact marketing collateral, product packaging, social media creative systems, and print assets that turn curious prospects into loyal brand advocates.",
+    metaTitle: "Graphic Design Agency & Marketing Collateral Studio | Cosuniq",
+    metaDesc: "Top graphic design agency delivering product packaging design, marketing collateral, corporate brochures, social media creatives, and print design.",
+    keywords: [
+      "graphic design agency in coimbatore",
+      "creative graphic designers tirupur",
+      "marketing collateral design chennai",
+      "social media post design pollachi",
+      "brochure design services udumalpet",
+      "product packaging design agency udumalpet",
+      "brochure and catalog design company udumalpet",
+      "agriculture & agro product packaging design udumalpet",
+      "Graphic design studio in dharapuram",
+      "print and digital design agency tanjavur",
+      "corporate brochure and catalog design tirupur",
+      "packaging design company coimbatore",
+      "digital ad creatives design agency",
+      "social media banner design services",
+      "flyer and poster design pollachi",
+      "corporate profile design company chennai",
+      "product packaging design studio",
+      "custom illustration design services",
+      "vector artwork design dharapuram",
+      "banner and hoardings design coimbatore"
+    ],
+    bannerImage: "/assets/images/hero-brand.webp",
+    deliverables: [
+      {
+        num: "01",
+        title: "Product Packaging & Label Design",
+        desc: "3D packaging boxes, pouch designs, garment hangtags, export labels, and print-ready dielines engineered for retail shelf presence."
+      },
+      {
+        num: "02",
+        title: "Corporate Brochures & Catalogs",
+        desc: "Multi-page product catalogs, company profiles, lookbooks, and pitch decks with modern typography and grid precision."
+      },
+      {
+        num: "03",
+        title: "Social Media Post & Ad Creatives",
+        desc: "High-converting Instagram, LinkedIn, and Facebook ad creatives, carousels, and promotional story templates."
+      },
+      {
+        num: "04",
+        title: "Marketing Collateral & Print Media",
+        desc: "Business stationery, corporate flyers, exhibition banners, trade show hoardings, and promotional swag kits."
+      },
+      {
+        num: "05",
+        title: "Custom Vector Artwork & Illustrations",
+        desc: "Bespoke digital vector illustrations, technical iconography, and custom artwork tailored to your brand narrative."
+      },
+      {
+        num: "06",
+        title: "Digital Marketing Asset Systems",
+        desc: "Display banner ads, email newsletter headers, and campaign creative kits with rapid turn-around."
+      }
+    ],
+    techStack: ["Adobe Illustrator", "Photoshop", "InDesign", "Figma", "After Effects", "Blender"],
+    process: [
+      { step: "Phase 01", title: "Creative Brief & Objectives", desc: "Understanding product dimensions, target audience demographics, and retail environments." },
+      { step: "Phase 02", title: "Concepts & Dielines", desc: "Presenting 2-3 distinct visual directions with physical mockups and scale testing." },
+      { step: "Phase 03", title: "Artwork Vectorization", desc: "Perfecting CMYK color values, Pantone swatches, font licensing, and bleed margins." },
+      { step: "Phase 04", title: "Print-Ready Proofing", desc: "Generating high-resolution vector PDFs, layered source files, and printer handoff specs." },
+      { step: "Phase 05", title: "Digital Optimization", desc: "Exporting compressed RGB WebP and PNG assets optimized for web and social distribution." }
+    ],
+    caseStudy: {
+      title: "Cosuniq Technologies Visual System",
+      tag: "Packaging & Collateral",
+      metricVal: "100%",
+      metricLbl: "Visual Consistency Across Channels",
+      desc: "Designed unified brand assets, digital ad creatives, and high-impact print collateral with mathematically aligned typography.",
+      link: "/about"
+    },
+    faqs: [
+      { q: "Do you provide print-ready source files?", a: "Yes. All graphic design deliverables include print-ready CMYK PDFs with bleed marks, layered Adobe Illustrator (.AI) and Photoshop (.PSD) vectors, and web-ready RGB PNGs." },
+      { q: "Can you design packaging for retail and export products?", a: "Yes. We design corrugated boxes, food pouches, textile labels, cosmetic bottles, and agro packaging complying with barcode and legal regulatory standards." },
+      { q: "Do you design social media ad creatives on monthly retainers?", a: "Yes. We offer dedicated creative design retainers providing custom Instagram/LinkedIn static posts, carousels, and ad banners on a regular sprint basis." }
     ]
   }
 };

@@ -138,6 +138,9 @@ export default function RootLayout({
                     { "@type": "City", "name": "Tiruppur" },
                     { "@type": "City", "name": "Pollachi" },
                     { "@type": "City", "name": "Udumalpet" },
+                    { "@type": "City", "name": "Palani" },
+                    { "@type": "City", "name": "Dharapuram" },
+                    { "@type": "City", "name": "Tanjavur" },
                     { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
                     { "@type": "Country", "name": "India" }
                   ],
@@ -147,6 +150,7 @@ export default function RootLayout({
                     "Website Creation",
                     "UI/UX Design",
                     "Branding Design",
+                    "Graphic Design & Collateral",
                     "Next.js Engineering",
                     "Mobile App Development",
                     "AI & Custom Software",
@@ -187,6 +191,22 @@ export default function RootLayout({
                           "@type": "Service",
                           "name": "E-Commerce Website Development",
                           "description": "High-converting online storefronts, headless Shopify, and inventory synchronization."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Mobile Application Development",
+                          "description": "Cross-platform iOS and Android mobile apps, PWA, React Native, and Flutter development."
+                        }
+                      },
+                      {
+                        "@type": "Offer",
+                        "itemOffered": {
+                          "@type": "Service",
+                          "name": "Graphic Design & Marketing Collateral",
+                          "description": "Product packaging design, corporate brochures, catalogs, social media creatives, and print media."
                         }
                       }
                     ]

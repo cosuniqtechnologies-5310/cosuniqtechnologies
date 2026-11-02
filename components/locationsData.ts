@@ -52,17 +52,47 @@ export const locationsMap: Record<string, LocationData> = {
     keywords: [
       "website development company in chennai",
       "website designers in chennai",
+      "wordpress developer in chennai",
+      "custom web application development chennai",
+      "php web developers in chennai",
+      "mern stack development agency chennai",
+      "corporate web design agency chennai",
+      "web application development agency chennai",
+      "mern stack developers in chennai",
+      "web portal development agency chennai",
+      "real estate web portal development chennai",
+      "android app developers in chennai",
+      "flutter app development chennai",
+      "on demand app development agency chennai",
+      "hybrid mobile app development chennai",
+      "startup mobile app agency chennai",
+      "ios app development agency chennai",
+      "react native app development company chennai",
+      "enterprise mobile app solutions chennai",
+      "ui ux design studio chennai",
+      "saas product ui ux design agency chennai",
+      "web application ui ux design chennai",
+      "design system creation studio chennai",
+      "user research and testing chennai",
+      "startup product redesign studio chennai",
+      "landing page ux optimization chennai",
+      "wireframing and prototyping services chennai",
+      "user research and usability testing chennai",
+      "brand identity design agency chennai",
+      "minimalist logo designer chennai",
+      "rebranding services in chennai",
+      "brand strategy consultants chennai",
+      "marketing collateral design chennai",
+      "corporate profile design company chennai",
+      "rebranding agency for small business chennai",
+      "enterprise software solution agency chennai",
+      "web application maintenance company chennai",
       "website development chennai",
-      "website design company in chennai",
       "best website development company in chennai",
       "website designer near me",
-      "website design chennai",
-      "web development company in chennai",
       "website creation chennai",
       "ecommerce website development in chennai",
-      "software development company in chennai",
-      "ui designs for website chennai",
-      "branding design agency chennai"
+      "software development company in chennai"
     ],
     bannerImage: "/assets/images/laptop.webp",
     localContext: {
@@ -152,11 +182,43 @@ export const locationsMap: Record<string, LocationData> = {
     metaTitle: "Best Website Development & Website Design Company in Coimbatore | Cosuniq",
     metaDesc: "Cosuniq is the premier website development company and top website design company in Coimbatore. Sub-second Next.js web development, e-commerce, and UI/UX design.",
     keywords: [
+      "web development company in coimbatore",
       "website development company in coimbatore",
       "website design company in coimbatore",
       "website designers in coimbatore",
       "website design coimbatore",
       "website development coimbatore",
+      "shopify store development coimbatore",
+      "website redesign services coimbatore",
+      "landing page design agency coimbatore",
+      "industrial website design coimbatore",
+      "real estate web design coimbatore",
+      "textile export web design company coimbatore",
+      "react js web development company coimbatore",
+      "full stack web development company coimbatore",
+      "mobile app development company coimbatore",
+      "react native developers coimbatore",
+      "flutter mobile app developers coimbatore",
+      "business mobile app developers coimbatore",
+      "delivery app development company coimbatore",
+      "mobile app maintenance services coimbatore",
+      "ui ux designer in coimbatore",
+      "dashboard interface design coimbatore",
+      "wireframing and prototyping agency coimbatore",
+      "figma ui design services coimbatore",
+      "b2b software ui design coimbatore",
+      "user experience design studio coimbatore",
+      "hire ui ux designer in coimbatore",
+      "branding agency in coimbatore",
+      "corporate identity design coimbatore",
+      "brand guideline creation agency coimbatore",
+      "banner and hoardings design coimbatore",
+      "graphic design agency in coimbatore",
+      "packaging design company coimbatore",
+      "minimalist logo design coimbatore",
+      "real estate brand identity coimbatore",
+      "custom software development company coimbatore",
+      "custom CRM software developers coimbatore",
       "best website design company in coimbatore",
       "best website development company in coimbatore",
       "website design & development company in coimbatore",
@@ -165,8 +227,7 @@ export const locationsMap: Record<string, LocationData> = {
       "ecommerce website design company in coimbatore",
       "top website design company in coimbatore",
       "matrimony website design company in coimbatore",
-      "software development in coimbatore",
-      "web development company in coimbatore"
+      "software development in coimbatore"
     ],
     bannerImage: "/assets/images/laptop.webp",
     localContext: {
@@ -256,6 +317,31 @@ export const locationsMap: Record<string, LocationData> = {
     metaTitle: "Web Development & E-Commerce Solutions in Tiruppur | Cosuniq",
     metaDesc: "Custom web development, apparel export portals, inventory synchronization, and B2B digital solutions for manufacturers and brands in Tiruppur.",
     keywords: [
+      "custom website developers in tirupur",
+      "custom website design services tirupur",
+      "textile export web design tirupur",
+      "garment business web design tirupur",
+      "b2b web portal development tirupur",
+      "garment industry website development tirupur",
+      "custom php web development tirupur",
+      "B2B web application agency tirupur",
+      "android app developers in tirupur",
+      "ios app development agency tirupur",
+      "e-commerce mobile app development tirupur",
+      "enterprise app development tirupur",
+      "hybrid app development services tirupur",
+      "textile inventory management app tirupur",
+      "mobile app ui ux design tirupur",
+      "ecommerce ui ux optimization tirupur",
+      "ui ux designer for startups tirupur",
+      "logo design services in tirupur",
+      "product packaging design tirupur",
+      "business catalog design tirupur",
+      "garment label design tirupur",
+      "creative graphic designers tirupur",
+      "corporate brochure and catalog design tirupur",
+      "garment brand logo design tirupur",
+      "saas product development company tirupur",
       "website development company in tiruppur",
       "textile ecommerce website design in tiruppur",
       "web development company in tiruppur",
@@ -347,6 +433,26 @@ export const locationsMap: Record<string, LocationData> = {
     metaTitle: "Website Design & Software Development in Pollachi | Cosuniq",
     metaDesc: "Professional website design, custom business software, and e-commerce development for agro-exporters, local brands, and retail businesses in Pollachi.",
     keywords: [
+      "e-commerce website design pollachi",
+      "low cost website design pollachi",
+      "retail store e-commerce website pollachi",
+      "e-commerce website developers in pollachi",
+      "cross platform app development pollachi",
+      "delivery app development pollachi",
+      "booking app development pollachi",
+      "cross platform mobile app development pollachi",
+      "grocery shopping app developers pollachi",
+      "website user experience design pollachi",
+      "creative ui ux design pollachi",
+      "mobile app ui ux design pollachi",
+      "graphic design company in pollachi",
+      "social media poster design pollachi",
+      "digital marketing graphic design pollachi",
+      "corporate branding services pollachi",
+      "social media post design pollachi",
+      "flyer and poster design pollachi",
+      "restaurant branding and menu design pollachi",
+      "custom ERP software development pollachi",
       "website design company in pollachi",
       "website development in pollachi",
       "ecommerce website development in pollachi",
@@ -432,12 +538,37 @@ export const locationsMap: Record<string, LocationData> = {
     slug: "udumalpet",
     cityName: "Udumalpet",
     region: "Western Tamil Nadu",
-    eyebrow: "UDUMALPET • #1 WEB & SOFTWARE DEVELOPMENT COMPANY",
-    heroTitle: "#1 Web & Software Development Company in Udumalpet.",
-    heroDesc: "Cosuniq Technologies is the #1 web development, web design, and software development company in Udumalpet. We build high-speed websites, custom business software, mobile apps, and cloud ERP systems.",
-    metaTitle: "#1 Web Design & Software Development Company in Udumalpet",
-    metaDesc: "Cosuniq Technologies is the #1 web development & software development company in Udumalpet. Expert web design, website development & software in Udumalpet.",
+    eyebrow: "UDUMALPET • #1 BRANDING & SOFTWARE STUDIO",
+    heroTitle: "#1 Branding, Logo Design & Web Development Company in Udumalpet.",
+    heroDesc: "Cosuniq Technologies is the leading branding company in Udumalpet offering professional logo design, visual identity, product packaging, brand guidelines, custom web design, and software for startups and local businesses.",
+    metaTitle: "Branding Company in Udumalpet | Custom Logo & Identity Design",
+    metaDesc: "Leading branding company in Udumalpet offering professional logo design, visual identity, product packaging, and brand guidelines for startups and local businesses.",
     keywords: [
+      "branding company in udumalpet",
+      "branding design agency udumalpet",
+      "logo design services in udumalpet",
+      "brand identity designer udumalpet",
+      "best branding consultants in udumalpet",
+      "graphic design and branding agency udumalpet",
+      "corporate identity design studio udumalpet",
+      "minimalist logo design udumalpet",
+      "company brand guidelines design udumalpet",
+      "product packaging design agency udumalpet",
+      "rebranding services for small business udumalpet",
+      "brochure and catalog design company udumalpet",
+      "social media branding services udumalpet",
+      "business card and letterhead design udumalpet",
+      "retail store branding agency udumalpet",
+      "textile & showroom brand identity udumalpet",
+      "hospital and clinic branding design udumalpet",
+      "restaurant branding and menu design udumalpet",
+      "school & institution brand strategy udumalpet",
+      "agriculture & agro product packaging design udumalpet",
+      "hire logo designer in udumalpet",
+      "branding package cost in udumalpet",
+      "best logo and branding company near me",
+      "professional brand designer near pollachi and udumalpet",
+      "brand positioning agency for startups in udumalpet",
       "#1 web development company in udumalpet",
       "#1 web design company in udumalpet",
       "#1 software development company in udumalpet",
@@ -464,6 +595,20 @@ export const locationsMap: Record<string, LocationData> = {
       "custom software development company in udumalpet",
       "billing software in udumalpet",
       "mobile app development company in udumalpet",
+      "website development services udumalpet",
+      "school management website udumalpet",
+      "wordpress website development udumalpet",
+      "school and college website design udumalpet",
+      "custom software app developers udumalpet",
+      "educational app developers udumalpet",
+      "custom app development agency udumalpet",
+      "ui ux design agency udumalpet",
+      "website user interface design udumalpet",
+      "brochure and flyer design udumalpet",
+      "company profile design udumalpet",
+      "professional logo designers udumalpet",
+      "brochure design services udumalpet",
+      "business process automation software udumalpet",
       "software developer jobs in udumalpet tamilnadu"
     ],
     bannerImage: "/assets/images/brainstorm.webp",
@@ -496,10 +641,10 @@ export const locationsMap: Record<string, LocationData> = {
       },
       {
         num: "04",
-        title: "Enterprise AI Automation & Brand Strategy",
-        desc: "Intelligent document processing, automated WhatsApp customer notifications, Voice AI workflows, and distinctive UI/UX design systems that position Udumalpet brands as market leaders.",
+        title: "Branding, Minimalist Logo Design & Packaging Studio",
+        desc: "Minimalist logo design, corporate branding services in Udumalpet, packaging & print design, brand guidelines, brochure/catalog design, and retail store showroom identities.",
         serviceLink: "/services/brand-identity",
-        serviceName: "AI & Brand Strategy"
+        serviceName: "Branding & Graphic Design"
       }
     ],
     practicalSolutions: [
@@ -552,6 +697,18 @@ export const locationsMap: Record<string, LocationData> = {
       {
         q: "How does Cosuniq differ from traditional web design agencies and directory listings?",
         a: "Unlike traditional agencies that deploy slow, insecure WordPress themes or generic directory listings, Cosuniq develops custom software and websites using modern modern stacks like Next.js, React, Node.js, and TypeScript. This guarantees 95+ Google PageSpeed scores, zero database security vulnerabilities, and top Google search rankings."
+      },
+      {
+        q: "Which is the best branding company and logo designer in Udumalpet?",
+        a: "Cosuniq Technologies is the premier branding company and graphic design studio in Udumalpet. Headquartered at 5/233C, Sarathamani Layout, KVS Colony, we craft minimalist logos, comprehensive brand identity guidelines, product packaging labels, and corporate stationery for startups, retail stores, and agro-exporters across Udumalpet and Pollachi."
+      },
+      {
+        q: "What does a complete branding package cost in Udumalpet?",
+        a: "Branding packages in Udumalpet range from essential logo and business card starter kits (₹10,000–₹25,000) to full corporate identity systems, packaging dielines, brand style guides, and showroom collateral (₹35,000–₹75,000+). We offer transparent fixed-price proposals with 100% vector source file ownership."
+      },
+      {
+        q: "Can you design product packaging and brand guidelines for local businesses in Udumalpet?",
+        a: "Yes. We specialize in packaging design for Udumalpet's agriculture, poultry, oil, confectionery, and textile industries, providing print-ready CMYK dielines, barcode compliance, and complete brand style guide manuals."
       }
     ]
   },
@@ -566,6 +723,17 @@ export const locationsMap: Record<string, LocationData> = {
     metaTitle: "Website Design & Digital Solutions in Palani | Cosuniq",
     metaDesc: "Professional website development, hospitality portals, retail digital platforms, and brand design for businesses and institutions in Palani.",
     keywords: [
+      "business website design palani",
+      "hospital web design services palani",
+      "website redesign services palani",
+      "hospital & clinic website development palani",
+      "retail store mobile app palani",
+      "educational mobile app design palani",
+      "minimalist ui UX designer palani",
+      "ui ux design studio palani",
+      "typography and brand design palani",
+      "logo and brand design studio palani",
+      "healthcare brand design services palani",
       "website development in palani",
       "website design company in palani",
       "business website design in palani",
@@ -643,6 +811,200 @@ export const locationsMap: Record<string, LocationData> = {
       {
         q: "Will our website be easy to navigate on mobile phones for travelers on the go?",
         a: "Yes. All our designs prioritize mobile ergonomics with tap-friendly buttons, clear maps integration, fast click-to-call buttons, and instant loading."
+      }
+    ]
+  },
+
+  "dharapuram": {
+    slug: "dharapuram",
+    cityName: "Dharapuram",
+    region: "Western Tamil Nadu (Tiruppur District)",
+    eyebrow: "DHARAPURAM • TOP RESPONSIVE WEB DESIGN & APP STUDIO",
+    heroTitle: "Responsive website design, billing apps & custom digital solutions in Dharapuram.",
+    heroDesc: "We build responsive business websites, Shopify stores, retail billing apps, custom dashboard UIs, and vector branding for growing businesses and agro-enterprises in Dharapuram.",
+    metaTitle: "Responsive Website Design & Mobile App Development Dharapuram | Cosuniq",
+    metaDesc: "Cosuniq Technologies provides responsive website design, custom website builders, Shopify stores, retail billing app development, and graphic design in Dharapuram.",
+    keywords: [
+      "responsive website design dharapuram",
+      "custom website builders dharapuram",
+      "shopify store developers dharapuram",
+      "billing app development dharapuram",
+      "mobile app developers near dharapuram",
+      "custom dashboard ui design dharapuram",
+      "ui ux design services in dharapuram",
+      "vector artwork design dharapuram",
+      "branding company in dharapuram",
+      "Graphic design studio in dharapuram",
+      "website development in dharapuram",
+      "software development dharapuram"
+    ],
+    bannerImage: "/assets/images/laptop.webp",
+    localContext: {
+      heading: "Empowering Dharapuram's Agriculture, Retail & Trade with Modern Web Velocity",
+      description: "Dharapuram is a historical trade center in Tiruppur district with a thriving agrarian base, retail hubs, oil mills, educational institutions, and healthcare clinics. Local business owners and traders need fast, responsive websites and automated billing apps to expand beyond regional borders and manage daily retail transactions effortlessly. Cosuniq Technologies builds custom responsive web platforms, mobile billing applications, and vector identity designs that give Dharapuram businesses a modern digital edge.",
+      highlight: "Mobile-responsive layouts, automated GST billing tools, sub-second speed, and clear local engineering support."
+    },
+    targetServices: [
+      {
+        num: "01",
+        title: "Responsive Website Design & Custom Builders",
+        desc: "Custom corporate websites and digital storefronts engineered with Next.js for sub-second loading on mobile devices in Dharapuram.",
+        serviceLink: "/services/web-development",
+        serviceName: "Web Development"
+      },
+      {
+        num: "02",
+        title: "Shopify Store & Retail E-Commerce",
+        desc: "High-converting online shops with automated payment gateways, product variant filters, and WhatsApp order alerts.",
+        serviceLink: "/services/ecommerce",
+        serviceName: "E-Commerce Solutions"
+      },
+      {
+        num: "03",
+        title: "Billing App & Custom Software Development",
+        desc: "Tailor-made POS billing apps, inventory records, and cloud software engineered for retail shops and local manufacturers.",
+        serviceLink: "/services/ai-software",
+        serviceName: "AI & Custom Software"
+      },
+      {
+        num: "04",
+        title: "Vector Artwork, Graphic Design & Branding Studio",
+        desc: "Distinctive logo design, vector graphics, print brochures, banners, and social media flyers that elevate your local brand presence.",
+        serviceLink: "/services/brand-identity",
+        serviceName: "Brand Identity"
+      }
+    ],
+    practicalSolutions: [
+      {
+        problem: "Local shops in Dharapuram struggling with slow, manual billing and inventory desynchronization.",
+        solution: "We build intuitive cloud billing apps and custom dashboards that automate invoices, stock levels, and daily accounts in seconds."
+      },
+      {
+        problem: "Businesses losing prospective clients because their websites look broken or load slowly on mobile phones.",
+        solution: "We engineer 100% mobile-responsive Next.js web platforms with sub-second page rendering and perfect touch ergonomics."
+      },
+      {
+        problem: "Agro and manufacturing enterprises launching without professional vector logos or marketing collateral.",
+        solution: "We design complete brand packages including vector artwork, print packaging labels, business cards, and marketing banners."
+      }
+    ],
+    caseStudy: {
+      title: "Sellgy Multi-Vendor Marketplace",
+      tag: "E-Commerce & High Concurrency",
+      metricVal: "4.2x",
+      metricLbl: "Faster Checkout Speed",
+      desc: "Re-engineered core web architecture from a slow monolithic stack to Next.js microservices, handling high traffic and payment processing flawlessly.",
+      link: "/case-studies"
+    },
+    faqs: [
+      {
+        q: "What services do you offer for businesses in Dharapuram?",
+        a: "Cosuniq Technologies provides responsive website design, custom website builders, Shopify development, mobile billing app development, dashboard UI/UX design, and vector graphic design in Dharapuram."
+      },
+      {
+        q: "Can you build a billing app for a retail store or wholesale shop in Dharapuram?",
+        a: "Yes. We develop custom mobile and desktop billing applications with barcode scanning, automated GST invoices, WhatsApp receipts, and inventory tracking."
+      },
+      {
+        q: "How does Cosuniq ensure websites load fast in Dharapuram?",
+        a: "We engineer all websites using modern Next.js static site generation with edge caching, ensuring instant load times even on 3G/4G cellular networks."
+      }
+    ]
+  },
+
+  "tanjavur": {
+    slug: "tanjavur",
+    cityName: "Tanjavur",
+    region: "Cauvery Delta & Central Tamil Nadu",
+    eyebrow: "TANJAVUR • PREMIER WEB DESIGN & PRODUCT AGENCY",
+    heroTitle: "Web design agency, mobile apps & brand identity in Tanjavur.",
+    heroDesc: "We build high-speed business websites, mobile apps, brand identity designs, and retail digital solutions for enterprises across Thanjavur, Kumbakonam, and the Delta region.",
+    metaTitle: "Web Design Agency & Mobile App Development in Tanjavur | Cosuniq",
+    metaDesc: "Cosuniq Technologies is the premier web design agency and product design consultancy in Tanjavur (Thanjavur). Custom websites, mobile apps, and branding.",
+    keywords: [
+      "web design agency in tanjavur",
+      "business website design company tanjavur",
+      "mobile app builders in tanjavur",
+      "app development agency tanjavur",
+      "Product design consultancy tanjavur",
+      "ui design company in tanjavur",
+      "creative graphic design studio tanjavur",
+      "brand identity design agency tanjavur",
+      "print and digital design agency tanjavur",
+      "retail store branding agency tanjavur",
+      "website development in thanjavur",
+      "software company in tanjavur"
+    ],
+    bannerImage: "/assets/images/office.webp",
+    localContext: {
+      heading: "Elevating Cultural Heritage & Modern Enterprise in the Rice Bowl of Tamil Nadu",
+      description: "Tanjavur (Thanjavur) is celebrated globally for magnificent architectural heritage, bronze art, agro-processing, higher education, healthcare, and expanding retail commerce. As regional businesses modernize, having an authoritative web presence and intuitive mobile apps is critical to capture domestic and global buyers. Cosuniq Technologies brings world-class web engineering, mobile app development, product design consultancy, and graphic branding to enterprises across Tanjavur.",
+      highlight: "World-class digital product design, Next.js engineering, multi-platform mobile apps, and enduring brand identities."
+    },
+    targetServices: [
+      {
+        num: "01",
+        title: "Business Website Design & Custom Web Portals",
+        desc: "Modern corporate websites, educational institution portals, and agro-export platforms engineered with Next.js for maximum search visibility and speed.",
+        serviceLink: "/services/web-development",
+        serviceName: "Web Development"
+      },
+      {
+        num: "02",
+        title: "Mobile App Builders & Cross-Platform Apps",
+        desc: "Native and hybrid iOS & Android mobile apps built with React Native and Flutter for retail stores, clinics, and on-demand services.",
+        serviceLink: "/services/mobile-apps",
+        serviceName: "Mobile Applications"
+      },
+      {
+        num: "03",
+        title: "Product Design Consultancy & UI/UX Studio",
+        desc: "Wireframing, interactive Figma prototypes, and human-centered user interface design for web applications and client dashboards.",
+        serviceLink: "/services/ui-ux-design",
+        serviceName: "UI/UX Design"
+      },
+      {
+        num: "04",
+        title: "Brand Identity Design & Print/Digital Collateral",
+        desc: "Distinctive logo design, typography, packaging labels, corporate profiles, and marketing collateral for heritage and modern brands.",
+        serviceLink: "/services/brand-identity",
+        serviceName: "Brand Identity"
+      }
+    ],
+    practicalSolutions: [
+      {
+        problem: "Traditional businesses and institutions in Tanjavur operating with outdated websites that fail to attract high-value corporate clients.",
+        solution: "We architect modern, lightning-fast digital experiences that communicate credibility, heritage, and contemporary technical authority."
+      },
+      {
+        problem: "Local retail brands unable to reach customers beyond Thanjavur city limits.",
+        solution: "We build intuitive e-commerce stores and mobile shopping apps with secure payment gateways and automated shipping integrations."
+      },
+      {
+        problem: "Startups and enterprises in the Delta region struggling to find dependable design and engineering partners without outsourcing.",
+        solution: "We provide direct 1:1 senior engineering collaboration, transparent milestone pricing, and 100% intellectual property ownership."
+      }
+    ],
+    caseStudy: {
+      title: "Classbell Institutional Mobile Platform",
+      tag: "120,000+ Active Users",
+      metricVal: "98.4%",
+      metricLbl: "Parent Engagement",
+      desc: "Delivered a cross-platform mobile communication app that streamlined administrative workflows and eliminated fragmented communication.",
+      link: "/case-studies"
+    },
+    faqs: [
+      {
+        q: "Which is the best web design agency and app development company in Tanjavur?",
+        a: "Cosuniq Technologies is the premier web design agency and mobile app development studio serving Tanjavur (Thanjavur). We build custom business websites, mobile apps, UI/UX designs, and brand identities."
+      },
+      {
+        q: "What digital services do you provide in Tanjavur / Thanjavur?",
+        a: "We provide full-stack web development, mobile app development (iOS & Android), product design consultancy, UI/UX prototyping in Figma, and print/digital graphic design."
+      },
+      {
+        q: "Can you design e-commerce websites and mobile apps for retail shops in Tanjavur?",
+        a: "Yes. We engineer complete e-commerce storefronts and mobile apps with integrated UPI payments (PhonePe, Google Pay), WhatsApp notifications, and pan-India shipping."
       }
     ]
   }
